@@ -1,0 +1,4556 @@
+{
+    "22MX44001": {
+        "ID": "22MX44001"
+    },
+    "ACCT2001": {
+        "ID": "ACCT2001"
+    },
+    "ACCT2002": {
+        "ID": "ACCT2002"
+    },
+    "ACCT2002E": {
+        "ID": "ACCT2002E"
+    },
+    "ACCT2002F": {
+        "ID": "ACCT2002F"
+    },
+    "ACCT2003": {
+        "ID": "ACCT2003"
+    },
+    "ACCT2004": {
+        "ID": "ACCT2004"
+    },
+    "ACCT2005": {
+        "ID": "ACCT2005"
+    },
+    "ACCT2005E": {
+        "ID": "ACCT2005E"
+    },
+    "ACCT2006": {
+        "ID": "ACCT2006"
+    },
+    "ACCT2007": {
+        "ID": "ACCT2007"
+    },
+    "ACCT2008A": {
+        "ID": "ACCT2008A"
+    },
+    "ACCT2008B": {
+        "ID": "ACCT2008B"
+    },
+    "ACCT2009": {
+        "ID": "ACCT2009"
+    },
+    "ACCT2010": {
+        "ID": "ACCT2010"
+    },
+    "ACCT2011": {
+        "ID": "ACCT2011"
+    },
+    "ACCT2101": {
+        "ID": "ACCT2101"
+    },
+    "ACCT2102": {
+        "ID": "ACCT2102"
+    },
+    "ACCT2103": {
+        "ID": "ACCT2103"
+    },
+    "ACCT2104": {
+        "ID": "ACCT2104"
+    },
+    "ACCT2403": {
+        "ID": "ACCT2403"
+    },
+    "ACCT3001": {
+        "ID": "ACCT3001"
+    },
+    "ACCT3002": {
+        "ID": "ACCT3002"
+    },
+    "ACCT3003": {
+        "ID": "ACCT3003"
+    },
+    "ACCT3004": {
+        "ID": "ACCT3004"
+    },
+    "ACCT3005": {
+        "ID": "ACCT3005"
+    },
+    "ACCT3006": {
+        "ID": "ACCT3006"
+    },
+    "ACCT3007": {
+        "ID": "ACCT3007"
+    },
+    "ACCT3011": {
+        "ID": "ACCT3011"
+    },
+    "ACCT3012": {
+        "ID": "ACCT3012"
+    },
+    "ACCT3013": {
+        "ID": "ACCT3013"
+    },
+    "ACCT3014": {
+        "ID": "ACCT3014"
+    },
+    "ACCT3015": {
+        "ID": "ACCT3015"
+    },
+    "ACCT3016": {
+        "ID": "ACCT3016"
+    },
+    "ACCT3017": {
+        "ID": "ACCT3017"
+    },
+    "ACCT3018": {
+        "ID": "ACCT3018"
+    },
+    "ACCT3019": {
+        "ID": "ACCT3019"
+    },
+    "ACCT3098": {
+        "ID": "ACCT3098"
+    },
+    "ACCT3099": {
+        "ID": "ACCT3099"
+    },
+    "ACCT3099E": {
+        "ID": "ACCT3099E"
+    },
+    "ACCT3104": {
+        "ID": "ACCT3104"
+    },
+    "ACCT3105": {
+        "ID": "ACCT3105"
+    },
+    "AISZ1002": {
+        "ID": "AISZ1002"
+    },
+    "AISZ1003": {
+        "ID": "AISZ1003"
+    },
+    "AISZ1005": {
+        "ID": "AISZ1005"
+    },
+    "AISZ1006": {
+        "ID": "AISZ1006"
+    },
+    "AISZ1007": {
+        "ID": "AISZ1007"
+    },
+    "AISZ2001": {
+        "ID": "AISZ2001"
+    },
+    "AISZ2002": {
+        "ID": "AISZ2002"
+    },
+    "AISZ2004": {
+        "ID": "AISZ2004"
+    },
+    "AISZ2005": {
+        "ID": "AISZ2005"
+    },
+    "AISZ2006": {
+        "ID": "AISZ2006"
+    },
+    "AISZ2007": {
+        "ID": "AISZ2007"
+    },
+    "AISZ2008": {
+        "ID": "AISZ2008"
+    },
+    "AISZ3001": {
+        "ID": "AISZ3001"
+    },
+    "AISZ3002": {
+        "ID": "AISZ3002"
+    },
+    "AISZ3003": {
+        "ID": "AISZ3003"
+    },
+    "AISZ3099": {
+        "ID": "AISZ3099"
+    },
+    "ARCH1001": {
+        "ID": "ARCH1001"
+    },
+    "ARCH2001": {
+        "ID": "ARCH2001"
+    },
+    "ARCH2002": {
+        "ID": "ARCH2002"
+    },
+    "ARCH2003": {
+        "ID": "ARCH2003"
+    },
+    "ARCH2003E": {
+        "ID": "ARCH2003E"
+    },
+    "ARCH2004": {
+        "ID": "ARCH2004"
+    },
+    "ARCH2004E": {
+        "ID": "ARCH2004E"
+    },
+    "ARCH2101": {
+        "ID": "ARCH2101"
+    },
+    "ARCH2102": {
+        "ID": "ARCH2102"
+    },
+    "ARCH2103": {
+        "ID": "ARCH2103"
+    },
+    "ARCH2104": {
+        "ID": "ARCH2104"
+    },
+    "ARCH2105": {
+        "ID": "ARCH2105"
+    },
+    "ARCH2106": {
+        "ID": "ARCH2106"
+    },
+    "ARCH2107": {
+        "ID": "ARCH2107"
+    },
+    "ARCH2108": {
+        "ID": "ARCH2108"
+    },
+    "ARCH2109": {
+        "ID": "ARCH2109"
+    },
+    "ARCH2110": {
+        "ID": "ARCH2110"
+    },
+    "ARCH2111": {
+        "ID": "ARCH2111"
+    },
+    "ARCH2111E": {
+        "ID": "ARCH2111E"
+    },
+    "ARCH2112": {
+        "ID": "ARCH2112"
+    },
+    "ARCH2202": {
+        "ID": "ARCH2202"
+    },
+    "ARCH2203": {
+        "ID": "ARCH2203"
+    },
+    "ARCH2203E": {
+        "ID": "ARCH2203E"
+    },
+    "ARCH2204": {
+        "ID": "ARCH2204"
+    },
+    "ARCH2205": {
+        "ID": "ARCH2205"
+    },
+    "ARCH2206": {
+        "ID": "ARCH2206"
+    },
+    "ARCH2206E": {
+        "ID": "ARCH2206E"
+    },
+    "ARCH2207": {
+        "ID": "ARCH2207"
+    },
+    "ARCH2207E": {
+        "ID": "ARCH2207E"
+    },
+    "ARCH2208": {
+        "ID": "ARCH2208"
+    },
+    "ARCH2208E": {
+        "ID": "ARCH2208E"
+    },
+    "ARCH2301A": {
+        "ID": "ARCH2301A"
+    },
+    "ARCH2301B": {
+        "ID": "ARCH2301B"
+    },
+    "ARCH2301E": {
+        "ID": "ARCH2301E"
+    },
+    "ARCH2302A": {
+        "ID": "ARCH2302A"
+    },
+    "ARCH2302B": {
+        "ID": "ARCH2302B"
+    },
+    "ARCH2302E": {
+        "ID": "ARCH2302E"
+    },
+    "ARCH2303A": {
+        "ID": "ARCH2303A"
+    },
+    "ARCH2303B": {
+        "ID": "ARCH2303B"
+    },
+    "ARCH2304": {
+        "ID": "ARCH2304"
+    },
+    "ARCH2701": {
+        "ID": "ARCH2701"
+    },
+    "ARCH2702": {
+        "ID": "ARCH2702"
+    },
+    "ARCH2702E": {
+        "ID": "ARCH2702E"
+    },
+    "ARCH2703": {
+        "ID": "ARCH2703"
+    },
+    "ARCH2703E": {
+        "ID": "ARCH2703E"
+    },
+    "ARCH2704": {
+        "ID": "ARCH2704"
+    },
+    "ARCH3001": {
+        "ID": "ARCH3001"
+    },
+    "ARCH3001E": {
+        "ID": "ARCH3001E"
+    },
+    "ARCH3002": {
+        "ID": "ARCH3002"
+    },
+    "ARCH3003": {
+        "ID": "ARCH3003"
+    },
+    "ARCH3004": {
+        "ID": "ARCH3004"
+    },
+    "ARCH3004E": {
+        "ID": "ARCH3004E"
+    },
+    "ARCH3005": {
+        "ID": "ARCH3005"
+    },
+    "ARCH3005E": {
+        "ID": "ARCH3005E"
+    },
+    "ARCH3006": {
+        "ID": "ARCH3006"
+    },
+    "ARCH3006E": {
+        "ID": "ARCH3006E"
+    },
+    "ARCH3007": {
+        "ID": "ARCH3007"
+    },
+    "ARCH3007E": {
+        "ID": "ARCH3007E"
+    },
+    "ARCH3008": {
+        "ID": "ARCH3008"
+    },
+    "ARCH3008E": {
+        "ID": "ARCH3008E"
+    },
+    "ARCH3010": {
+        "ID": "ARCH3010"
+    },
+    "ARCH3010E": {
+        "ID": "ARCH3010E"
+    },
+    "ARCH3011": {
+        "ID": "ARCH3011"
+    },
+    "ARCH3012": {
+        "ID": "ARCH3012"
+    },
+    "ARCH3012E": {
+        "ID": "ARCH3012E"
+    },
+    "ARCH3015": {
+        "ID": "ARCH3015"
+    },
+    "ARCH3015E": {
+        "ID": "ARCH3015E"
+    },
+    "ARCH3016": {
+        "ID": "ARCH3016"
+    },
+    "ARCH3016E": {
+        "ID": "ARCH3016E"
+    },
+    "ARCH3017": {
+        "ID": "ARCH3017"
+    },
+    "ARCH3017E": {
+        "ID": "ARCH3017E"
+    },
+    "ARCH3018": {
+        "ID": "ARCH3018"
+    },
+    "ARCH3018E": {
+        "ID": "ARCH3018E"
+    },
+    "ARCH3019": {
+        "ID": "ARCH3019"
+    },
+    "ARCH3020": {
+        "ID": "ARCH3020"
+    },
+    "ARCH3020E": {
+        "ID": "ARCH3020E"
+    },
+    "ARCH3099": {
+        "ID": "ARCH3099"
+    },
+    "ARCH3111": {
+        "ID": "ARCH3111"
+    },
+    "ARCH3112": {
+        "ID": "ARCH3112"
+    },
+    "ARCH3113": {
+        "ID": "ARCH3113"
+    },
+    "ARCH3114": {
+        "ID": "ARCH3114"
+    },
+    "ARCH3115": {
+        "ID": "ARCH3115"
+    },
+    "ARCH3116": {
+        "ID": "ARCH3116"
+    },
+    "ARCH3117": {
+        "ID": "ARCH3117"
+    },
+    "ARCH3118": {
+        "ID": "ARCH3118"
+    },
+    "ARCH3118E": {
+        "ID": "ARCH3118E"
+    },
+    "ARCH3119": {
+        "ID": "ARCH3119"
+    },
+    "ARCH3121": {
+        "ID": "ARCH3121"
+    },
+    "ARCH3304": {
+        "ID": "ARCH3304"
+    },
+    "ARCH3305": {
+        "ID": "ARCH3305"
+    },
+    "ARCH3306": {
+        "ID": "ARCH3306"
+    },
+    "ARCH3307": {
+        "ID": "ARCH3307"
+    },
+    "ARCH3308": {
+        "ID": "ARCH3308"
+    },
+    "ARCH3309": {
+        "ID": "ARCH3309"
+    },
+    "ARCH3309E": {
+        "ID": "ARCH3309E"
+    },
+    "ARCH3310": {
+        "ID": "ARCH3310"
+    },
+    "ARCH3311": {
+        "ID": "ARCH3311"
+    },
+    "ARCH3399": {
+        "ID": "ARCH3399"
+    },
+    "ARCH3399E": {
+        "ID": "ARCH3399E"
+    },
+    "ARCH3501": {
+        "ID": "ARCH3501"
+    },
+    "ARCH3502": {
+        "ID": "ARCH3502"
+    },
+    "ARCH3503": {
+        "ID": "ARCH3503"
+    },
+    "ARCH3504": {
+        "ID": "ARCH3504"
+    },
+    "ARCH3506": {
+        "ID": "ARCH3506"
+    },
+    "ARCH3507": {
+        "ID": "ARCH3507"
+    },
+    "ARCH3508": {
+        "ID": "ARCH3508"
+    },
+    "ARCH3510": {
+        "ID": "ARCH3510"
+    },
+    "ARCH3511": {
+        "ID": "ARCH3511"
+    },
+    "ARCH3512": {
+        "ID": "ARCH3512"
+    },
+    "ARCH3705": {
+        "ID": "ARCH3705"
+    },
+    "ARCH3705E": {
+        "ID": "ARCH3705E"
+    },
+    "ARCH3706": {
+        "ID": "ARCH3706"
+    },
+    "ARCH3707": {
+        "ID": "ARCH3707"
+    },
+    "ARCH3707E": {
+        "ID": "ARCH3707E"
+    },
+    "ARCH3708": {
+        "ID": "ARCH3708"
+    },
+    "ARCH5012": {
+        "ID": "ARCH5012"
+    },
+    "ARCH5020": {
+        "ID": "ARCH5020"
+    },
+    "ARCH5021": {
+        "ID": "ARCH5021"
+    },
+    "ARCH5022": {
+        "ID": "ARCH5022"
+    },
+    "ARCH5025": {
+        "ID": "ARCH5025"
+    },
+    "ARCH5026": {
+        "ID": "ARCH5026"
+    },
+    "ARCH5030F": {
+        "ID": "ARCH5030F"
+    },
+    "ARCH5105": {
+        "ID": "ARCH5105"
+    },
+    "ARCH5106": {
+        "ID": "ARCH5106"
+    },
+    "ARCH5107": {
+        "ID": "ARCH5107"
+    },
+    "ARCH5110": {
+        "ID": "ARCH5110"
+    },
+    "ARCH5112": {
+        "ID": "ARCH5112"
+    },
+    "ARCH5113": {
+        "ID": "ARCH5113"
+    },
+    "ARCH5116": {
+        "ID": "ARCH5116"
+    },
+    "ARCH5123": {
+        "ID": "ARCH5123"
+    },
+    "AUTO1001": {
+        "ID": "AUTO1001"
+    },
+    "AUTO2001": {
+        "ID": "AUTO2001"
+    },
+    "AUTO2001E": {
+        "ID": "AUTO2001E"
+    },
+    "AUTO2003": {
+        "ID": "AUTO2003"
+    },
+    "AUTO2003A": {
+        "ID": "AUTO2003A"
+    },
+    "AUTO2003B": {
+        "ID": "AUTO2003B"
+    },
+    "AUTO2003E": {
+        "ID": "AUTO2003E"
+    },
+    "AUTO2004": {
+        "ID": "AUTO2004"
+    },
+    "AUTO2005": {
+        "ID": "AUTO2005"
+    },
+    "AUTO2006": {
+        "ID": "AUTO2006"
+    },
+    "AUTO2007": {
+        "ID": "AUTO2007"
+    },
+    "AUTO2009": {
+        "ID": "AUTO2009"
+    },
+    "AUTO3001A": {
+        "ID": "AUTO3001A"
+    },
+    "AUTO3001B": {
+        "ID": "AUTO3001B"
+    },
+    "AUTO3002A": {
+        "ID": "AUTO3002A"
+    },
+    "AUTO3002B": {
+        "ID": "AUTO3002B"
+    },
+    "AUTO3003": {
+        "ID": "AUTO3003"
+    },
+    "AUTO3004": {
+        "ID": "AUTO3004"
+    },
+    "AUTO3005": {
+        "ID": "AUTO3005"
+    },
+    "AUTO3006": {
+        "ID": "AUTO3006"
+    },
+    "AUTO3007": {
+        "ID": "AUTO3007"
+    },
+    "AUTO3008": {
+        "ID": "AUTO3008"
+    },
+    "AUTO3009": {
+        "ID": "AUTO3009"
+    },
+    "AUTO3010": {
+        "ID": "AUTO3010"
+    },
+    "AUTO3011": {
+        "ID": "AUTO3011"
+    },
+    "AUTO3012": {
+        "ID": "AUTO3012"
+    },
+    "AUTO3013": {
+        "ID": "AUTO3013"
+    },
+    "AUTO3014": {
+        "ID": "AUTO3014"
+    },
+    "AUTO3016": {
+        "ID": "AUTO3016"
+    },
+    "AUTO3018": {
+        "ID": "AUTO3018"
+    },
+    "AUTO3019": {
+        "ID": "AUTO3019"
+    },
+    "AUTO3020": {
+        "ID": "AUTO3020"
+    },
+    "AUTO3021": {
+        "ID": "AUTO3021"
+    },
+    "AUTO3022": {
+        "ID": "AUTO3022"
+    },
+    "AUTO3024": {
+        "ID": "AUTO3024"
+    },
+    "AUTO3025": {
+        "ID": "AUTO3025"
+    },
+    "AUTO3028": {
+        "ID": "AUTO3028"
+    },
+    "AUTO3098": {
+        "ID": "AUTO3098"
+    },
+    "AUTO3099": {
+        "ID": "AUTO3099"
+    },
+    "AUTO4001": {
+        "ID": "AUTO4001"
+    },
+    "AUTO4002": {
+        "ID": "AUTO4002"
+    },
+    "AUTO4003": {
+        "ID": "AUTO4003"
+    },
+    "AUTO4004": {
+        "ID": "AUTO4004"
+    },
+    "AUTO4005": {
+        "ID": "AUTO4005"
+    },
+    "AUTO4006": {
+        "ID": "AUTO4006"
+    },
+    "AUTO5001": {
+        "ID": "AUTO5001"
+    },
+    "AUTO5002": {
+        "ID": "AUTO5002"
+    },
+    "AUTO5003": {
+        "ID": "AUTO5003"
+    },
+    "AUTO5004": {
+        "ID": "AUTO5004"
+    },
+    "AUTO5005": {
+        "ID": "AUTO5005"
+    },
+    "AUTO5013": {
+        "ID": "AUTO5013"
+    },
+    "AUTO5023": {
+        "ID": "AUTO5023"
+    },
+    "AUTO5024": {
+        "ID": "AUTO5024"
+    },
+    "BIO1001": {
+        "ID": "BIO1001"
+    },
+    "BIO1002": {
+        "ID": "BIO1002"
+    },
+    "BIO1002E": {
+        "ID": "BIO1002E"
+    },
+    "BMED3101": {
+        "ID": "BMED3101"
+    },
+    "CAEC1001": {
+        "ID": "CAEC1001"
+    },
+    "CHEM1001": {
+        "ID": "CHEM1001"
+    },
+    "CHEM1002": {
+        "ID": "CHEM1002"
+    },
+    "CHEM1003": {
+        "ID": "CHEM1003"
+    },
+    "CHEM1004": {
+        "ID": "CHEM1004"
+    },
+    "CHEM1005": {
+        "ID": "CHEM1005"
+    },
+    "CHEM1007": {
+        "ID": "CHEM1007"
+    },
+    "CHEM1013": {
+        "ID": "CHEM1013"
+    },
+    "CHEM1014B": {
+        "ID": "CHEM1014B"
+    },
+    "CHEM1015A": {
+        "ID": "CHEM1015A"
+    },
+    "CHEM1015B": {
+        "ID": "CHEM1015B"
+    },
+    "CHEM1016A": {
+        "ID": "CHEM1016A"
+    },
+    "CHEM1016B": {
+        "ID": "CHEM1016B"
+    },
+    "CHEM1017A": {
+        "ID": "CHEM1017A"
+    },
+    "CHEM1017B": {
+        "ID": "CHEM1017B"
+    },
+    "CHEM1018": {
+        "ID": "CHEM1018"
+    },
+    "CHEM1019": {
+        "ID": "CHEM1019"
+    },
+    "CHEM1020A": {
+        "ID": "CHEM1020A"
+    },
+    "CHEM1020B": {
+        "ID": "CHEM1020B"
+    },
+    "CHEM1021": {
+        "ID": "CHEM1021"
+    },
+    "CHEM1022": {
+        "ID": "CHEM1022"
+    },
+    "CHEM2001": {
+        "ID": "CHEM2001"
+    },
+    "CHEM2002": {
+        "ID": "CHEM2002"
+    },
+    "CHEM2003": {
+        "ID": "CHEM2003"
+    },
+    "CHEM2004": {
+        "ID": "CHEM2004"
+    },
+    "CHEM2005": {
+        "ID": "CHEM2005"
+    },
+    "CHEM2006": {
+        "ID": "CHEM2006"
+    },
+    "CHEM2007": {
+        "ID": "CHEM2007"
+    },
+    "CHEM3001": {
+        "ID": "CHEM3001"
+    },
+    "CHEM3002": {
+        "ID": "CHEM3002"
+    },
+    "CHEM3003": {
+        "ID": "CHEM3003"
+    },
+    "CHEM3004": {
+        "ID": "CHEM3004"
+    },
+    "CHEM3005": {
+        "ID": "CHEM3005"
+    },
+    "CHEM3006": {
+        "ID": "CHEM3006"
+    },
+    "CHEM3007": {
+        "ID": "CHEM3007"
+    },
+    "CHEM3008": {
+        "ID": "CHEM3008"
+    },
+    "CHEM3009": {
+        "ID": "CHEM3009"
+    },
+    "CHEM3010": {
+        "ID": "CHEM3010"
+    },
+    "CHEM3011": {
+        "ID": "CHEM3011"
+    },
+    "CHEM3012": {
+        "ID": "CHEM3012"
+    },
+    "CHEM3099": {
+        "ID": "CHEM3099"
+    },
+    "CHEM5005": {
+        "ID": "CHEM5005"
+    },
+    "CHEM6008": {
+        "ID": "CHEM6008"
+    },
+    "CIVL1001": {
+        "ID": "CIVL1001"
+    },
+    "CIVL1002": {
+        "ID": "CIVL1002"
+    },
+    "CIVL1002E": {
+        "ID": "CIVL1002E"
+    },
+    "CIVL1003": {
+        "ID": "CIVL1003"
+    },
+    "CIVL1004": {
+        "ID": "CIVL1004"
+    },
+    "CIVL2001": {
+        "ID": "CIVL2001"
+    },
+    "CIVL2002": {
+        "ID": "CIVL2002"
+    },
+    "CIVL2002E": {
+        "ID": "CIVL2002E"
+    },
+    "CIVL2003": {
+        "ID": "CIVL2003"
+    },
+    "CIVL2004": {
+        "ID": "CIVL2004"
+    },
+    "CIVL2004E": {
+        "ID": "CIVL2004E"
+    },
+    "CIVL2005A": {
+        "ID": "CIVL2005A"
+    },
+    "CIVL2005B": {
+        "ID": "CIVL2005B"
+    },
+    "CIVL2006": {
+        "ID": "CIVL2006"
+    },
+    "CIVL2007": {
+        "ID": "CIVL2007"
+    },
+    "CIVL2007E": {
+        "ID": "CIVL2007E"
+    },
+    "CIVL2009": {
+        "ID": "CIVL2009"
+    },
+    "CIVL2009E": {
+        "ID": "CIVL2009E"
+    },
+    "CIVL2010": {
+        "ID": "CIVL2010"
+    },
+    "CIVL2010E": {
+        "ID": "CIVL2010E"
+    },
+    "CIVL2011": {
+        "ID": "CIVL2011"
+    },
+    "CIVL2011E": {
+        "ID": "CIVL2011E"
+    },
+    "CIVL2012": {
+        "ID": "CIVL2012"
+    },
+    "CIVL2013": {
+        "ID": "CIVL2013"
+    },
+    "CIVL2014": {
+        "ID": "CIVL2014"
+    },
+    "CIVL2014E": {
+        "ID": "CIVL2014E"
+    },
+    "CIVL2015": {
+        "ID": "CIVL2015"
+    },
+    "CIVL2015E": {
+        "ID": "CIVL2015E"
+    },
+    "CIVL2016": {
+        "ID": "CIVL2016"
+    },
+    "CIVL2017": {
+        "ID": "CIVL2017"
+    },
+    "CIVL2017E": {
+        "ID": "CIVL2017E"
+    },
+    "CIVL2019": {
+        "ID": "CIVL2019"
+    },
+    "CIVL2019E": {
+        "ID": "CIVL2019E"
+    },
+    "CIVL2020": {
+        "ID": "CIVL2020"
+    },
+    "CIVL2021": {
+        "ID": "CIVL2021"
+    },
+    "CIVL2021E": {
+        "ID": "CIVL2021E"
+    },
+    "CIVL2022": {
+        "ID": "CIVL2022"
+    },
+    "CIVL2022E": {
+        "ID": "CIVL2022E"
+    },
+    "CIVL2023": {
+        "ID": "CIVL2023"
+    },
+    "CIVL2023E": {
+        "ID": "CIVL2023E"
+    },
+    "CIVL3001": {
+        "ID": "CIVL3001"
+    },
+    "CIVL3002": {
+        "ID": "CIVL3002"
+    },
+    "CIVL3003": {
+        "ID": "CIVL3003"
+    },
+    "CIVL3003E": {
+        "ID": "CIVL3003E"
+    },
+    "CIVL3004": {
+        "ID": "CIVL3004"
+    },
+    "CIVL3005": {
+        "ID": "CIVL3005"
+    },
+    "CIVL3006A": {
+        "ID": "CIVL3006A"
+    },
+    "CIVL3006B": {
+        "ID": "CIVL3006B"
+    },
+    "CIVL3007": {
+        "ID": "CIVL3007"
+    },
+    "CIVL3008": {
+        "ID": "CIVL3008"
+    },
+    "CIVL3008E": {
+        "ID": "CIVL3008E"
+    },
+    "CIVL3009": {
+        "ID": "CIVL3009"
+    },
+    "CIVL3010": {
+        "ID": "CIVL3010"
+    },
+    "CIVL3011": {
+        "ID": "CIVL3011"
+    },
+    "CIVL3012": {
+        "ID": "CIVL3012"
+    },
+    "CIVL3012E": {
+        "ID": "CIVL3012E"
+    },
+    "CIVL3013": {
+        "ID": "CIVL3013"
+    },
+    "CIVL3013E": {
+        "ID": "CIVL3013E"
+    },
+    "CIVL3015": {
+        "ID": "CIVL3015"
+    },
+    "CIVL3016": {
+        "ID": "CIVL3016"
+    },
+    "CIVL3017": {
+        "ID": "CIVL3017"
+    },
+    "CIVL3018": {
+        "ID": "CIVL3018"
+    },
+    "CIVL3019": {
+        "ID": "CIVL3019"
+    },
+    "CIVL3020": {
+        "ID": "CIVL3020"
+    },
+    "CIVL3021": {
+        "ID": "CIVL3021"
+    },
+    "CIVL3022": {
+        "ID": "CIVL3022"
+    },
+    "CIVL3023": {
+        "ID": "CIVL3023"
+    },
+    "CIVL3024": {
+        "ID": "CIVL3024"
+    },
+    "CIVL3025": {
+        "ID": "CIVL3025"
+    },
+    "CIVL3026": {
+        "ID": "CIVL3026"
+    },
+    "CIVL3027": {
+        "ID": "CIVL3027"
+    },
+    "CIVL3028": {
+        "ID": "CIVL3028"
+    },
+    "CIVL3029": {
+        "ID": "CIVL3029"
+    },
+    "CIVL3030": {
+        "ID": "CIVL3030"
+    },
+    "CIVL3030E": {
+        "ID": "CIVL3030E"
+    },
+    "CIVL3031": {
+        "ID": "CIVL3031"
+    },
+    "CIVL3032": {
+        "ID": "CIVL3032"
+    },
+    "CIVL3033": {
+        "ID": "CIVL3033"
+    },
+    "CIVL3034": {
+        "ID": "CIVL3034"
+    },
+    "CIVL3035": {
+        "ID": "CIVL3035"
+    },
+    "CIVL3036": {
+        "ID": "CIVL3036"
+    },
+    "CIVL3037": {
+        "ID": "CIVL3037"
+    },
+    "CIVL3038": {
+        "ID": "CIVL3038"
+    },
+    "CIVL3038E": {
+        "ID": "CIVL3038E"
+    },
+    "CIVL3039": {
+        "ID": "CIVL3039"
+    },
+    "CIVL3039E": {
+        "ID": "CIVL3039E"
+    },
+    "CIVL3040": {
+        "ID": "CIVL3040"
+    },
+    "CIVL3041": {
+        "ID": "CIVL3041"
+    },
+    "CIVL3041E": {
+        "ID": "CIVL3041E"
+    },
+    "CIVL3042": {
+        "ID": "CIVL3042"
+    },
+    "CIVL3042E": {
+        "ID": "CIVL3042E"
+    },
+    "CIVL3043": {
+        "ID": "CIVL3043"
+    },
+    "CIVL3044": {
+        "ID": "CIVL3044"
+    },
+    "CIVL3044E": {
+        "ID": "CIVL3044E"
+    },
+    "CIVL3046": {
+        "ID": "CIVL3046"
+    },
+    "CIVL3047": {
+        "ID": "CIVL3047"
+    },
+    "CIVL3047E": {
+        "ID": "CIVL3047E"
+    },
+    "CIVL3048": {
+        "ID": "CIVL3048"
+    },
+    "CIVL3049": {
+        "ID": "CIVL3049"
+    },
+    "CIVL3050": {
+        "ID": "CIVL3050"
+    },
+    "CIVL3050E": {
+        "ID": "CIVL3050E"
+    },
+    "CIVL3051": {
+        "ID": "CIVL3051"
+    },
+    "CIVL3052": {
+        "ID": "CIVL3052"
+    },
+    "CIVL3052E": {
+        "ID": "CIVL3052E"
+    },
+    "CIVL3053": {
+        "ID": "CIVL3053"
+    },
+    "CIVL3053E": {
+        "ID": "CIVL3053E"
+    },
+    "CIVL3054": {
+        "ID": "CIVL3054"
+    },
+    "CIVL3054E": {
+        "ID": "CIVL3054E"
+    },
+    "CIVL3055": {
+        "ID": "CIVL3055"
+    },
+    "CIVL3055E": {
+        "ID": "CIVL3055E"
+    },
+    "CIVL3056": {
+        "ID": "CIVL3056"
+    },
+    "CIVL3056E": {
+        "ID": "CIVL3056E"
+    },
+    "CIVL3057": {
+        "ID": "CIVL3057"
+    },
+    "CIVL3058": {
+        "ID": "CIVL3058"
+    },
+    "CIVL3059": {
+        "ID": "CIVL3059"
+    },
+    "CIVL3059E": {
+        "ID": "CIVL3059E"
+    },
+    "CIVL3060": {
+        "ID": "CIVL3060"
+    },
+    "CIVL3060E": {
+        "ID": "CIVL3060E"
+    },
+    "CIVL3061": {
+        "ID": "CIVL3061"
+    },
+    "CIVL3098": {
+        "ID": "CIVL3098"
+    },
+    "CIVL3099": {
+        "ID": "CIVL3099"
+    },
+    "CIVL3099E": {
+        "ID": "CIVL3099E"
+    },
+    "CIVL5011": {
+        "ID": "CIVL5011"
+    },
+    "CIVL5033": {
+        "ID": "CIVL5033"
+    },
+    "COMP1001": {
+        "ID": "COMP1001"
+    },
+    "COMP1003": {
+        "ID": "COMP1003"
+    },
+    "COMP1007": {
+        "ID": "COMP1007"
+    },
+    "COMP1008": {
+        "ID": "COMP1008"
+    },
+    "COMP1009": {
+        "ID": "COMP1009"
+    },
+    "COMP1010": {
+        "ID": "COMP1010"
+    },
+    "COMP1011": {
+        "ID": "COMP1011"
+    },
+    "COMP1012": {
+        "ID": "COMP1012"
+    },
+    "COMP1013": {
+        "ID": "COMP1013"
+    },
+    "COMP1014": {
+        "ID": "COMP1014"
+    },
+    "COMP1015": {
+        "ID": "COMP1015"
+    },
+    "COMP2001": {
+        "ID": "COMP2001"
+    },
+    "COMP2003": {
+        "ID": "COMP2003"
+    },
+    "COMP2006E": {
+        "ID": "COMP2006E"
+    },
+    "COMP2007": {
+        "ID": "COMP2007"
+    },
+    "COMP2008": {
+        "ID": "COMP2008"
+    },
+    "COMP2010": {
+        "ID": "COMP2010"
+    },
+    "COMP2011": {
+        "ID": "COMP2011"
+    },
+    "COMP2012": {
+        "ID": "COMP2012"
+    },
+    "COMP2014": {
+        "ID": "COMP2014"
+    },
+    "COMP2015": {
+        "ID": "COMP2015"
+    },
+    "COMP2015E": {
+        "ID": "COMP2015E"
+    },
+    "COMP2019": {
+        "ID": "COMP2019"
+    },
+    "COMP2021": {
+        "ID": "COMP2021"
+    },
+    "COMP2022": {
+        "ID": "COMP2022"
+    },
+    "COMP2023": {
+        "ID": "COMP2023"
+    },
+    "COMP2024A": {
+        "ID": "COMP2024A"
+    },
+    "COMP2024B": {
+        "ID": "COMP2024B"
+    },
+    "COMP2025": {
+        "ID": "COMP2025"
+    },
+    "COMP2026": {
+        "ID": "COMP2026"
+    },
+    "COMP2027": {
+        "ID": "COMP2027"
+    },
+    "COMP2027E": {
+        "ID": "COMP2027E"
+    },
+    "COMP2028": {
+        "ID": "COMP2028"
+    },
+    "COMP2029": {
+        "ID": "COMP2029"
+    },
+    "COMP2030": {
+        "ID": "COMP2030"
+    },
+    "COMP2030E": {
+        "ID": "COMP2030E"
+    },
+    "COMP2031E": {
+        "ID": "COMP2031E"
+    },
+    "COMP2050": {
+        "ID": "COMP2050"
+    },
+    "COMP2051": {
+        "ID": "COMP2051"
+    },
+    "COMP2052": {
+        "ID": "COMP2052"
+    },
+    "COMP2053": {
+        "ID": "COMP2053"
+    },
+    "COMP2054": {
+        "ID": "COMP2054"
+    },
+    "COMP3001": {
+        "ID": "COMP3001"
+    },
+    "COMP3002": {
+        "ID": "COMP3002"
+    },
+    "COMP3003": {
+        "ID": "COMP3003"
+    },
+    "COMP3003E": {
+        "ID": "COMP3003E"
+    },
+    "COMP3004": {
+        "ID": "COMP3004"
+    },
+    "COMP3005": {
+        "ID": "COMP3005"
+    },
+    "COMP3005E": {
+        "ID": "COMP3005E"
+    },
+    "COMP3006": {
+        "ID": "COMP3006"
+    },
+    "COMP3006E": {
+        "ID": "COMP3006E"
+    },
+    "COMP3007": {
+        "ID": "COMP3007"
+    },
+    "COMP3009": {
+        "ID": "COMP3009"
+    },
+    "COMP3010": {
+        "ID": "COMP3010"
+    },
+    "COMP3010E": {
+        "ID": "COMP3010E"
+    },
+    "COMP3011": {
+        "ID": "COMP3011"
+    },
+    "COMP3013": {
+        "ID": "COMP3013"
+    },
+    "COMP3014": {
+        "ID": "COMP3014"
+    },
+    "COMP3016": {
+        "ID": "COMP3016"
+    },
+    "COMP3017": {
+        "ID": "COMP3017"
+    },
+    "COMP3018": {
+        "ID": "COMP3018"
+    },
+    "COMP3018E": {
+        "ID": "COMP3018E"
+    },
+    "COMP3019": {
+        "ID": "COMP3019"
+    },
+    "COMP3020": {
+        "ID": "COMP3020"
+    },
+    "COMP3021": {
+        "ID": "COMP3021"
+    },
+    "COMP3023": {
+        "ID": "COMP3023"
+    },
+    "COMP3026": {
+        "ID": "COMP3026"
+    },
+    "COMP3026E": {
+        "ID": "COMP3026E"
+    },
+    "COMP3028": {
+        "ID": "COMP3028"
+    },
+    "COMP3028E": {
+        "ID": "COMP3028E"
+    },
+    "COMP3029": {
+        "ID": "COMP3029"
+    },
+    "COMP3030": {
+        "ID": "COMP3030"
+    },
+    "COMP3031": {
+        "ID": "COMP3031"
+    },
+    "COMP3032": {
+        "ID": "COMP3032"
+    },
+    "COMP3037": {
+        "ID": "COMP3037"
+    },
+    "COMP3039": {
+        "ID": "COMP3039"
+    },
+    "COMP3040": {
+        "ID": "COMP3040"
+    },
+    "COMP3042": {
+        "ID": "COMP3042"
+    },
+    "COMP3043": {
+        "ID": "COMP3043"
+    },
+    "COMP3044": {
+        "ID": "COMP3044"
+    },
+    "COMP3045": {
+        "ID": "COMP3045"
+    },
+    "COMP3046": {
+        "ID": "COMP3046"
+    },
+    "COMP3047": {
+        "ID": "COMP3047"
+    },
+    "COMP3048": {
+        "ID": "COMP3048"
+    },
+    "COMP3049": {
+        "ID": "COMP3049"
+    },
+    "COMP3050": {
+        "ID": "COMP3050"
+    },
+    "COMP3051": {
+        "ID": "COMP3051"
+    },
+    "COMP3052": {
+        "ID": "COMP3052"
+    },
+    "COMP3053": {
+        "ID": "COMP3053"
+    },
+    "COMP3054": {
+        "ID": "COMP3054"
+    },
+    "COMP3055": {
+        "ID": "COMP3055"
+    },
+    "COMP3056E": {
+        "ID": "COMP3056E"
+    },
+    "COMP3057": {
+        "ID": "COMP3057"
+    },
+    "COMP3057E": {
+        "ID": "COMP3057E"
+    },
+    "COMP3058": {
+        "ID": "COMP3058"
+    },
+    "COMP3058E": {
+        "ID": "COMP3058E"
+    },
+    "COMP3059": {
+        "ID": "COMP3059"
+    },
+    "COMP3060": {
+        "ID": "COMP3060"
+    },
+    "COMP3099": {
+        "ID": "COMP3099"
+    },
+    "COMP3099E": {
+        "ID": "COMP3099E"
+    },
+    "DATA2001": {
+        "ID": "DATA2001"
+    },
+    "DATA2002A": {
+        "ID": "DATA2002A"
+    },
+    "DATA2002B": {
+        "ID": "DATA2002B"
+    },
+    "DATA2003": {
+        "ID": "DATA2003"
+    },
+    "DATA3001": {
+        "ID": "DATA3001"
+    },
+    "DATA3099": {
+        "ID": "DATA3099"
+    },
+    "DMAM10012": {
+        "ID": "DMAM10012"
+    },
+    "DMAM1001A": {
+        "ID": "DMAM1001A"
+    },
+    "DMAM1001B": {
+        "ID": "DMAM1001B"
+    },
+    "DMAM1002A": {
+        "ID": "DMAM1002A"
+    },
+    "DMAM1002B": {
+        "ID": "DMAM1002B"
+    },
+    "DMAM1003": {
+        "ID": "DMAM1003"
+    },
+    "DMAM1004": {
+        "ID": "DMAM1004"
+    },
+    "DMAM1005": {
+        "ID": "DMAM1005"
+    },
+    "DMAM1012": {
+        "ID": "DMAM1012"
+    },
+    "DMAM2002": {
+        "ID": "DMAM2002"
+    },
+    "DMAM2003": {
+        "ID": "DMAM2003"
+    },
+    "DMAM2004": {
+        "ID": "DMAM2004"
+    },
+    "DMAM2005": {
+        "ID": "DMAM2005"
+    },
+    "DMAM2006": {
+        "ID": "DMAM2006"
+    },
+    "DMAM2007": {
+        "ID": "DMAM2007"
+    },
+    "DMAM2008": {
+        "ID": "DMAM2008"
+    },
+    "DMAM2009": {
+        "ID": "DMAM2009"
+    },
+    "DMAM2010": {
+        "ID": "DMAM2010"
+    },
+    "DMAM2011": {
+        "ID": "DMAM2011"
+    },
+    "DMAM2012": {
+        "ID": "DMAM2012"
+    },
+    "DMAM2013": {
+        "ID": "DMAM2013"
+    },
+    "DMAM2014": {
+        "ID": "DMAM2014"
+    },
+    "DMAM2015": {
+        "ID": "DMAM2015"
+    },
+    "DMAM3001": {
+        "ID": "DMAM3001"
+    },
+    "DMAM3002": {
+        "ID": "DMAM3002"
+    },
+    "DMAM3003": {
+        "ID": "DMAM3003"
+    },
+    "DMAM3004": {
+        "ID": "DMAM3004"
+    },
+    "DMAM3005": {
+        "ID": "DMAM3005"
+    },
+    "DMAM3006": {
+        "ID": "DMAM3006"
+    },
+    "DMAM3007": {
+        "ID": "DMAM3007"
+    },
+    "DMAM3008": {
+        "ID": "DMAM3008"
+    },
+    "DMAM3009": {
+        "ID": "DMAM3009"
+    },
+    "DMAM3010": {
+        "ID": "DMAM3010"
+    },
+    "DMAM3011": {
+        "ID": "DMAM3011"
+    },
+    "DMAM3013": {
+        "ID": "DMAM3013"
+    },
+    "DMAM3014": {
+        "ID": "DMAM3014"
+    },
+    "DMAM3015": {
+        "ID": "DMAM3015"
+    },
+    "DMAM3016": {
+        "ID": "DMAM3016"
+    },
+    "DMAM3017": {
+        "ID": "DMAM3017"
+    },
+    "DMAM3018": {
+        "ID": "DMAM3018"
+    },
+    "DMAM3019": {
+        "ID": "DMAM3019"
+    },
+    "DMAM3020": {
+        "ID": "DMAM3020"
+    },
+    "DMAM3021": {
+        "ID": "DMAM3021"
+    },
+    "DMAM3099": {
+        "ID": "DMAM3099"
+    },
+    "ECON1001": {
+        "ID": "ECON1001"
+    },
+    "ECON1001E": {
+        "ID": "ECON1001E"
+    },
+    "ECON2005": {
+        "ID": "ECON2005"
+    },
+    "ECON2005F": {
+        "ID": "ECON2005F"
+    },
+    "ECON2006": {
+        "ID": "ECON2006"
+    },
+    "ECON2008": {
+        "ID": "ECON2008"
+    },
+    "ECON2008E": {
+        "ID": "ECON2008E"
+    },
+    "ECON2010": {
+        "ID": "ECON2010"
+    },
+    "ECON2010E": {
+        "ID": "ECON2010E"
+    },
+    "ECON2010F": {
+        "ID": "ECON2010F"
+    },
+    "ECON2012": {
+        "ID": "ECON2012"
+    },
+    "ECON2017": {
+        "ID": "ECON2017"
+    },
+    "ECON2018A": {
+        "ID": "ECON2018A"
+    },
+    "ECON2018B": {
+        "ID": "ECON2018B"
+    },
+    "ECON2019": {
+        "ID": "ECON2019"
+    },
+    "ECON2019E": {
+        "ID": "ECON2019E"
+    },
+    "ECON2020": {
+        "ID": "ECON2020"
+    },
+    "ECON2021": {
+        "ID": "ECON2021"
+    },
+    "ECON2024": {
+        "ID": "ECON2024"
+    },
+    "ECON2025": {
+        "ID": "ECON2025"
+    },
+    "ECON2026": {
+        "ID": "ECON2026"
+    },
+    "ECON2028": {
+        "ID": "ECON2028"
+    },
+    "ECON2028E": {
+        "ID": "ECON2028E"
+    },
+    "ECON2029E": {
+        "ID": "ECON2029E"
+    },
+    "ECON2030E": {
+        "ID": "ECON2030E"
+    },
+    "ECON2031E": {
+        "ID": "ECON2031E"
+    },
+    "ECON2032E": {
+        "ID": "ECON2032E"
+    },
+    "ECON2033E": {
+        "ID": "ECON2033E"
+    },
+    "ECON2034E": {
+        "ID": "ECON2034E"
+    },
+    "ECON2035E": {
+        "ID": "ECON2035E"
+    },
+    "ECON2036E": {
+        "ID": "ECON2036E"
+    },
+    "ECON2037E": {
+        "ID": "ECON2037E"
+    },
+    "ECON2038E": {
+        "ID": "ECON2038E"
+    },
+    "ECON2039E": {
+        "ID": "ECON2039E"
+    },
+    "ECON2040E": {
+        "ID": "ECON2040E"
+    },
+    "ECON2041": {
+        "ID": "ECON2041"
+    },
+    "ECON2069E": {
+        "ID": "ECON2069E"
+    },
+    "ECON3001": {
+        "ID": "ECON3001"
+    },
+    "ECON3001E": {
+        "ID": "ECON3001E"
+    },
+    "ECON3002": {
+        "ID": "ECON3002"
+    },
+    "ECON3003": {
+        "ID": "ECON3003"
+    },
+    "ECON3004": {
+        "ID": "ECON3004"
+    },
+    "ECON3005": {
+        "ID": "ECON3005"
+    },
+    "ECON3006": {
+        "ID": "ECON3006"
+    },
+    "ECON3008": {
+        "ID": "ECON3008"
+    },
+    "ECON3010": {
+        "ID": "ECON3010"
+    },
+    "ECON3011": {
+        "ID": "ECON3011"
+    },
+    "ECON3013": {
+        "ID": "ECON3013"
+    },
+    "ECON3015": {
+        "ID": "ECON3015"
+    },
+    "ECON3016": {
+        "ID": "ECON3016"
+    },
+    "ECON3016E": {
+        "ID": "ECON3016E"
+    },
+    "ECON3018": {
+        "ID": "ECON3018"
+    },
+    "ECON3019": {
+        "ID": "ECON3019"
+    },
+    "ECON3021": {
+        "ID": "ECON3021"
+    },
+    "ECON3023": {
+        "ID": "ECON3023"
+    },
+    "ECON3026": {
+        "ID": "ECON3026"
+    },
+    "ECON3027": {
+        "ID": "ECON3027"
+    },
+    "ECON3029": {
+        "ID": "ECON3029"
+    },
+    "ECON3031": {
+        "ID": "ECON3031"
+    },
+    "ECON3032": {
+        "ID": "ECON3032"
+    },
+    "ECON3033": {
+        "ID": "ECON3033"
+    },
+    "ECON3034": {
+        "ID": "ECON3034"
+    },
+    "ECON3035": {
+        "ID": "ECON3035"
+    },
+    "ECON3036": {
+        "ID": "ECON3036"
+    },
+    "ECON3036E": {
+        "ID": "ECON3036E"
+    },
+    "ECON3037": {
+        "ID": "ECON3037"
+    },
+    "ECON3038": {
+        "ID": "ECON3038"
+    },
+    "ECON3053": {
+        "ID": "ECON3053"
+    },
+    "ECON3054": {
+        "ID": "ECON3054"
+    },
+    "ECON3061": {
+        "ID": "ECON3061"
+    },
+    "ECON3063": {
+        "ID": "ECON3063"
+    },
+    "ECON3063E": {
+        "ID": "ECON3063E"
+    },
+    "ECON3065": {
+        "ID": "ECON3065"
+    },
+    "ECON3067": {
+        "ID": "ECON3067"
+    },
+    "ECON3067E": {
+        "ID": "ECON3067E"
+    },
+    "ECON3068": {
+        "ID": "ECON3068"
+    },
+    "ECON3068E": {
+        "ID": "ECON3068E"
+    },
+    "ECON3071": {
+        "ID": "ECON3071"
+    },
+    "ECON3072": {
+        "ID": "ECON3072"
+    },
+    "ECON3072E": {
+        "ID": "ECON3072E"
+    },
+    "ECON3079": {
+        "ID": "ECON3079"
+    },
+    "ECON3080": {
+        "ID": "ECON3080"
+    },
+    "ECON3089": {
+        "ID": "ECON3089"
+    },
+    "ECON3090": {
+        "ID": "ECON3090"
+    },
+    "ECON3091": {
+        "ID": "ECON3091"
+    },
+    "ECON3092": {
+        "ID": "ECON3092"
+    },
+    "ECON3093": {
+        "ID": "ECON3093"
+    },
+    "ECON3094": {
+        "ID": "ECON3094"
+    },
+    "ECON3095": {
+        "ID": "ECON3095"
+    },
+    "ECON3096": {
+        "ID": "ECON3096"
+    },
+    "ECON3097": {
+        "ID": "ECON3097"
+    },
+    "ECON3098": {
+        "ID": "ECON3098"
+    },
+    "ECON3099": {
+        "ID": "ECON3099"
+    },
+    "ECON3099E": {
+        "ID": "ECON3099E"
+    },
+    "ECON3101": {
+        "ID": "ECON3101"
+    },
+    "ECON3102": {
+        "ID": "ECON3102"
+    },
+    "ECON3103": {
+        "ID": "ECON3103"
+    },
+    "ECON3104": {
+        "ID": "ECON3104"
+    },
+    "ECON3105": {
+        "ID": "ECON3105"
+    },
+    "ECON3106": {
+        "ID": "ECON3106"
+    },
+    "ECON3301": {
+        "ID": "ECON3301"
+    },
+    "ECON5023": {
+        "ID": "ECON5023"
+    },
+    "EE1003": {
+        "ID": "EE1003"
+    },
+    "EE1003E": {
+        "ID": "EE1003E"
+    },
+    "EE1004": {
+        "ID": "EE1004"
+    },
+    "EE1004E": {
+        "ID": "EE1004E"
+    },
+    "EE1005": {
+        "ID": "EE1005"
+    },
+    "EE1006": {
+        "ID": "EE1006"
+    },
+    "EE1007": {
+        "ID": "EE1007"
+    },
+    "EE1007E": {
+        "ID": "EE1007E"
+    },
+    "EE1008": {
+        "ID": "EE1008"
+    },
+    "EE1008E": {
+        "ID": "EE1008E"
+    },
+    "EE1009": {
+        "ID": "EE1009"
+    },
+    "EE1010": {
+        "ID": "EE1010"
+    },
+    "EE1011A": {
+        "ID": "EE1011A"
+    },
+    "EE1011B": {
+        "ID": "EE1011B"
+    },
+    "EE1012A": {
+        "ID": "EE1012A"
+    },
+    "EE1012B": {
+        "ID": "EE1012B"
+    },
+    "EE1013": {
+        "ID": "EE1013"
+    },
+    "EE1014": {
+        "ID": "EE1014"
+    },
+    "EE1015": {
+        "ID": "EE1015"
+    },
+    "EE1016": {
+        "ID": "EE1016"
+    },
+    "EE1017": {
+        "ID": "EE1017"
+    },
+    "EE1018": {
+        "ID": "EE1018"
+    },
+    "EE1019": {
+        "ID": "EE1019"
+    },
+    "EE1020": {
+        "ID": "EE1020"
+    },
+    "EE1021": {
+        "ID": "EE1021"
+    },
+    "EE1022": {
+        "ID": "EE1022"
+    },
+    "EE1023": {
+        "ID": "EE1023"
+    },
+    "EE1024": {
+        "ID": "EE1024"
+    },
+    "EE1025": {
+        "ID": "EE1025"
+    },
+    "EE1026": {
+        "ID": "EE1026"
+    },
+    "EE1027": {
+        "ID": "EE1027"
+    },
+    "EE1028A": {
+        "ID": "EE1028A"
+    },
+    "EE2001": {
+        "ID": "EE2001"
+    },
+    "EE2002": {
+        "ID": "EE2002"
+    },
+    "EE2003": {
+        "ID": "EE2003"
+    },
+    "EE2004": {
+        "ID": "EE2004"
+    },
+    "EE2005": {
+        "ID": "EE2005"
+    },
+    "EE2005E": {
+        "ID": "EE2005E"
+    },
+    "EE3001": {
+        "ID": "EE3001"
+    },
+    "EE3001E": {
+        "ID": "EE3001E"
+    },
+    "EE3002": {
+        "ID": "EE3002"
+    },
+    "EE3002E": {
+        "ID": "EE3002E"
+    },
+    "EE3003": {
+        "ID": "EE3003"
+    },
+    "EE3004": {
+        "ID": "EE3004"
+    },
+    "EE3004E": {
+        "ID": "EE3004E"
+    },
+    "EE3005": {
+        "ID": "EE3005"
+    },
+    "EE3005E": {
+        "ID": "EE3005E"
+    },
+    "EE3006": {
+        "ID": "EE3006"
+    },
+    "EE3007": {
+        "ID": "EE3007"
+    },
+    "EE3008": {
+        "ID": "EE3008"
+    },
+    "EE3009": {
+        "ID": "EE3009"
+    },
+    "EE3011": {
+        "ID": "EE3011"
+    },
+    "EE3011E": {
+        "ID": "EE3011E"
+    },
+    "EE3012": {
+        "ID": "EE3012"
+    },
+    "EE3012E": {
+        "ID": "EE3012E"
+    },
+    "EE3013": {
+        "ID": "EE3013"
+    },
+    "EE3014": {
+        "ID": "EE3014"
+    },
+    "EE3015": {
+        "ID": "EE3015"
+    },
+    "EE3015E": {
+        "ID": "EE3015E"
+    },
+    "EE3016": {
+        "ID": "EE3016"
+    },
+    "EE3016E": {
+        "ID": "EE3016E"
+    },
+    "EE3017": {
+        "ID": "EE3017"
+    },
+    "EE3017E": {
+        "ID": "EE3017E"
+    },
+    "EE3018": {
+        "ID": "EE3018"
+    },
+    "EE3021": {
+        "ID": "EE3021"
+    },
+    "EE3022": {
+        "ID": "EE3022"
+    },
+    "EE3022E": {
+        "ID": "EE3022E"
+    },
+    "EE3023": {
+        "ID": "EE3023"
+    },
+    "EE3023E": {
+        "ID": "EE3023E"
+    },
+    "EE3024": {
+        "ID": "EE3024"
+    },
+    "EE3025": {
+        "ID": "EE3025"
+    },
+    "EE3026": {
+        "ID": "EE3026"
+    },
+    "EE3026E": {
+        "ID": "EE3026E"
+    },
+    "EE3027": {
+        "ID": "EE3027"
+    },
+    "EE3028": {
+        "ID": "EE3028"
+    },
+    "EE3028E": {
+        "ID": "EE3028E"
+    },
+    "EE3029": {
+        "ID": "EE3029"
+    },
+    "EE3029E": {
+        "ID": "EE3029E"
+    },
+    "EE3030": {
+        "ID": "EE3030"
+    },
+    "EE3030E": {
+        "ID": "EE3030E"
+    },
+    "EE3031": {
+        "ID": "EE3031"
+    },
+    "EE3032": {
+        "ID": "EE3032"
+    },
+    "EE3032E": {
+        "ID": "EE3032E"
+    },
+    "EE3034": {
+        "ID": "EE3034"
+    },
+    "EE3037": {
+        "ID": "EE3037"
+    },
+    "EE3037E": {
+        "ID": "EE3037E"
+    },
+    "EE3038": {
+        "ID": "EE3038"
+    },
+    "EE3039": {
+        "ID": "EE3039"
+    },
+    "EE3040": {
+        "ID": "EE3040"
+    },
+    "EE3041": {
+        "ID": "EE3041"
+    },
+    "EE3041E": {
+        "ID": "EE3041E"
+    },
+    "EE3042": {
+        "ID": "EE3042"
+    },
+    "EE3043": {
+        "ID": "EE3043"
+    },
+    "EE3099": {
+        "ID": "EE3099"
+    },
+    "EE3099E": {
+        "ID": "EE3099E"
+    },
+    "EE4001E": {
+        "ID": "EE4001E"
+    },
+    "EE4001　": {
+        "ID": "EE4001　"
+    },
+    "EE4002": {
+        "ID": "EE4002"
+    },
+    "ELEC1002": {
+        "ID": "ELEC1002"
+    },
+    "ELEC2001": {
+        "ID": "ELEC2001"
+    },
+    "ELEC2002": {
+        "ID": "ELEC2002"
+    },
+    "ELEC2002E": {
+        "ID": "ELEC2002E"
+    },
+    "ELEC2003": {
+        "ID": "ELEC2003"
+    },
+    "ELEC2003E": {
+        "ID": "ELEC2003E"
+    },
+    "ELEC2004": {
+        "ID": "ELEC2004"
+    },
+    "ELEC2005": {
+        "ID": "ELEC2005"
+    },
+    "ELEC2006": {
+        "ID": "ELEC2006"
+    },
+    "ELEC2007": {
+        "ID": "ELEC2007"
+    },
+    "ELEC2007E": {
+        "ID": "ELEC2007E"
+    },
+    "ELEC2008": {
+        "ID": "ELEC2008"
+    },
+    "ELEC2009": {
+        "ID": "ELEC2009"
+    },
+    "ELEC2010": {
+        "ID": "ELEC2010"
+    },
+    "ELEC2010E": {
+        "ID": "ELEC2010E"
+    },
+    "ELEC2011": {
+        "ID": "ELEC2011"
+    },
+    "ELEC2012": {
+        "ID": "ELEC2012"
+    },
+    "ELEC2013": {
+        "ID": "ELEC2013"
+    },
+    "ELEC2014": {
+        "ID": "ELEC2014"
+    },
+    "ELEC2015": {
+        "ID": "ELEC2015"
+    },
+    "ELEC2016": {
+        "ID": "ELEC2016"
+    },
+    "ELEC2017": {
+        "ID": "ELEC2017"
+    },
+    "ELEC2018": {
+        "ID": "ELEC2018"
+    },
+    "ELEC2019": {
+        "ID": "ELEC2019"
+    },
+    "ELEC2101K": {
+        "ID": "ELEC2101K"
+    },
+    "ELEC2102K": {
+        "ID": "ELEC2102K"
+    },
+    "ELEC3001": {
+        "ID": "ELEC3001"
+    },
+    "ELEC3002": {
+        "ID": "ELEC3002"
+    },
+    "ELEC3003": {
+        "ID": "ELEC3003"
+    },
+    "ELEC3004": {
+        "ID": "ELEC3004"
+    },
+    "ELEC3005": {
+        "ID": "ELEC3005"
+    },
+    "ELEC3005E": {
+        "ID": "ELEC3005E"
+    },
+    "ELEC3006": {
+        "ID": "ELEC3006"
+    },
+    "ELEC3007": {
+        "ID": "ELEC3007"
+    },
+    "ELEC3008": {
+        "ID": "ELEC3008"
+    },
+    "ELEC3009": {
+        "ID": "ELEC3009"
+    },
+    "ELEC3010": {
+        "ID": "ELEC3010"
+    },
+    "ELEC3011": {
+        "ID": "ELEC3011"
+    },
+    "ELEC3012": {
+        "ID": "ELEC3012"
+    },
+    "ELEC3013": {
+        "ID": "ELEC3013"
+    },
+    "ELEC3014": {
+        "ID": "ELEC3014"
+    },
+    "ELEC3015": {
+        "ID": "ELEC3015"
+    },
+    "ELEC3016": {
+        "ID": "ELEC3016"
+    },
+    "ELEC3017": {
+        "ID": "ELEC3017"
+    },
+    "ELEC3018": {
+        "ID": "ELEC3018"
+    },
+    "ELEC3019": {
+        "ID": "ELEC3019"
+    },
+    "ELEC3021": {
+        "ID": "ELEC3021"
+    },
+    "ELEC3022": {
+        "ID": "ELEC3022"
+    },
+    "ELEC3023": {
+        "ID": "ELEC3023"
+    },
+    "ELEC3025": {
+        "ID": "ELEC3025"
+    },
+    "ELEC3026": {
+        "ID": "ELEC3026"
+    },
+    "ELEC3027": {
+        "ID": "ELEC3027"
+    },
+    "ELEC3028": {
+        "ID": "ELEC3028"
+    },
+    "ELEC3029": {
+        "ID": "ELEC3029"
+    },
+    "ELEC3039": {
+        "ID": "ELEC3039"
+    },
+    "ELEC3039E": {
+        "ID": "ELEC3039E"
+    },
+    "ELEC3040": {
+        "ID": "ELEC3040"
+    },
+    "ELEC3041": {
+        "ID": "ELEC3041"
+    },
+    "ELEC3042": {
+        "ID": "ELEC3042"
+    },
+    "ELEC3045": {
+        "ID": "ELEC3045"
+    },
+    "ELEC3045E": {
+        "ID": "ELEC3045E"
+    },
+    "ELEC3046": {
+        "ID": "ELEC3046"
+    },
+    "ELEC3047": {
+        "ID": "ELEC3047"
+    },
+    "ELEC3049": {
+        "ID": "ELEC3049"
+    },
+    "ELEC3050": {
+        "ID": "ELEC3050"
+    },
+    "ELEC3051": {
+        "ID": "ELEC3051"
+    },
+    "ELEC3052": {
+        "ID": "ELEC3052"
+    },
+    "ELEC3054": {
+        "ID": "ELEC3054"
+    },
+    "ELEC3054E": {
+        "ID": "ELEC3054E"
+    },
+    "ELEC3055": {
+        "ID": "ELEC3055"
+    },
+    "ELEC3055E": {
+        "ID": "ELEC3055E"
+    },
+    "ELEC3056": {
+        "ID": "ELEC3056"
+    },
+    "ELEC3057E": {
+        "ID": "ELEC3057E"
+    },
+    "ELEC3058": {
+        "ID": "ELEC3058"
+    },
+    "ELEC3058E": {
+        "ID": "ELEC3058E"
+    },
+    "ELEC3059": {
+        "ID": "ELEC3059"
+    },
+    "ELEC3060": {
+        "ID": "ELEC3060"
+    },
+    "ELEC3061": {
+        "ID": "ELEC3061"
+    },
+    "ELEC3062": {
+        "ID": "ELEC3062"
+    },
+    "ELEC3065E": {
+        "ID": "ELEC3065E"
+    },
+    "ELEC3066": {
+        "ID": "ELEC3066"
+    },
+    "ELEC3066E": {
+        "ID": "ELEC3066E"
+    },
+    "ELEC3067": {
+        "ID": "ELEC3067"
+    },
+    "ELEC3068": {
+        "ID": "ELEC3068"
+    },
+    "ELEC3070": {
+        "ID": "ELEC3070"
+    },
+    "ELEC3071": {
+        "ID": "ELEC3071"
+    },
+    "ELEC3072": {
+        "ID": "ELEC3072"
+    },
+    "ELEC3073": {
+        "ID": "ELEC3073"
+    },
+    "ELEC3075": {
+        "ID": "ELEC3075"
+    },
+    "ELEC3076": {
+        "ID": "ELEC3076"
+    },
+    "ELEC3099": {
+        "ID": "ELEC3099"
+    },
+    "ELEC3199": {
+        "ID": "ELEC3199"
+    },
+    "ELEC5307": {
+        "ID": "ELEC5307"
+    },
+    "ELPA2001": {
+        "ID": "ELPA2001"
+    },
+    "ELPA2002": {
+        "ID": "ELPA2002"
+    },
+    "ELPA2003": {
+        "ID": "ELPA2003"
+    },
+    "ELPA3001": {
+        "ID": "ELPA3001"
+    },
+    "ELPA3002": {
+        "ID": "ELPA3002"
+    },
+    "ELPA3003": {
+        "ID": "ELPA3003"
+    },
+    "ELPA3005": {
+        "ID": "ELPA3005"
+    },
+    "ELPA3006": {
+        "ID": "ELPA3006"
+    },
+    "ELPA3007": {
+        "ID": "ELPA3007"
+    },
+    "ELPA3008": {
+        "ID": "ELPA3008"
+    },
+    "ELPA3011": {
+        "ID": "ELPA3011"
+    },
+    "ELPA3012": {
+        "ID": "ELPA3012"
+    },
+    "ELPA3013": {
+        "ID": "ELPA3013"
+    },
+    "ELPA3015": {
+        "ID": "ELPA3015"
+    },
+    "ELPA3017": {
+        "ID": "ELPA3017"
+    },
+    "ELPA3018": {
+        "ID": "ELPA3018"
+    },
+    "ELPA3019": {
+        "ID": "ELPA3019"
+    },
+    "ELPA3099": {
+        "ID": "ELPA3099"
+    },
+    "EMEC1001": {
+        "ID": "EMEC1001"
+    },
+    "EMEC1002": {
+        "ID": "EMEC1002"
+    },
+    "EMEC1003": {
+        "ID": "EMEC1003"
+    },
+    "EMEC1004": {
+        "ID": "EMEC1004"
+    },
+    "EMEC1005": {
+        "ID": "EMEC1005"
+    },
+    "EMEC1006": {
+        "ID": "EMEC1006"
+    },
+    "EMEC1007": {
+        "ID": "EMEC1007"
+    },
+    "EMEC1019": {
+        "ID": "EMEC1019"
+    },
+    "EMEC2001": {
+        "ID": "EMEC2001"
+    },
+    "ENER2001": {
+        "ID": "ENER2001"
+    },
+    "ENER2002": {
+        "ID": "ENER2002"
+    },
+    "ENER2003": {
+        "ID": "ENER2003"
+    },
+    "ENER2004": {
+        "ID": "ENER2004"
+    },
+    "ENER2006": {
+        "ID": "ENER2006"
+    },
+    "ENER2007": {
+        "ID": "ENER2007"
+    },
+    "ENER2008": {
+        "ID": "ENER2008"
+    },
+    "ENER3002": {
+        "ID": "ENER3002"
+    },
+    "ENER3002E": {
+        "ID": "ENER3002E"
+    },
+    "ENER3003": {
+        "ID": "ENER3003"
+    },
+    "ENER3004": {
+        "ID": "ENER3004"
+    },
+    "ENER3005": {
+        "ID": "ENER3005"
+    },
+    "ENER3006": {
+        "ID": "ENER3006"
+    },
+    "ENER3007": {
+        "ID": "ENER3007"
+    },
+    "ENER3008": {
+        "ID": "ENER3008"
+    },
+    "ENER3009": {
+        "ID": "ENER3009"
+    },
+    "ENER3010": {
+        "ID": "ENER3010"
+    },
+    "ENER3011": {
+        "ID": "ENER3011"
+    },
+    "ENER3012": {
+        "ID": "ENER3012"
+    },
+    "ENER3013": {
+        "ID": "ENER3013"
+    },
+    "ENER3014": {
+        "ID": "ENER3014"
+    },
+    "ENER3015": {
+        "ID": "ENER3015"
+    },
+    "ENER3016": {
+        "ID": "ENER3016"
+    },
+    "ENER3017": {
+        "ID": "ENER3017"
+    },
+    "ENER3021": {
+        "ID": "ENER3021"
+    },
+    "ENER3022": {
+        "ID": "ENER3022"
+    },
+    "ENER3024": {
+        "ID": "ENER3024"
+    },
+    "ENER3025": {
+        "ID": "ENER3025"
+    },
+    "ENER3026": {
+        "ID": "ENER3026"
+    },
+    "ENER3027": {
+        "ID": "ENER3027"
+    },
+    "ENER3029": {
+        "ID": "ENER3029"
+    },
+    "ENER3030": {
+        "ID": "ENER3030"
+    },
+    "ENER3031": {
+        "ID": "ENER3031"
+    },
+    "ENER3032": {
+        "ID": "ENER3032"
+    },
+    "ENER3033": {
+        "ID": "ENER3033"
+    },
+    "ENER3034": {
+        "ID": "ENER3034"
+    },
+    "ENER3035": {
+        "ID": "ENER3035"
+    },
+    "ENER3036": {
+        "ID": "ENER3036"
+    },
+    "ENER3044": {
+        "ID": "ENER3044"
+    },
+    "ENER3045": {
+        "ID": "ENER3045"
+    },
+    "ENER3046": {
+        "ID": "ENER3046"
+    },
+    "ENER3047": {
+        "ID": "ENER3047"
+    },
+    "ENER3048": {
+        "ID": "ENER3048"
+    },
+    "ENER3049": {
+        "ID": "ENER3049"
+    },
+    "ENER3050": {
+        "ID": "ENER3050"
+    },
+    "ENER3051": {
+        "ID": "ENER3051"
+    },
+    "ENER3052": {
+        "ID": "ENER3052"
+    },
+    "ENER3053": {
+        "ID": "ENER3053"
+    },
+    "ENER3054": {
+        "ID": "ENER3054"
+    },
+    "ENER3055": {
+        "ID": "ENER3055"
+    },
+    "ENER3056": {
+        "ID": "ENER3056"
+    },
+    "ENER3057": {
+        "ID": "ENER3057"
+    },
+    "ENER3058": {
+        "ID": "ENER3058"
+    },
+    "ENER3059": {
+        "ID": "ENER3059"
+    },
+    "ENER3060": {
+        "ID": "ENER3060"
+    },
+    "ENER3062": {
+        "ID": "ENER3062"
+    },
+    "ENER3063": {
+        "ID": "ENER3063"
+    },
+    "ENER3064": {
+        "ID": "ENER3064"
+    },
+    "ENER3065": {
+        "ID": "ENER3065"
+    },
+    "ENER3067": {
+        "ID": "ENER3067"
+    },
+    "ENER3069": {
+        "ID": "ENER3069"
+    },
+    "ENER3070": {
+        "ID": "ENER3070"
+    },
+    "ENER3071": {
+        "ID": "ENER3071"
+    },
+    "ENER3072": {
+        "ID": "ENER3072"
+    },
+    "ENER3074": {
+        "ID": "ENER3074"
+    },
+    "ENER3075": {
+        "ID": "ENER3075"
+    },
+    "ENER3098": {
+        "ID": "ENER3098"
+    },
+    "ENER3099": {
+        "ID": "ENER3099"
+    },
+    "ENGG1002": {
+        "ID": "ENGG1002"
+    },
+    "ENGG1003": {
+        "ID": "ENGG1003"
+    },
+    "ENGG1005": {
+        "ID": "ENGG1005"
+    },
+    "ENGG1006": {
+        "ID": "ENGG1006"
+    },
+    "ENGG1007": {
+        "ID": "ENGG1007"
+    },
+    "ENGG1008": {
+        "ID": "ENGG1008"
+    },
+    "ENGG1009": {
+        "ID": "ENGG1009"
+    },
+    "ENVR1001": {
+        "ID": "ENVR1001"
+    },
+    "ENVR2001": {
+        "ID": "ENVR2001"
+    },
+    "ENVR2002": {
+        "ID": "ENVR2002"
+    },
+    "ENVR2003": {
+        "ID": "ENVR2003"
+    },
+    "ENVR2006": {
+        "ID": "ENVR2006"
+    },
+    "ENVR2007": {
+        "ID": "ENVR2007"
+    },
+    "ENVR2008": {
+        "ID": "ENVR2008"
+    },
+    "ENVR2009": {
+        "ID": "ENVR2009"
+    },
+    "ENVR2010": {
+        "ID": "ENVR2010"
+    },
+    "ENVR2011": {
+        "ID": "ENVR2011"
+    },
+    "ENVR2012": {
+        "ID": "ENVR2012"
+    },
+    "ENVR2013": {
+        "ID": "ENVR2013"
+    },
+    "ENVR2014": {
+        "ID": "ENVR2014"
+    },
+    "ENVR2015": {
+        "ID": "ENVR2015"
+    },
+    "ENVR2016": {
+        "ID": "ENVR2016"
+    },
+    "ENVR2017": {
+        "ID": "ENVR2017"
+    },
+    "ENVR2018": {
+        "ID": "ENVR2018"
+    },
+    "ENVR2019": {
+        "ID": "ENVR2019"
+    },
+    "ENVR2020": {
+        "ID": "ENVR2020"
+    },
+    "ENVR3001": {
+        "ID": "ENVR3001"
+    },
+    "ENVR3002": {
+        "ID": "ENVR3002"
+    },
+    "ENVR3003": {
+        "ID": "ENVR3003"
+    },
+    "ENVR3004": {
+        "ID": "ENVR3004"
+    },
+    "ENVR3005": {
+        "ID": "ENVR3005"
+    },
+    "ENVR3006": {
+        "ID": "ENVR3006"
+    },
+    "ENVR3007": {
+        "ID": "ENVR3007"
+    },
+    "ENVR3008": {
+        "ID": "ENVR3008"
+    },
+    "ENVR3009": {
+        "ID": "ENVR3009"
+    },
+    "ENVR3010": {
+        "ID": "ENVR3010"
+    },
+    "ENVR3011": {
+        "ID": "ENVR3011"
+    },
+    "ENVR3012": {
+        "ID": "ENVR3012"
+    },
+    "ENVR3013": {
+        "ID": "ENVR3013"
+    },
+    "ENVR3014": {
+        "ID": "ENVR3014"
+    },
+    "ENVR3015": {
+        "ID": "ENVR3015"
+    },
+    "ENVR3016": {
+        "ID": "ENVR3016"
+    },
+    "ENVR3017": {
+        "ID": "ENVR3017"
+    },
+    "ENVR3018": {
+        "ID": "ENVR3018"
+    },
+    "ENVR3019": {
+        "ID": "ENVR3019"
+    },
+    "ENVR3020": {
+        "ID": "ENVR3020"
+    },
+    "ENVR3021": {
+        "ID": "ENVR3021"
+    },
+    "ENVR3022": {
+        "ID": "ENVR3022"
+    },
+    "ENVR3023": {
+        "ID": "ENVR3023"
+    },
+    "ENVR3024": {
+        "ID": "ENVR3024"
+    },
+    "ENVR3025": {
+        "ID": "ENVR3025"
+    },
+    "ENVR3026": {
+        "ID": "ENVR3026"
+    },
+    "ENVR3028": {
+        "ID": "ENVR3028"
+    },
+    "ENVR3029": {
+        "ID": "ENVR3029"
+    },
+    "ENVR3030": {
+        "ID": "ENVR3030"
+    },
+    "ENVR3032": {
+        "ID": "ENVR3032"
+    },
+    "ENVR3033": {
+        "ID": "ENVR3033"
+    },
+    "ENVR3034": {
+        "ID": "ENVR3034"
+    },
+    "ENVR3035": {
+        "ID": "ENVR3035"
+    },
+    "ENVR3036": {
+        "ID": "ENVR3036"
+    },
+    "ENVR3037": {
+        "ID": "ENVR3037"
+    },
+    "ENVR3038": {
+        "ID": "ENVR3038"
+    },
+    "ENVR3039": {
+        "ID": "ENVR3039"
+    },
+    "ENVR3040": {
+        "ID": "ENVR3040"
+    },
+    "ENVR3041": {
+        "ID": "ENVR3041"
+    },
+    "ENVR3042": {
+        "ID": "ENVR3042"
+    },
+    "ENVR3043": {
+        "ID": "ENVR3043"
+    },
+    "ENVR3044": {
+        "ID": "ENVR3044"
+    },
+    "ENVR3046": {
+        "ID": "ENVR3046"
+    },
+    "ENVR3047": {
+        "ID": "ENVR3047"
+    },
+    "ENVR3048": {
+        "ID": "ENVR3048"
+    },
+    "ENVR3049": {
+        "ID": "ENVR3049"
+    },
+    "ENVR3050": {
+        "ID": "ENVR3050"
+    },
+    "ENVR3051": {
+        "ID": "ENVR3051"
+    },
+    "ENVR3052": {
+        "ID": "ENVR3052"
+    },
+    "ENVR3053": {
+        "ID": "ENVR3053"
+    },
+    "ENVR3054": {
+        "ID": "ENVR3054"
+    },
+    "ENVR3055": {
+        "ID": "ENVR3055"
+    },
+    "ENVR3056": {
+        "ID": "ENVR3056"
+    },
+    "ENVR3057": {
+        "ID": "ENVR3057"
+    },
+    "ENVR3058": {
+        "ID": "ENVR3058"
+    },
+    "ENVR3059": {
+        "ID": "ENVR3059"
+    },
+    "ENVR3060": {
+        "ID": "ENVR3060"
+    },
+    "ENVR3061": {
+        "ID": "ENVR3061"
+    },
+    "ENVR3062": {
+        "ID": "ENVR3062"
+    },
+    "ENVR3063": {
+        "ID": "ENVR3063"
+    },
+    "ENVR3064": {
+        "ID": "ENVR3064"
+    },
+    "ENVR3065": {
+        "ID": "ENVR3065"
+    },
+    "ENVR3066": {
+        "ID": "ENVR3066"
+    },
+    "ENVR3067": {
+        "ID": "ENVR3067"
+    },
+    "ENVR3068": {
+        "ID": "ENVR3068"
+    },
+    "ENVR3069": {
+        "ID": "ENVR3069"
+    },
+    "ENVR3070": {
+        "ID": "ENVR3070"
+    },
+    "ENVR3071": {
+        "ID": "ENVR3071"
+    },
+    "ENVR3072": {
+        "ID": "ENVR3072"
+    },
+    "ENVR3073": {
+        "ID": "ENVR3073"
+    },
+    "ENVR3074": {
+        "ID": "ENVR3074"
+    },
+    "ENVR3075": {
+        "ID": "ENVR3075"
+    },
+    "ENVR3098": {
+        "ID": "ENVR3098"
+    },
+    "ENVR3099": {
+        "ID": "ENVR3099"
+    },
+    "ENVR5033": {
+        "ID": "ENVR5033"
+    },
+    "ENVR5060": {
+        "ID": "ENVR5060"
+    },
+    "GEIP1003": {
+        "ID": "GEIP1003"
+    },
+    "GEIP1007": {
+        "ID": "GEIP1007"
+    },
+    "GEIP1008": {
+        "ID": "GEIP1008"
+    },
+    "GEIP1010": {
+        "ID": "GEIP1010"
+    },
+    "GEIP1011": {
+        "ID": "GEIP1011"
+    },
+    "GEIP1012": {
+        "ID": "GEIP1012"
+    },
+    "GEIP1013": {
+        "ID": "GEIP1013"
+    },
+    "GEIP1014": {
+        "ID": "GEIP1014"
+    },
+    "GEIP1015": {
+        "ID": "GEIP1015"
+    },
+    "GEIP1016": {
+        "ID": "GEIP1016"
+    },
+    "GEIP1017": {
+        "ID": "GEIP1017"
+    },
+    "GEIP1018": {
+        "ID": "GEIP1018"
+    },
+    "GEIP1019-1": {
+        "ID": "GEIP1019-1"
+    },
+    "GEIP1019-2": {
+        "ID": "GEIP1019-2"
+    },
+    "GEIP1019-3": {
+        "ID": "GEIP1019-3"
+    },
+    "HUMA1110E": {
+        "ID": "HUMA1110E"
+    },
+    "HUMA1111E": {
+        "ID": "HUMA1111E"
+    },
+    "HUMA1112E": {
+        "ID": "HUMA1112E"
+    },
+    "HUMA1113E": {
+        "ID": "HUMA1113E"
+    },
+    "HUMA1114E": {
+        "ID": "HUMA1114E"
+    },
+    "HUMA1117E": {
+        "ID": "HUMA1117E"
+    },
+    "HUMA1118E": {
+        "ID": "HUMA1118E"
+    },
+    "HUMA1119E": {
+        "ID": "HUMA1119E"
+    },
+    "HUMA1120E": {
+        "ID": "HUMA1120E"
+    },
+    "HUMA1121E": {
+        "ID": "HUMA1121E"
+    },
+    "HUMA1122E": {
+        "ID": "HUMA1122E"
+    },
+    "HUMA1123E": {
+        "ID": "HUMA1123E"
+    },
+    "HUMA1124E": {
+        "ID": "HUMA1124E"
+    },
+    "HUMA1125E": {
+        "ID": "HUMA1125E"
+    },
+    "HUMA1126E": {
+        "ID": "HUMA1126E"
+    },
+    "HUMA1127E": {
+        "ID": "HUMA1127E"
+    },
+    "HUMA1128E": {
+        "ID": "HUMA1128E"
+    },
+    "HUMA1129E": {
+        "ID": "HUMA1129E"
+    },
+    "HUMA1130E": {
+        "ID": "HUMA1130E"
+    },
+    "HUMA1132E": {
+        "ID": "HUMA1132E"
+    },
+    "HUMA1133E": {
+        "ID": "HUMA1133E"
+    },
+    "HUMA1134E": {
+        "ID": "HUMA1134E"
+    },
+    "HUMA1135E": {
+        "ID": "HUMA1135E"
+    },
+    "ICDS1001": {
+        "ID": "ICDS1001"
+    },
+    "ICDS2005": {
+        "ID": "ICDS2005"
+    },
+    "ICDS2006": {
+        "ID": "ICDS2006"
+    },
+    "ICDS3024": {
+        "ID": "ICDS3024"
+    },
+    "ICSE5206": {
+        "ID": "ICSE5206"
+    },
+    "IEPR1303": {
+        "ID": "IEPR1303"
+    },
+    "IEPR1306": {
+        "ID": "IEPR1306"
+    },
+    "IEPR1307": {
+        "ID": "IEPR1307"
+    },
+    "IEPR1308": {
+        "ID": "IEPR1308"
+    },
+    "INDS2002": {
+        "ID": "INDS2002"
+    },
+    "INDS2003": {
+        "ID": "INDS2003"
+    },
+    "INDS2004": {
+        "ID": "INDS2004"
+    },
+    "INDS2005": {
+        "ID": "INDS2005"
+    },
+    "INDS2006": {
+        "ID": "INDS2006"
+    },
+    "INDS2007": {
+        "ID": "INDS2007"
+    },
+    "INDS2008": {
+        "ID": "INDS2008"
+    },
+    "INDS3001": {
+        "ID": "INDS3001"
+    },
+    "INDS3003": {
+        "ID": "INDS3003"
+    },
+    "INDS3004": {
+        "ID": "INDS3004"
+    },
+    "INDS3005": {
+        "ID": "INDS3005"
+    },
+    "INDS3006": {
+        "ID": "INDS3006"
+    },
+    "INDS3007": {
+        "ID": "INDS3007"
+    },
+    "INDS3008": {
+        "ID": "INDS3008"
+    },
+    "INDS3009": {
+        "ID": "INDS3009"
+    },
+    "INDS3010": {
+        "ID": "INDS3010"
+    },
+    "INDS3011": {
+        "ID": "INDS3011"
+    },
+    "INDS3022": {
+        "ID": "INDS3022"
+    },
+    "INDS3099": {
+        "ID": "INDS3099"
+    },
+    "INEP1057": {
+        "ID": "INEP1057"
+    },
+    "INEP1058": {
+        "ID": "INEP1058"
+    },
+    "INEP1059": {
+        "ID": "INEP1059"
+    },
+    "LANG1001": {
+        "ID": "LANG1001"
+    },
+    "LANG1002": {
+        "ID": "LANG1002"
+    },
+    "LANG1003": {
+        "ID": "LANG1003"
+    },
+    "LANG1004": {
+        "ID": "LANG1004"
+    },
+    "LANG1005": {
+        "ID": "LANG1005"
+    },
+    "LANG1006": {
+        "ID": "LANG1006"
+    },
+    "LANG1007": {
+        "ID": "LANG1007"
+    },
+    "LANG1008": {
+        "ID": "LANG1008"
+    },
+    "LANG1009A": {
+        "ID": "LANG1009A"
+    },
+    "LANG1009B": {
+        "ID": "LANG1009B"
+    },
+    "MATH1001A": {
+        "ID": "MATH1001A"
+    },
+    "MATH1001B": {
+        "ID": "MATH1001B"
+    },
+    "MATH1002": {
+        "ID": "MATH1002"
+    },
+    "MATH1002E": {
+        "ID": "MATH1002E"
+    },
+    "MATH1004": {
+        "ID": "MATH1004"
+    },
+    "MATH1004E": {
+        "ID": "MATH1004E"
+    },
+    "MATH1005": {
+        "ID": "MATH1005"
+    },
+    "MATH1006": {
+        "ID": "MATH1006"
+    },
+    "MATH1007": {
+        "ID": "MATH1007"
+    },
+    "MATH1008": {
+        "ID": "MATH1008"
+    },
+    "MATH1010A": {
+        "ID": "MATH1010A"
+    },
+    "MATH1011A": {
+        "ID": "MATH1011A"
+    },
+    "MATH1011B": {
+        "ID": "MATH1011B"
+    },
+    "MATH1012A": {
+        "ID": "MATH1012A"
+    },
+    "MATH1012B": {
+        "ID": "MATH1012B"
+    },
+    "MATH1014A": {
+        "ID": "MATH1014A"
+    },
+    "MATH1014B": {
+        "ID": "MATH1014B"
+    },
+    "MATH1015A": {
+        "ID": "MATH1015A"
+    },
+    "MATH1015AE": {
+        "ID": "MATH1015AE"
+    },
+    "MATH1015B": {
+        "ID": "MATH1015B"
+    },
+    "MATH1015BE": {
+        "ID": "MATH1015BE"
+    },
+    "MATH1016A": {
+        "ID": "MATH1016A"
+    },
+    "MATH1016B": {
+        "ID": "MATH1016B"
+    },
+    "MATH1017A": {
+        "ID": "MATH1017A"
+    },
+    "MATH1017B": {
+        "ID": "MATH1017B"
+    },
+    "MATH1018": {
+        "ID": "MATH1018"
+    },
+    "MATH1019": {
+        "ID": "MATH1019"
+    },
+    "MATH1019E": {
+        "ID": "MATH1019E"
+    },
+    "MATH2001": {
+        "ID": "MATH2001"
+    },
+    "MATH2002": {
+        "ID": "MATH2002"
+    },
+    "MATH2003": {
+        "ID": "MATH2003"
+    },
+    "MATH2004": {
+        "ID": "MATH2004"
+    },
+    "MATH2005": {
+        "ID": "MATH2005"
+    },
+    "MATH2006": {
+        "ID": "MATH2006"
+    },
+    "MATH2007": {
+        "ID": "MATH2007"
+    },
+    "MATH2008": {
+        "ID": "MATH2008"
+    },
+    "MATH2009": {
+        "ID": "MATH2009"
+    },
+    "MATH2010": {
+        "ID": "MATH2010"
+    },
+    "MATH2011": {
+        "ID": "MATH2011"
+    },
+    "MATH2012": {
+        "ID": "MATH2012"
+    },
+    "MATH3001": {
+        "ID": "MATH3001"
+    },
+    "MATH3002": {
+        "ID": "MATH3002"
+    },
+    "MATH3003": {
+        "ID": "MATH3003"
+    },
+    "MATH3004": {
+        "ID": "MATH3004"
+    },
+    "MATH3005": {
+        "ID": "MATH3005"
+    },
+    "MATH3006": {
+        "ID": "MATH3006"
+    },
+    "MATH3007": {
+        "ID": "MATH3007"
+    },
+    "MATH3008": {
+        "ID": "MATH3008"
+    },
+    "MATH3009": {
+        "ID": "MATH3009"
+    },
+    "MATH3010": {
+        "ID": "MATH3010"
+    },
+    "MATH3011": {
+        "ID": "MATH3011"
+    },
+    "MATH3012": {
+        "ID": "MATH3012"
+    },
+    "MATH3013": {
+        "ID": "MATH3013"
+    },
+    "MATH3014": {
+        "ID": "MATH3014"
+    },
+    "MATH3015": {
+        "ID": "MATH3015"
+    },
+    "MATH3017": {
+        "ID": "MATH3017"
+    },
+    "MATH3018": {
+        "ID": "MATH3018"
+    },
+    "MATH3019": {
+        "ID": "MATH3019"
+    },
+    "MATH3020": {
+        "ID": "MATH3020"
+    },
+    "MATH3021": {
+        "ID": "MATH3021"
+    },
+    "MATH3022": {
+        "ID": "MATH3022"
+    },
+    "MATH3023": {
+        "ID": "MATH3023"
+    },
+    "MATH3025": {
+        "ID": "MATH3025"
+    },
+    "MATH3026": {
+        "ID": "MATH3026"
+    },
+    "MATH3027": {
+        "ID": "MATH3027"
+    },
+    "MATH3028": {
+        "ID": "MATH3028"
+    },
+    "MATH3029": {
+        "ID": "MATH3029"
+    },
+    "MATH3030": {
+        "ID": "MATH3030"
+    },
+    "MATH3032": {
+        "ID": "MATH3032"
+    },
+    "MATH3033": {
+        "ID": "MATH3033"
+    },
+    "MATH3034": {
+        "ID": "MATH3034"
+    },
+    "MATH3035": {
+        "ID": "MATH3035"
+    },
+    "MATH3036": {
+        "ID": "MATH3036"
+    },
+    "MATH3099": {
+        "ID": "MATH3099"
+    },
+    "MECH1003": {
+        "ID": "MECH1003"
+    },
+    "MECH1003E": {
+        "ID": "MECH1003E"
+    },
+    "MECH1004A": {
+        "ID": "MECH1004A"
+    },
+    "MECH1004B": {
+        "ID": "MECH1004B"
+    },
+    "MECH1006": {
+        "ID": "MECH1006"
+    },
+    "MECH1007": {
+        "ID": "MECH1007"
+    },
+    "MECH1008": {
+        "ID": "MECH1008"
+    },
+    "MECH1009": {
+        "ID": "MECH1009"
+    },
+    "MECH2001": {
+        "ID": "MECH2001"
+    },
+    "MECH2002": {
+        "ID": "MECH2002"
+    },
+    "MECH2003": {
+        "ID": "MECH2003"
+    },
+    "MECH2004": {
+        "ID": "MECH2004"
+    },
+    "MECH2005": {
+        "ID": "MECH2005"
+    },
+    "MECH2006": {
+        "ID": "MECH2006"
+    },
+    "MECH2009": {
+        "ID": "MECH2009"
+    },
+    "MECH2010": {
+        "ID": "MECH2010"
+    },
+    "MECH2011E": {
+        "ID": "MECH2011E"
+    },
+    "MECH2012E": {
+        "ID": "MECH2012E"
+    },
+    "MECH2013E": {
+        "ID": "MECH2013E"
+    },
+    "MECH2014E": {
+        "ID": "MECH2014E"
+    },
+    "MECH2017": {
+        "ID": "MECH2017"
+    },
+    "MECH2018": {
+        "ID": "MECH2018"
+    },
+    "MECH2019": {
+        "ID": "MECH2019"
+    },
+    "MECH2020": {
+        "ID": "MECH2020"
+    },
+    "MECH2021": {
+        "ID": "MECH2021"
+    },
+    "MECH2022": {
+        "ID": "MECH2022"
+    },
+    "MECH2023": {
+        "ID": "MECH2023"
+    },
+    "MECH2023E": {
+        "ID": "MECH2023E"
+    },
+    "MECH2024": {
+        "ID": "MECH2024"
+    },
+    "MECH3002": {
+        "ID": "MECH3002"
+    },
+    "MECH3003": {
+        "ID": "MECH3003"
+    },
+    "MECH3004": {
+        "ID": "MECH3004"
+    },
+    "MECH3005": {
+        "ID": "MECH3005"
+    },
+    "MECH3006": {
+        "ID": "MECH3006"
+    },
+    "MECH3007": {
+        "ID": "MECH3007"
+    },
+    "MECH3009": {
+        "ID": "MECH3009"
+    },
+    "MECH3010": {
+        "ID": "MECH3010"
+    },
+    "MECH3011": {
+        "ID": "MECH3011"
+    },
+    "MECH3012": {
+        "ID": "MECH3012"
+    },
+    "MECH3013": {
+        "ID": "MECH3013"
+    },
+    "MECH3014": {
+        "ID": "MECH3014"
+    },
+    "MECH3015": {
+        "ID": "MECH3015"
+    },
+    "MECH3018": {
+        "ID": "MECH3018"
+    },
+    "MECH3019": {
+        "ID": "MECH3019"
+    },
+    "MECH3020": {
+        "ID": "MECH3020"
+    },
+    "MECH3021": {
+        "ID": "MECH3021"
+    },
+    "MECH3022": {
+        "ID": "MECH3022"
+    },
+    "MECH3024": {
+        "ID": "MECH3024"
+    },
+    "MECH3025": {
+        "ID": "MECH3025"
+    },
+    "MECH3029": {
+        "ID": "MECH3029"
+    },
+    "MECH3031": {
+        "ID": "MECH3031"
+    },
+    "MECH3032": {
+        "ID": "MECH3032"
+    },
+    "MECH3033": {
+        "ID": "MECH3033"
+    },
+    "MECH3034": {
+        "ID": "MECH3034"
+    },
+    "MECH3035": {
+        "ID": "MECH3035"
+    },
+    "MECH3036": {
+        "ID": "MECH3036"
+    },
+    "MECH3037": {
+        "ID": "MECH3037"
+    },
+    "MECH3039": {
+        "ID": "MECH3039"
+    },
+    "MECH3040": {
+        "ID": "MECH3040"
+    },
+    "MECH3041": {
+        "ID": "MECH3041"
+    },
+    "MECH3042": {
+        "ID": "MECH3042"
+    },
+    "MECH3042E": {
+        "ID": "MECH3042E"
+    },
+    "MECH3043": {
+        "ID": "MECH3043"
+    },
+    "MECH3043E": {
+        "ID": "MECH3043E"
+    },
+    "MECH3044": {
+        "ID": "MECH3044"
+    },
+    "MECH3045": {
+        "ID": "MECH3045"
+    },
+    "MECH3046": {
+        "ID": "MECH3046"
+    },
+    "MECH3047": {
+        "ID": "MECH3047"
+    },
+    "MECH3048": {
+        "ID": "MECH3048"
+    },
+    "MECH3048E": {
+        "ID": "MECH3048E"
+    },
+    "MECH3049": {
+        "ID": "MECH3049"
+    },
+    "MECH3049E": {
+        "ID": "MECH3049E"
+    },
+    "MECH3050": {
+        "ID": "MECH3050"
+    },
+    "MECH3050E": {
+        "ID": "MECH3050E"
+    },
+    "MECH3051": {
+        "ID": "MECH3051"
+    },
+    "MECH3051E": {
+        "ID": "MECH3051E"
+    },
+    "MECH3052": {
+        "ID": "MECH3052"
+    },
+    "MECH3052E": {
+        "ID": "MECH3052E"
+    },
+    "MECH3053": {
+        "ID": "MECH3053"
+    },
+    "MECH3053E": {
+        "ID": "MECH3053E"
+    },
+    "MECH3054": {
+        "ID": "MECH3054"
+    },
+    "MECH3054E": {
+        "ID": "MECH3054E"
+    },
+    "MECH3055": {
+        "ID": "MECH3055"
+    },
+    "MECH3055E": {
+        "ID": "MECH3055E"
+    },
+    "MECH3057": {
+        "ID": "MECH3057"
+    },
+    "MECH3058": {
+        "ID": "MECH3058"
+    },
+    "MECH3059": {
+        "ID": "MECH3059"
+    },
+    "MECH3060": {
+        "ID": "MECH3060"
+    },
+    "MECH3060E": {
+        "ID": "MECH3060E"
+    },
+    "MECH3061": {
+        "ID": "MECH3061"
+    },
+    "MECH3061E": {
+        "ID": "MECH3061E"
+    },
+    "MECH3062": {
+        "ID": "MECH3062"
+    },
+    "MECH3062E": {
+        "ID": "MECH3062E"
+    },
+    "MECH3063": {
+        "ID": "MECH3063"
+    },
+    "MECH3064": {
+        "ID": "MECH3064"
+    },
+    "MECH3064E": {
+        "ID": "MECH3064E"
+    },
+    "MECH3065": {
+        "ID": "MECH3065"
+    },
+    "MECH3066": {
+        "ID": "MECH3066"
+    },
+    "MECH3066E": {
+        "ID": "MECH3066E"
+    },
+    "MECH3067": {
+        "ID": "MECH3067"
+    },
+    "MECH3067E": {
+        "ID": "MECH3067E"
+    },
+    "MECH3068": {
+        "ID": "MECH3068"
+    },
+    "MECH3068E": {
+        "ID": "MECH3068E"
+    },
+    "MECH3069": {
+        "ID": "MECH3069"
+    },
+    "MECH3069E": {
+        "ID": "MECH3069E"
+    },
+    "MECH3071": {
+        "ID": "MECH3071"
+    },
+    "MECH3071E": {
+        "ID": "MECH3071E"
+    },
+    "MECH3072": {
+        "ID": "MECH3072"
+    },
+    "MECH3072E": {
+        "ID": "MECH3072E"
+    },
+    "MECH3073": {
+        "ID": "MECH3073"
+    },
+    "MECH3073E": {
+        "ID": "MECH3073E"
+    },
+    "MECH3075": {
+        "ID": "MECH3075"
+    },
+    "MECH3075E": {
+        "ID": "MECH3075E"
+    },
+    "MECH3076": {
+        "ID": "MECH3076"
+    },
+    "MECH3076E": {
+        "ID": "MECH3076E"
+    },
+    "MECH3077": {
+        "ID": "MECH3077"
+    },
+    "MECH3077E": {
+        "ID": "MECH3077E"
+    },
+    "MECH3078": {
+        "ID": "MECH3078"
+    },
+    "MECH3079": {
+        "ID": "MECH3079"
+    },
+    "MECH3080": {
+        "ID": "MECH3080"
+    },
+    "MECH3081": {
+        "ID": "MECH3081"
+    },
+    "MECH3098": {
+        "ID": "MECH3098"
+    },
+    "MECH3099": {
+        "ID": "MECH3099"
+    },
+    "MECH3099E": {
+        "ID": "MECH3099E"
+    },
+    "MECH3101": {
+        "ID": "MECH3101"
+    },
+    "MECH3102": {
+        "ID": "MECH3102"
+    },
+    "MECH3103": {
+        "ID": "MECH3103"
+    },
+    "MECH3199": {
+        "ID": "MECH3199"
+    },
+    "MECH3199E": {
+        "ID": "MECH3199E"
+    },
+    "MILT1001": {
+        "ID": "MILT1001"
+    },
+    "MILT1002": {
+        "ID": "MILT1002"
+    },
+    "MILT1003": {
+        "ID": "MILT1003"
+    },
+    "MSE2002": {
+        "ID": "MSE2002"
+    },
+    "MSE2004": {
+        "ID": "MSE2004"
+    },
+    "MSE2004A": {
+        "ID": "MSE2004A"
+    },
+    "MSE2004B": {
+        "ID": "MSE2004B"
+    },
+    "MSE2006": {
+        "ID": "MSE2006"
+    },
+    "MSE2007": {
+        "ID": "MSE2007"
+    },
+    "MSE2008": {
+        "ID": "MSE2008"
+    },
+    "MSE2050": {
+        "ID": "MSE2050"
+    },
+    "MSE2051": {
+        "ID": "MSE2051"
+    },
+    "MSE3001": {
+        "ID": "MSE3001"
+    },
+    "MSE3001A": {
+        "ID": "MSE3001A"
+    },
+    "MSE3001B": {
+        "ID": "MSE3001B"
+    },
+    "MSE3002": {
+        "ID": "MSE3002"
+    },
+    "MSE3004": {
+        "ID": "MSE3004"
+    },
+    "MSE3005": {
+        "ID": "MSE3005"
+    },
+    "MSE3006": {
+        "ID": "MSE3006"
+    },
+    "MSE3007": {
+        "ID": "MSE3007"
+    },
+    "MSE3008": {
+        "ID": "MSE3008"
+    },
+    "MSE3009": {
+        "ID": "MSE3009"
+    },
+    "MSE3010": {
+        "ID": "MSE3010"
+    },
+    "MSE3011": {
+        "ID": "MSE3011"
+    },
+    "MSE3013": {
+        "ID": "MSE3013"
+    },
+    "MSE3014": {
+        "ID": "MSE3014"
+    },
+    "MSE3015": {
+        "ID": "MSE3015"
+    },
+    "MSE3016": {
+        "ID": "MSE3016"
+    },
+    "MSE3017": {
+        "ID": "MSE3017"
+    },
+    "MSE3018": {
+        "ID": "MSE3018"
+    },
+    "MSE3019": {
+        "ID": "MSE3019"
+    },
+    "MSE3020": {
+        "ID": "MSE3020"
+    },
+    "MSE3022": {
+        "ID": "MSE3022"
+    },
+    "MSE3023": {
+        "ID": "MSE3023"
+    },
+    "MSE3024": {
+        "ID": "MSE3024"
+    },
+    "MSE3024B": {
+        "ID": "MSE3024B"
+    },
+    "MSE3025": {
+        "ID": "MSE3025"
+    },
+    "MSE3026": {
+        "ID": "MSE3026"
+    },
+    "MSE3027": {
+        "ID": "MSE3027"
+    },
+    "MSE3028A": {
+        "ID": "MSE3028A"
+    },
+    "MSE3028B": {
+        "ID": "MSE3028B"
+    },
+    "MSE3029": {
+        "ID": "MSE3029"
+    },
+    "MSE3030": {
+        "ID": "MSE3030"
+    },
+    "MSE3031": {
+        "ID": "MSE3031"
+    },
+    "MSE3032": {
+        "ID": "MSE3032"
+    },
+    "MSE3033": {
+        "ID": "MSE3033"
+    },
+    "MSE3034": {
+        "ID": "MSE3034"
+    },
+    "MSE3035": {
+        "ID": "MSE3035"
+    },
+    "MSE3036": {
+        "ID": "MSE3036"
+    },
+    "MSE3037": {
+        "ID": "MSE3037"
+    },
+    "MSE3038": {
+        "ID": "MSE3038"
+    },
+    "MSE3039": {
+        "ID": "MSE3039"
+    },
+    "MSE3040": {
+        "ID": "MSE3040"
+    },
+    "MSE3041": {
+        "ID": "MSE3041"
+    },
+    "MSE3042": {
+        "ID": "MSE3042"
+    },
+    "MSE3043": {
+        "ID": "MSE3043"
+    },
+    "MSE3045": {
+        "ID": "MSE3045"
+    },
+    "MSE3098": {
+        "ID": "MSE3098"
+    },
+    "MSE3099": {
+        "ID": "MSE3099"
+    },
+    "NESC1001": {
+        "ID": "NESC1001"
+    },
+    "PE1001A": {
+        "ID": "PE1001A"
+    },
+    "PE1001B": {
+        "ID": "PE1001B"
+    },
+    "PE1001C": {
+        "ID": "PE1001C"
+    },
+    "PE1001D": {
+        "ID": "PE1001D"
+    },
+    "PE1002C": {
+        "ID": "PE1002C"
+    },
+    "PE1002D": {
+        "ID": "PE1002D"
+    },
+    "PE1002E": {
+        "ID": "PE1002E"
+    },
+    "PE1002F": {
+        "ID": "PE1002F"
+    },
+    "PHYS1001A": {
+        "ID": "PHYS1001A"
+    },
+    "PHYS1001AE": {
+        "ID": "PHYS1001AE"
+    },
+    "PHYS1001B": {
+        "ID": "PHYS1001B"
+    },
+    "PHYS1001BE": {
+        "ID": "PHYS1001BE"
+    },
+    "PHYS1002A": {
+        "ID": "PHYS1002A"
+    },
+    "PHYS1002AE": {
+        "ID": "PHYS1002AE"
+    },
+    "PHYS1002B": {
+        "ID": "PHYS1002B"
+    },
+    "PHYS1002BE": {
+        "ID": "PHYS1002BE"
+    },
+    "PHYS1003": {
+        "ID": "PHYS1003"
+    },
+    "PHYS1004": {
+        "ID": "PHYS1004"
+    },
+    "PHYS1005": {
+        "ID": "PHYS1005"
+    },
+    "PHYS1005A": {
+        "ID": "PHYS1005A"
+    },
+    "PHYS1005B": {
+        "ID": "PHYS1005B"
+    },
+    "PHYS1006A": {
+        "ID": "PHYS1006A"
+    },
+    "PHYS1006B": {
+        "ID": "PHYS1006B"
+    },
+    "PHYS1007A": {
+        "ID": "PHYS1007A"
+    },
+    "PHYS1007B": {
+        "ID": "PHYS1007B"
+    },
+    "PHYS1009": {
+        "ID": "PHYS1009"
+    },
+    "PSYC1001": {
+        "ID": "PSYC1001"
+    },
+    "SATE3011": {
+        "ID": "SATE3011"
+    },
+    "SATE3024": {
+        "ID": "SATE3024"
+    },
+    "SATE3026": {
+        "ID": "SATE3026"
+    },
+    "SATE3030": {
+        "ID": "SATE3030"
+    },
+    "SATE3032": {
+        "ID": "SATE3032"
+    },
+    "SATE3033": {
+        "ID": "SATE3033"
+    },
+    "SATE3040": {
+        "ID": "SATE3040"
+    },
+    "SATE3041": {
+        "ID": "SATE3041"
+    },
+    "SATE3045": {
+        "ID": "SATE3045"
+    },
+    "SATE3049": {
+        "ID": "SATE3049"
+    },
+    "SDFC2001": {
+        "ID": "SDFC2001"
+    },
+    "SDFC2001-1": {
+        "ID": "SDFC2001-1"
+    },
+    "SDFC2001-2": {
+        "ID": "SDFC2001-2"
+    },
+    "SDFC2002": {
+        "ID": "SDFC2002"
+    },
+    "SDFC2003": {
+        "ID": "SDFC2003"
+    },
+    "SDFC2004": {
+        "ID": "SDFC2004"
+    },
+    "SDFC2005": {
+        "ID": "SDFC2005"
+    },
+    "SDFC2006": {
+        "ID": "SDFC2006"
+    },
+    "SDID2003": {
+        "ID": "SDID2003"
+    },
+    "SDID2004": {
+        "ID": "SDID2004"
+    },
+    "SDID2005": {
+        "ID": "SDID2005"
+    },
+    "SDID2006": {
+        "ID": "SDID2006"
+    },
+    "SDID2007": {
+        "ID": "SDID2007"
+    },
+    "SDVM2003-1": {
+        "ID": "SDVM2003-1"
+    },
+    "SDVM2004-1": {
+        "ID": "SDVM2004-1"
+    },
+    "SDVM2005-1": {
+        "ID": "SDVM2005-1"
+    },
+    "SDVM2006-1": {
+        "ID": "SDVM2006-1"
+    },
+    "SDVM2008": {
+        "ID": "SDVM2008"
+    },
+    "SDVM2009": {
+        "ID": "SDVM2009"
+    },
+    "SDVM2010-1": {
+        "ID": "SDVM2010-1"
+    },
+    "SDVM2011": {
+        "ID": "SDVM2011"
+    },
+    "SDVM2012": {
+        "ID": "SDVM2012"
+    },
+    "SEIN1054": {
+        "ID": "SEIN1054"
+    },
+    "URBP1001": {
+        "ID": "URBP1001"
+    },
+    "URBP2201A": {
+        "ID": "URBP2201A"
+    },
+    "URBP2201B": {
+        "ID": "URBP2201B"
+    },
+    "URBP2202": {
+        "ID": "URBP2202"
+    },
+    "URBP2202E": {
+        "ID": "URBP2202E"
+    },
+    "URBP2203": {
+        "ID": "URBP2203"
+    },
+    "URBP2204": {
+        "ID": "URBP2204"
+    },
+    "URBP2206": {
+        "ID": "URBP2206"
+    },
+    "URBP2601": {
+        "ID": "URBP2601"
+    },
+    "URBP2602": {
+        "ID": "URBP2602"
+    },
+    "URBP3001": {
+        "ID": "URBP3001"
+    },
+    "URBP3002A": {
+        "ID": "URBP3002A"
+    },
+    "URBP3002B": {
+        "ID": "URBP3002B"
+    },
+    "URBP3002C": {
+        "ID": "URBP3002C"
+    },
+    "URBP3002D": {
+        "ID": "URBP3002D"
+    },
+    "URBP3003": {
+        "ID": "URBP3003"
+    },
+    "URBP3003E": {
+        "ID": "URBP3003E"
+    },
+    "URBP3004": {
+        "ID": "URBP3004"
+    },
+    "URBP3006": {
+        "ID": "URBP3006"
+    },
+    "URBP3007": {
+        "ID": "URBP3007"
+    },
+    "URBP3009": {
+        "ID": "URBP3009"
+    },
+    "URBP3009E": {
+        "ID": "URBP3009E"
+    },
+    "URBP3010": {
+        "ID": "URBP3010"
+    },
+    "URBP3011": {
+        "ID": "URBP3011"
+    },
+    "URBP3012": {
+        "ID": "URBP3012"
+    },
+    "URBP3202A": {
+        "ID": "URBP3202A"
+    },
+    "URBP3202B": {
+        "ID": "URBP3202B"
+    },
+    "URBP3203": {
+        "ID": "URBP3203"
+    },
+    "URBP3203E": {
+        "ID": "URBP3203E"
+    },
+    "URBP3204": {
+        "ID": "URBP3204"
+    },
+    "URBP3205": {
+        "ID": "URBP3205"
+    },
+    "URBP3206": {
+        "ID": "URBP3206"
+    },
+    "URBP3207": {
+        "ID": "URBP3207"
+    },
+    "URBP3208": {
+        "ID": "URBP3208"
+    },
+    "URBP3209": {
+        "ID": "URBP3209"
+    },
+    "URBP3210": {
+        "ID": "URBP3210"
+    },
+    "URBP3211": {
+        "ID": "URBP3211"
+    },
+    "URBP3212": {
+        "ID": "URBP3212"
+    },
+    "URBP3213": {
+        "ID": "URBP3213"
+    },
+    "URBP3214": {
+        "ID": "URBP3214"
+    },
+    "URBP3401": {
+        "ID": "URBP3401"
+    },
+    "URBP3402": {
+        "ID": "URBP3402"
+    },
+    "URBP3403": {
+        "ID": "URBP3403"
+    },
+    "URBP3404A": {
+        "ID": "URBP3404A"
+    },
+    "URBP3404B": {
+        "ID": "URBP3404B"
+    },
+    "URBP3405": {
+        "ID": "URBP3405"
+    },
+    "URBP3406": {
+        "ID": "URBP3406"
+    },
+    "URBP3407": {
+        "ID": "URBP3407"
+    },
+    "URBP3408": {
+        "ID": "URBP3408"
+    },
+    "URBP3499": {
+        "ID": "URBP3499"
+    },
+    "URBP3603": {
+        "ID": "URBP3603"
+    },
+    "URBP3604": {
+        "ID": "URBP3604"
+    },
+    "URBP3605": {
+        "ID": "URBP3605"
+    },
+    "URBP3606": {
+        "ID": "URBP3606"
+    },
+    "URBP3608": {
+        "ID": "URBP3608"
+    },
+    "URBP3609": {
+        "ID": "URBP3609"
+    },
+    "URBP3610": {
+        "ID": "URBP3610"
+    },
+    "URBP3611": {
+        "ID": "URBP3611"
+    },
+    "URBP3612": {
+        "ID": "URBP3612"
+    },
+    "URBP3613": {
+        "ID": "URBP3613"
+    },
+    "URBP3801": {
+        "ID": "URBP3801"
+    },
+    "URBP3802": {
+        "ID": "URBP3802"
+    },
+    "URBP3803": {
+        "ID": "URBP3803"
+    },
+    "WRIT0001": {
+        "ID": "WRIT0001"
+    }
+}

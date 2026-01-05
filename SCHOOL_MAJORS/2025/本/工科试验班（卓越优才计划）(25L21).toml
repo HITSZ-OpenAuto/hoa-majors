@@ -460,25 +460,6 @@ exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "ENGG1002"
-credit = 2.0
-assessment_method = "考查"
-course_name = "工程训练（金工实习）"
-recommended_year_semester = "第一学年春季"
-track = "工程力学轨道课程包"
-course_nature = "必修"
-course_category = "其他"
-offering_college = "实验与创新实践教育中心（分析测试中心）"
-total_hours = 80
-
-[courses.hours]
-theory = 0
-lab = 0
-practice = 2
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
 course_code = "GEIP1016"
 credit = 2.5
 assessment_method = "考试"
@@ -657,6 +638,25 @@ total_hours = 72
 theory = 72
 lab = 0
 practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ENGG1002"
+credit = 2.0
+assessment_method = "考查"
+course_name = "工程训练（金工实习）"
+recommended_year_semester = "第二学年秋季"
+track = "工程力学轨道课程包"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "实验与创新实践教育中心（分析测试中心）"
+total_hours = 80
+
+[courses.hours]
+theory = 0
+lab = 0
+practice = 2
 exercise = 0
 computer = 0
 tutoring = 0

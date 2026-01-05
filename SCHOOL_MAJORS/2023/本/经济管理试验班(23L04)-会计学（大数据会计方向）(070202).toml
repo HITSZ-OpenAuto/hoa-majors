@@ -904,6 +904,24 @@ exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
+course_code = "ACCT3001"
+credit = 3.0
+assessment_method = "考试"
+course_name = "高级财务会计"
+recommended_year_semester = "第三学年春季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "经济管理学院"
+total_hours = 48
+
+[courses.hours]
+theory = 40
+lab = 8
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
 course_code = "ACCT3003"
 credit = 3.0
 assessment_method = "考试"
@@ -1119,24 +1137,6 @@ total_hours = 24
 [courses.hours]
 theory = 0
 lab = 24
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
-course_code = "ACCT3001"
-credit = 3.0
-assessment_method = "考试"
-course_name = "高级财务会计"
-recommended_year_semester = "第四学年秋季"
-course_nature = "必修"
-course_category = "其他"
-offering_college = "经济管理学院"
-total_hours = 48
-
-[courses.hours]
-theory = 40
-lab = 8
 practice = 0
 exercise = 0
 computer = 0

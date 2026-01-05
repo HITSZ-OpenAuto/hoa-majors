@@ -37,31 +37,12 @@ exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "GEIP1017"
-credit = 2.5
-assessment_method = "考查"
-course_name = "习近平新时代中国特色社会主义思想概论"
-recommended_year_semester = "第一学年秋季"
-track = "公共基础课程-思想政治课程"
-course_nature = "必修"
-course_category = "其他"
-offering_college = "马克思主义学院"
-total_hours = 40
-
-[courses.hours]
-theory = 40
-lab = 0
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
 course_code = "MATH1012A"
 credit = 3.0
 assessment_method = "考试"
 course_name = "高等数学IIA"
 recommended_year_semester = "第一学年秋季"
-track = "公共基础课程-数理与自然科学基础课程"
+track = "公共基础课程-数学与自然科学基础课"
 course_nature = "必修"
 course_category = "其他"
 offering_college = "理学院"
@@ -80,7 +61,7 @@ credit = 2.0
 assessment_method = "考查"
 course_name = "军事理论"
 recommended_year_semester = "第一学年秋季"
-track = "公共基础课程-军事理论和军事技能"
+track = "公共基础课程-军事理论与军事技能"
 course_nature = "必修"
 course_category = "其他"
 offering_college = "学生工作部（处）（基础学部）｜团委｜武装部"
@@ -99,7 +80,7 @@ credit = 2.0
 assessment_method = "考查"
 course_name = "军事技能"
 recommended_year_semester = "第一学年秋季"
-track = "公共基础课程-军事理论和军事技能"
+track = "公共基础课程-军事理论与军事技能"
 course_nature = "必修"
 course_category = "其他"
 offering_college = "学生工作部（处）（基础学部）｜团委｜武装部"
@@ -132,27 +113,8 @@ exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "PSYC1001"
-credit = 2.0
-assessment_method = "考查"
-course_name = "悦己人生—大学生心理健康"
-recommended_year_semester = "第一学年秋季"
-track = "公共基础课程-心理健康教育"
-course_nature = "必修"
-course_category = "其他"
-offering_college = "大学生心理健康教育与咨询中心"
-total_hours = 32
-
-[courses.hours]
-theory = 32
-lab = 0
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
-course_code = "SDFC2001-1"
-credit = 6.0
+course_code = "SDFC2001"
+credit = 7.5
 assessment_method = "考试"
 course_name = "跨专业基础课I"
 recommended_year_semester = "第一学年秋季"
@@ -160,10 +122,10 @@ track = "大类平台课程-专业集群基础课程"
 course_nature = "必修"
 course_category = "其他"
 offering_college = "国际设计学院"
-total_hours = 96
+total_hours = 120
 
 [courses.hours]
-theory = 0
+theory = 120
 lab = 0
 practice = 0
 exercise = 0
@@ -189,19 +151,19 @@ exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "GEIP1019-1"
-credit = 0.5
-assessment_method = "考查"
-course_name = "形势与政策-1"
+course_code = "GEIP1017"
+credit = 2.5
+assessment_method = "考试"
+course_name = "习近平新时代中国特色社会主义思想概论"
 recommended_year_semester = "第一学年春季"
 track = "公共基础课程-思想政治课程"
 course_nature = "必修"
 course_category = "其他"
 offering_college = "马克思主义学院"
-total_hours = 8
+total_hours = 40
 
 [courses.hours]
-theory = 8
+theory = 40
 lab = 0
 practice = 0
 exercise = 0
@@ -213,7 +175,7 @@ credit = 2.0
 assessment_method = "考试"
 course_name = "高等数学IIB"
 recommended_year_semester = "第一学年春季"
-track = "公共基础课程-数理与自然科学基础课程"
+track = "公共基础课程-数学与自然科学基础课"
 course_nature = "必修"
 course_category = "其他"
 offering_college = "理学院"
@@ -254,7 +216,7 @@ recommended_year_semester = "第一学年春季"
 track = "公共基础课程-体育"
 course_nature = "必修"
 course_category = "体育"
-offering_college = "体育部"
+offering_college = "人文与社会科学学院"
 total_hours = 32
 
 [courses.hours]
@@ -265,38 +227,19 @@ exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "PHYS1007A"
-credit = 4.5
+course_code = "PHYS1001A"
+credit = 4.0
 assessment_method = "考试"
 course_name = "大学物理IA"
 recommended_year_semester = "第一学年春季"
-track = "公共基础课程-数理与自然科学基础课程"
+track = "公共基础课程-数学与自然科学基础课"
 course_nature = "必修"
 course_category = "其他"
 offering_college = "理学院"
-total_hours = 72
+total_hours = 64
 
 [courses.hours]
-theory = 72
-lab = 0
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
-course_code = "SDFC2001-2"
-credit = 1.5
-assessment_method = "考查"
-course_name = "建筑史"
-recommended_year_semester = "第一学年春季"
-track = "大类平台课程-大类专业基础课程"
-course_nature = "必修"
-course_category = "其他"
-offering_college = "国际设计学院"
-total_hours = 24
-
-[courses.hours]
-theory = 0
+theory = 64
 lab = 0
 practice = 0
 exercise = 0
@@ -331,10 +274,10 @@ track = "大类平台课程-专业集群基础课程"
 course_nature = "必修"
 course_category = "其他"
 offering_college = "国际设计学院"
-total_hours = 64
+total_hours = 10
 
 [courses.hours]
-theory = 54
+theory = 0
 lab = 10
 practice = 0
 exercise = 0
@@ -343,7 +286,7 @@ tutoring = 0
 [[courses]]
 course_code = "SDFC2004"
 credit = 2.0
-assessment_method = "考查"
+assessment_method = "考试"
 course_name = "信息科学基础"
 recommended_year_semester = "第一学年春季"
 track = "公共基础课程-信息科学基础"
@@ -360,44 +303,6 @@ exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "ARCH2304"
-credit = 3.0
-assessment_method = "考查"
-course_name = "造型艺术基础"
-recommended_year_semester = "第二学年秋季"
-track = "大类平台课程-大类专业基础课程"
-course_nature = "必修"
-course_category = "其他"
-offering_college = "建筑学院"
-total_hours = 48
-
-[courses.hours]
-theory = 48
-lab = 0
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
-course_code = "EMEC1003"
-credit = 2.0
-assessment_method = "考试"
-course_name = "理论力学III"
-recommended_year_semester = "第二学年秋季"
-track = "大类平台课程-大类专业基础课程"
-course_nature = "必修"
-course_category = "其他"
-offering_college = "理学院"
-total_hours = 32
-
-[courses.hours]
-theory = 32
-lab = 0
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
 course_code = "GEIP1011"
 credit = 3.0
 assessment_method = "考试"
@@ -407,63 +312,6 @@ track = "公共基础课程-思想政治课程"
 course_nature = "必修"
 course_category = "其他"
 offering_college = "马克思主义学院"
-total_hours = 48
-
-[courses.hours]
-theory = 48
-lab = 0
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
-course_code = "INDS2002"
-credit = 6.0
-assessment_method = "考试"
-course_name = "产品设计基础 (A1)"
-recommended_year_semester = "第二学年秋季"
-track = "大类平台课程-大类专业基础课程"
-course_nature = "必修"
-course_category = "其他"
-offering_college = "国际设计学院"
-total_hours = 96
-
-[courses.hours]
-theory = 96
-lab = 0
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
-course_code = "INDS2006"
-credit = 2.0
-assessment_method = "考试"
-course_name = "人机工程学"
-recommended_year_semester = "第二学年秋季"
-track = "专业方向课程-专业方向核心课程"
-course_nature = "必修"
-course_category = "其他"
-offering_college = "国际设计学院"
-total_hours = 32
-
-[courses.hours]
-theory = 32
-lab = 0
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
-course_code = "INDS2007"
-credit = 3.0
-assessment_method = "考查"
-course_name = "电工与电子技术III"
-recommended_year_semester = "第二学年秋季"
-track = "专业方向课程-专业方向核心课程"
-course_nature = "必修"
-course_category = "其他"
-offering_college = "国际设计学院"
 total_hours = 48
 
 [courses.hours]
@@ -493,40 +341,75 @@ exercise = 0
 computer = 0
 tutoring = 16
 [[courses]]
-course_code = "EMEC1006"
-credit = 2.0
+course_code = "SATE3011"
+credit = 3.0
 assessment_method = "考查"
-course_name = "材料力学II"
-recommended_year_semester = "第二学年春季"
-track = "大类平台课程-大类专业基础课程"
-course_nature = "必修"
+course_name = "卫星课程（一）"
+recommended_year_semester = "第二学年秋季"
+track = "专业方向课程-专业方向选修课程"
+course_nature = "选修"
 course_category = "其他"
-offering_college = "理学院"
-total_hours = 32
+offering_college = "国际设计学院"
+total_hours = 48
 
 [courses.hours]
-theory = 32
+theory = 48
 lab = 0
 practice = 0
 exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "ENGG1008"
-credit = 2.0
-assessment_method = "考查"
-course_name = "工程训练（制造工艺实习）I"
-recommended_year_semester = "第二学年春季"
-track = "专业方向课程-专业方向核心课程"
+course_code = "SDID2003"
+credit = 3.0
+assessment_method = "考试"
+course_name = "“工具设计”专题设计工作坊"
+recommended_year_semester = "第二学年秋季"
+track = "大类平台课程-大类专业基础课程"
 course_nature = "必修"
-course_category = "其他"
-offering_college = "实验与创新实践教育中心（分析测试中心）"
+offering_college = "国际设计学院"
+total_hours = 48
+
+[courses.hours]
+theory = 0
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "SDID2004"
+credit = 3.0
+assessment_method = "考试"
+course_name = "“生活方式”专题设计工作坊"
+recommended_year_semester = "第二学年秋季"
+track = "大类平台课程-大类专业基础课程"
+course_nature = "必修"
+offering_college = "国际设计学院"
+total_hours = 48
+
+[courses.hours]
+theory = 0
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "SDID2005"
+credit = 5.0
+assessment_method = "考试"
+course_name = "“材料”专题设计工作坊"
+recommended_year_semester = "第二学年秋季"
+track = "大类平台课程-大类专业基础课程"
+course_nature = "必修"
+offering_college = "国际设计学院"
 total_hours = 80
 
 [courses.hours]
 theory = 0
 lab = 0
-practice = 2
+practice = 0
 exercise = 0
 computer = 0
 tutoring = 0
@@ -550,82 +433,6 @@ exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "GEIP1019-2"
-credit = 1.0
-assessment_method = "考查"
-course_name = "形势与政策-2"
-recommended_year_semester = "第二学年春季"
-track = "公共基础课程-思想政治课程"
-course_nature = "必修"
-course_category = "其他"
-offering_college = "马克思主义学院"
-total_hours = 16
-
-[courses.hours]
-theory = 16
-lab = 0
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
-course_code = "INDS2003"
-credit = 2.0
-assessment_method = "考试"
-course_name = "工业设计史"
-recommended_year_semester = "第二学年春季"
-track = "专业方向课程-专业方向核心课程"
-course_nature = "必修"
-course_category = "其他"
-offering_college = "国际设计学院"
-total_hours = 32
-
-[courses.hours]
-theory = 32
-lab = 0
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
-course_code = "INDS2004"
-credit = 4.0
-assessment_method = "考试"
-course_name = "立体造型设计 (B1)"
-recommended_year_semester = "第二学年春季"
-track = "专业方向课程-专业方向核心课程"
-course_nature = "必修"
-course_category = "其他"
-offering_college = "国际设计学院"
-total_hours = 64
-
-[courses.hours]
-theory = 32
-lab = 32
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
-course_code = "INDS2005"
-credit = 2.0
-assessment_method = "考试"
-course_name = "计算机辅助工业设计 (B2)"
-recommended_year_semester = "第二学年春季"
-track = "专业方向课程-专业方向核心课程"
-course_nature = "必修"
-course_category = "其他"
-offering_college = "国际设计学院"
-total_hours = 32
-
-[courses.hours]
-theory = 16
-lab = 16
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
 course_code = "PE1002D"
 credit = 0.5
 assessment_method = "考查"
@@ -634,7 +441,7 @@ recommended_year_semester = "第二学年春季"
 track = "公共基础课程-体育"
 course_nature = "必修"
 course_category = "体育"
-offering_college = "体育部"
+offering_college = "人文与社会科学学院"
 total_hours = 16
 
 [courses.hours]
@@ -645,38 +452,217 @@ exercise = 0
 computer = 0
 tutoring = 16
 [[courses]]
-course_code = "WRIT0001"
-credit = 1.0
+course_code = "SATE3024"
+credit = 3.0
 assessment_method = "考查"
-course_name = "写作与沟通"
+course_name = "艺术与社区：原位艺术探索"
 recommended_year_semester = "第二学年春季"
-track = "公共基础课程-写作与沟通"
-course_nature = "必修"
-course_category = "世界文明与对话"
-offering_college = "人文与社会科学学院"
-total_hours = 24
+course_nature = "选修"
+course_category = "其他"
+offering_college = "国际设计学院"
+total_hours = 48
 
 [courses.hours]
-theory = 24
+theory = 48
 lab = 0
 practice = 0
 exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "22MX44001"
-credit = 0.0
+course_code = "SATE3026"
+credit = 3.0
 assessment_method = "考查"
-course_name = "劳动教育概论"
-recommended_year_semester = "第三学年秋季"
-course_nature = "必修"
+course_name = "待建的房屋"
+recommended_year_semester = "第二学年春季"
+course_nature = "选修"
 course_category = "其他"
-offering_college = "马克思主义学院"
-total_hours = 8
+offering_college = "国际设计学院"
+total_hours = 48
 
 [courses.hours]
-theory = 8
+theory = 48
 lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "SATE3030"
+credit = 1.0
+assessment_method = "考查"
+course_name = "食品身份"
+recommended_year_semester = "第二学年春季"
+course_nature = "选修"
+offering_college = "国际设计学院"
+total_hours = 16
+
+[courses.hours]
+theory = 16
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "SATE3032"
+credit = 3.0
+assessment_method = "考查"
+course_name = "城市研究"
+recommended_year_semester = "第二学年春季"
+course_nature = "选修"
+course_category = "其他"
+offering_college = "国际设计学院"
+total_hours = 48
+
+[courses.hours]
+theory = 48
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "SATE3033"
+credit = 3.0
+assessment_method = "考查"
+course_name = "产品创新3D研讨会"
+recommended_year_semester = "第二学年春季"
+course_nature = "选修"
+course_category = "其他"
+offering_college = "国际设计学院"
+total_hours = 48
+
+[courses.hours]
+theory = 48
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "SATE3049"
+credit = 1.0
+assessment_method = "考查"
+course_name = "非表演专业的表演课I"
+recommended_year_semester = "第二学年春季"
+course_nature = "选修"
+course_category = "其他"
+offering_college = "国际设计学院"
+total_hours = 16
+
+[courses.hours]
+theory = 16
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "SDID2006"
+credit = 7.0
+assessment_method = "考试"
+course_name = "“未来”专题设计\n工作坊"
+recommended_year_semester = "第二学年春季"
+track = "专业方向课程-专业方向核心课程"
+course_nature = "必修"
+offering_college = "国际设计学院"
+total_hours = 112
+
+[courses.hours]
+theory = 0
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "SDID2007"
+credit = 4.0
+assessment_method = "考试"
+course_name = "“想象”专题设计\n工作坊"
+recommended_year_semester = "第二学年春季"
+track = "专业方向课程-专业方向核心课程"
+course_nature = "必修"
+offering_college = "国际设计学院"
+total_hours = 64
+
+[courses.hours]
+theory = 0
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "SATE3040"
+credit = 2.0
+assessment_method = "考查"
+course_name = "基于时间的媒体中的叙事策略"
+recommended_year_semester = "第二学年夏季"
+course_nature = "选修"
+course_category = "其他"
+offering_college = "国际设计学院"
+total_hours = 32
+
+[courses.hours]
+theory = 32
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "SATE3041"
+credit = 2.0
+assessment_method = "考查"
+course_name = "博物馆和展览的策划与设计"
+recommended_year_semester = "第二学年夏季"
+course_nature = "选修"
+course_category = "其他"
+offering_college = "国际设计学院"
+total_hours = 32
+
+[courses.hours]
+theory = 32
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "SATE3045"
+credit = 2.0
+assessment_method = "考查"
+course_name = "人类互动的未来"
+recommended_year_semester = "第二学年夏季"
+course_nature = "选修"
+course_category = "其他"
+offering_college = "国际设计学院"
+total_hours = 32
+
+[courses.hours]
+theory = 32
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "DMAM2006"
+credit = 3.0
+assessment_method = "考试"
+course_name = "数字媒体程序基础"
+recommended_year_semester = "第三学年秋季"
+track = "专业方向课程-专业方向核心课程"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "国际设计学院"
+total_hours = 48
+
+[courses.hours]
+theory = 32
+lab = 16
 practice = 0
 exercise = 0
 computer = 0
@@ -690,7 +676,7 @@ recommended_year_semester = "第三学年秋季"
 track = "专业方向课程-专业方向选修课程"
 course_nature = "选修"
 course_category = "其他"
-offering_college = "未来设计学院"
+offering_college = "国际设计学院"
 total_hours = 24
 
 [courses.hours]
@@ -709,7 +695,7 @@ recommended_year_semester = "第三学年秋季"
 track = "专业方向课程-专业方向选修课程"
 course_nature = "选修"
 course_category = "其他"
-offering_college = "未来设计学院"
+offering_college = "国际设计学院"
 total_hours = 32
 
 [courses.hours]
@@ -720,20 +706,39 @@ exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "INDS2008"
-credit = 1.0
-assessment_method = "考查"
-course_name = "电工与电子技术实验III"
+course_code = "INDS2006"
+credit = 2.0
+assessment_method = "考试"
+course_name = "人机工程学"
 recommended_year_semester = "第三学年秋季"
 track = "专业方向课程-专业方向核心课程"
 course_nature = "必修"
 course_category = "其他"
-offering_college = "未来设计学院"
-total_hours = 24
+offering_college = "国际设计学院"
+total_hours = 32
 
 [courses.hours]
-theory = 0
-lab = 24
+theory = 32
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "INDS2007"
+credit = 3.0
+assessment_method = "考查"
+course_name = "电工与电子技术III"
+recommended_year_semester = "第三学年秋季"
+track = "专业方向课程-专业方向核心课程"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "国际设计学院"
+total_hours = 48
+
+[courses.hours]
+theory = 48
+lab = 0
 practice = 0
 exercise = 0
 computer = 0
@@ -741,13 +746,13 @@ tutoring = 0
 [[courses]]
 course_code = "INDS3003"
 credit = 3.0
-assessment_method = "考试"
+assessment_method = "考查"
 course_name = "产品设计造型与创意(C1)"
 recommended_year_semester = "第三学年秋季"
 track = "专业方向课程-专业方向核心课程"
 course_nature = "必修"
 course_category = "其他"
-offering_college = "未来设计学院"
+offering_college = "建筑学院"
 total_hours = 48
 
 [courses.hours]
@@ -760,13 +765,13 @@ tutoring = 0
 [[courses]]
 course_code = "INDS3004"
 credit = 1.5
-assessment_method = "考试"
+assessment_method = "考查"
 course_name = "产品机遇与设计流程(C2)"
 recommended_year_semester = "第三学年秋季"
 track = "专业方向课程-专业方向核心课程"
 course_nature = "必修"
 course_category = "其他"
-offering_college = "未来设计学院"
+offering_college = "建筑学院"
 total_hours = 24
 
 [courses.hours]
@@ -785,7 +790,7 @@ recommended_year_semester = "第三学年秋季"
 track = "专业方向课程-专业方向核心课程"
 course_nature = "必修"
 course_category = "其他"
-offering_college = "未来设计学院"
+offering_college = "建筑学院"
 total_hours = 32
 
 [courses.hours]
@@ -798,36 +803,17 @@ tutoring = 0
 [[courses]]
 course_code = "INDS3006"
 credit = 1.5
-assessment_method = "考试"
+assessment_method = "考查"
 course_name = "产品快速表达(C3)"
 recommended_year_semester = "第三学年秋季"
 track = "专业方向课程-专业方向核心课程"
 course_nature = "必修"
 course_category = "其他"
-offering_college = "未来设计学院"
+offering_college = "国际设计学院"
 total_hours = 24
 
 [courses.hours]
 theory = 8
-lab = 16
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
-course_code = "INDS3022"
-credit = 3.0
-assessment_method = "考试"
-course_name = "数字媒体程序基础"
-recommended_year_semester = "第三学年秋季"
-track = "专业方向课程-专业方向核心课程"
-course_nature = "必修"
-course_category = "其他"
-offering_college = "未来设计学院"
-total_hours = 48
-
-[courses.hours]
-theory = 32
 lab = 16
 practice = 0
 exercise = 0
@@ -880,7 +866,7 @@ recommended_year_semester = "第三学年春季"
 track = "专业方向课程-专业方向选修课程"
 course_nature = "选修"
 course_category = "其他"
-offering_college = "未来设计学院"
+offering_college = "国际设计学院"
 total_hours = 32
 
 [courses.hours]
@@ -899,7 +885,7 @@ recommended_year_semester = "第三学年春季"
 track = "专业方向课程-专业方向选修课程"
 course_nature = "选修"
 course_category = "其他"
-offering_college = "未来设计学院"
+offering_college = "国际设计学院"
 total_hours = 24
 
 [courses.hours]
@@ -918,7 +904,7 @@ recommended_year_semester = "第三学年春季"
 track = "专业方向课程-专业方向选修课程"
 course_nature = "选修"
 course_category = "其他"
-offering_college = "未来设计学院"
+offering_college = "国际设计学院"
 total_hours = 24
 
 [courses.hours]
@@ -937,7 +923,7 @@ recommended_year_semester = "第三学年春季"
 track = "专业方向课程-专业方向选修课程"
 course_nature = "选修"
 course_category = "其他"
-offering_college = "未来设计学院"
+offering_college = "国际设计学院"
 total_hours = 24
 
 [courses.hours]
@@ -967,19 +953,57 @@ exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "GEIP1019-3"
-credit = 0.5
+course_code = "ENGG1008"
+credit = 2.0
 assessment_method = "考查"
-course_name = "形势与政策-3"
+course_name = "工程训练（制造工艺实习）I"
+recommended_year_semester = "第三学年春季"
+track = "专业方向课程-专业方向核心课程"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "实验与创新实践教育中心（分析测试中心）"
+total_hours = 80
+
+[courses.hours]
+theory = 0
+lab = 0
+practice = 2
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "GEIP1010"
+credit = 2.0
+assessment_method = "考查"
+course_name = "形势与政策"
 recommended_year_semester = "第三学年春季"
 track = "公共基础课程-思想政治课程"
 course_nature = "必修"
 course_category = "其他"
 offering_college = "马克思主义学院"
-total_hours = 8
+total_hours = 32
 
 [courses.hours]
-theory = 8
+theory = 32
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "INDS3001"
+credit = 2.0
+assessment_method = "考试"
+course_name = "工业设计史"
+recommended_year_semester = "第三学年春季"
+track = "专业方向课程-专业方向核心课程"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "国际设计学院"
+total_hours = 32
+
+[courses.hours]
+theory = 32
 lab = 0
 practice = 0
 exercise = 0
@@ -994,7 +1018,7 @@ recommended_year_semester = "第三学年春季"
 track = "专业方向课程-专业方向核心课程"
 course_nature = "必修"
 course_category = "其他"
-offering_college = "未来设计学院"
+offering_college = "国际设计学院"
 total_hours = 16
 
 [courses.hours]
@@ -1013,7 +1037,7 @@ recommended_year_semester = "第三学年春季"
 track = "专业方向课程-专业方向核心课程"
 course_nature = "必修"
 course_category = "其他"
-offering_college = "未来设计学院"
+offering_college = "国际设计学院"
 total_hours = 32
 
 [courses.hours]
@@ -1032,11 +1056,30 @@ recommended_year_semester = "第三学年春季"
 track = "专业方向课程-专业方向核心课程"
 course_nature = "必修"
 course_category = "其他"
-offering_college = "未来设计学院"
+offering_college = "国际设计学院"
 total_hours = 48
 
 [courses.hours]
 theory = 48
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "INDS3010"
+credit = 4.0
+assessment_method = "考查"
+course_name = "综合课程设计"
+recommended_year_semester = "第三学年春季"
+track = "专业方向课程-专业方向核心课程"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "国际设计学院"
+total_hours = 64
+
+[courses.hours]
+theory = 64
 lab = 0
 practice = 0
 exercise = 0
@@ -1051,7 +1094,7 @@ recommended_year_semester = "第三学年春季"
 track = "公共基础课程-体育"
 course_nature = "必修"
 course_category = "体育"
-offering_college = "体育部"
+offering_college = "人文与社会科学学院"
 total_hours = 16
 
 [courses.hours]
@@ -1062,20 +1105,38 @@ exercise = 0
 computer = 0
 tutoring = 16
 [[courses]]
-course_code = "INDS3010"
-credit = 4.0
+course_code = "22MX44001"
+credit = 0.0
 assessment_method = "考查"
-course_name = "综合课程设计"
-recommended_year_semester = "第三学年夏季"
+course_name = "劳动教育概论"
+recommended_year_semester = "第四学年秋季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "马克思主义学院"
+total_hours = 8
+
+[courses.hours]
+theory = 8
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "INDS2008"
+credit = 1.0
+assessment_method = "考查"
+course_name = "电工与电子技术实验III"
+recommended_year_semester = "第四学年秋季"
 track = "专业方向课程-专业方向核心课程"
 course_nature = "必修"
 course_category = "其他"
 offering_college = "未来设计学院"
-total_hours = 64
+total_hours = 24
 
 [courses.hours]
-theory = 64
-lab = 0
+theory = 0
+lab = 24
 practice = 0
 exercise = 0
 computer = 0

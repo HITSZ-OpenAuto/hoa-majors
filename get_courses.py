@@ -2,40 +2,36 @@
 Generate TOML metadata for all majors and sub-majors using HITsz JW data.
 
 Features:
-- Read school_majors_with_fah.json to determine FAH for each major plan.
+- Read major_mapping.json to determine FAH (plan_ID) for each major plan.
 - Crawl course list for each FAH using HITsz JW API.
 - Normalize course fields into readable English keys.
 - Parse teaching hours into structured format.
 - Write all courses under same FAH into a single TOML file.
 - Auto-create directory structure:
-    ./SCHOOL_MAJORS/{year}/{type}/MajorName[-Submajor].toml
+    ./SCHOOL_MAJORS/{year}/本/MajorName[-Submajor].toml
 """
 
-import os
 import json
-import requests
-import toml
 from pathlib import Path
 
+import requests
+import toml
 
 # -------------------------------------------------------------------------------------------------
 # 1. 教务系统请求配置（你可能需要替换 Cookie）
 # -------------------------------------------------------------------------------------------------
 
-JW_URL = "https://jw-hitsz-edu-cn.hitsz.edu.cn/Njpyfakc/queryList?sf_request_type=ajax"
+JW_URL = "https://jw.hitsz.edu.cn/Njpyfakc/queryList?sf_request_type=ajax"
 
 HEADERS = {
     "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-    "Cookie": "platformMultilingual_-_edu.cn=zh_CN; sdp_user_token=3f08ce29-36d8-4c79-9668-2c12062b8fda_9c83f1d7-35b3-42bf-bee3-ef619c6d0ae4; route=1db2c5f6085b9278d9cf7aaa8af65cd2; JSESSIONID=79A900F162D233C8652F2A5439213C0A",
+    "Cookie": "_qimei_uuid42=196031207051009c516abefb4710507b8457eedf87; _qimei_i_3=76ed518a9c5902dd9797fc310e8c7ae1a6e6f1f8410f0282e2dd7b092794243d676433943c89e29e8295; _qimei_h38=; tenantId=default; _qimei_i_1=54c552e1c132; _qimei_fingerprint=1418c5a93b1a523ba3a18392c8f2792d; route=35e0bb97cd8b3ec63836645aa32ed39c; JSESSIONID=C8E9345C924642480761F47FA6EBA66A",
     "RoleCode": "01",
     "X-Requested-With": "XMLHttpRequest",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
 }
 
-PROXIES = {
-    "http": "http://127.0.0.1:7897",
-    "https": "http://127.0.0.1:7897"
-}
+PROXIES = {"http": "http://127.0.0.1:7897", "https": "http://127.0.0.1:7897"}
 
 
 # -------------------------------------------------------------------------------------------------
@@ -70,6 +66,7 @@ HOURS_MAP = {
 # 3. 抓取课程数据
 # -------------------------------------------------------------------------------------------------
 
+
 def fetch_courses_by_fah(fah: str) -> list:
     """
     Crawl the JW API for a specific FAH (培养方案号).
@@ -91,7 +88,7 @@ def fetch_courses_by_fah(fah: str) -> list:
         "order1": "",
         "order2": "",
         "pageNum": 1,
-        "pageSize": 999
+        "pageSize": 999,
     }
 
     resp = requests.post(JW_URL, headers=HEADERS, data=payload, proxies=PROXIES)
@@ -106,6 +103,7 @@ def fetch_courses_by_fah(fah: str) -> list:
 # -------------------------------------------------------------------------------------------------
 # 4. 解析学时
 # -------------------------------------------------------------------------------------------------
+
 
 def parse_hours(raw_item: dict) -> dict:
     """
@@ -157,6 +155,7 @@ def parse_hours(raw_item: dict) -> dict:
 # 5. 规范化单个课程
 # -------------------------------------------------------------------------------------------------
 
+
 def normalize_course(raw: dict) -> dict:
     """
     Convert raw JW item to normalized English-field dict.
@@ -179,6 +178,7 @@ def normalize_course(raw: dict) -> dict:
 # 6. 为一个 FAH 生成 TOML 内容
 # -------------------------------------------------------------------------------------------------
 
+
 def generate_toml_for_fah(fah: str) -> dict:
     """
     Fetch, normalize, and return a TOML-ready dict:
@@ -192,6 +192,7 @@ def generate_toml_for_fah(fah: str) -> dict:
 # -------------------------------------------------------------------------------------------------
 # 7. 目录创建与文件写入
 # -------------------------------------------------------------------------------------------------
+
 
 def ensure_dir(path: Path):
     """Create directory recursively."""
@@ -208,8 +209,8 @@ def write_toml(path: Path, data: dict):
 # 8. 主流程：生成所有目录与 TOML
 # -------------------------------------------------------------------------------------------------
 
-def main():
 
+def main():
     # 打开 warning 文件
     warn_fp = open("warning.txt", "w", encoding="utf-8")
 
@@ -218,65 +219,68 @@ def main():
         print(msg)
         warn_fp.write(msg + "\n")
 
-    # 加载 school_majors_with_fah.json
-    with open("school_majors_with_fah.json", encoding="utf-8") as f:
+    # 加载 major_mapping.json
+    with open("major_mapping.json", encoding="utf-8") as f:
         majors = json.load(f)
 
     root = Path("SCHOOL_MAJORS")
 
-    for year, type_dict in majors.items():
-        for type_name, majors_dict in type_dict.items():
-            for major_with_fah, sub in majors_dict.items():
+    for year, majors_dict in majors.items():
+        # 创建目录 (固定为 "本")
+        base_dir = root / year / "本"
+        ensure_dir(base_dir)
 
-                # ------------------------------
-                # 解析大类名称与 FAH
-                # ------------------------------
-                if ":" in major_with_fah:
-                    major_name, fah = major_with_fah.split(":", 1)
-                else:
-                    major_name = major_with_fah
-                    fah = None
-                    warning(f"⚠ 大类无FAH，跳过大类 TOML：{year}-{type_name}-{major_name}")
+        for major_code, major_info in majors_dict.items():
+            major_name = major_info.get("name")
+            fah = major_info.get("plan_ID")
 
-                # 创建目录
-                base_dir = root / year / type_name
-                ensure_dir(base_dir)
+            if not major_name:
+                warning(f"⚠ 专业代码 {major_code} 无名称，跳过")
+                continue
 
-                # ------------------------------
-                # 若大类有FAH → 生成大类 TOML
-                # ------------------------------
-                if fah:
-                    try:
-                        major_toml_data = generate_toml_for_fah(fah)
-                        write_toml(base_dir / f"{major_name}.toml", major_toml_data)
-                    except Exception as e:
-                        warning(f"⚠ 生成大类 {major_name} TOML 失败：{e}")
+            # ------------------------------
+            # 若大类有 FAH → 生成大类 TOML
+            # ------------------------------
+            if fah:
+                try:
+                    major_toml_data = generate_toml_for_fah(fah)
+                    write_toml(
+                        base_dir / f"{major_name}({major_code}).toml", major_toml_data
+                    )
+                except Exception as e:
+                    warning(f"⚠ 生成大类 {major_name} TOML 失败：{e}")
+            else:
+                warning(f"⚠ 大类无FAH，跳过大类 TOML：{year}-{major_name}-{major_code}")
 
-                # ------------------------------
-                # 子类处理
-                # ------------------------------
-                if "to" in sub:
-                    for item in sub["to"]:
+            # ------------------------------
+            # 子专业处理
+            # ------------------------------
+            sub_majors = major_info.get("majors", [])
+            for sub in sub_majors:
+                sub_code = sub.get("major_ID")
+                sub_name = sub.get("name")
+                sub_fah = sub.get("plan_ID")
 
-                        # 子类可能没有 FAH
-                        if ":" in item:
-                            sub_name, sub_fah = item.split(":", 1)
-                        else:
-                            warning(f"⚠ 跳过子专业（无FAH）：{year}-{major_name}-{item}")
-                            continue
+                if not sub_name:
+                    warning(f"⚠ 子专业无名称，跳过：{year}-{major_name}")
+                    continue
 
-                        try:
-                            sub_toml = generate_toml_for_fah(sub_fah)
-                            write_toml(
-                                base_dir / f"{major_name}-{sub_name}.toml",
-                                sub_toml
-                            )
-                        except Exception as e:
-                            warning(f"⚠ 生成子类 {sub_name} TOML 失败：{e}")
+                if not sub_fah:
+                    warning(f"⚠ 跳过子专业（无FAH）：{year}-{major_name}-{sub_name}")
+                    continue
+
+                try:
+                    sub_toml = generate_toml_for_fah(sub_fah)
+                    write_toml(
+                        base_dir
+                        / f"{major_name}({major_code})-{sub_name}({sub_code}).toml",
+                        sub_toml,
+                    )
+                except Exception as e:
+                    warning(f"⚠ 生成子类 {sub_name} TOML 失败：{e}")
 
     warn_fp.close()
     print("✔ All TOML files generated successfully.")
-
 
 
 # -------------------------------------------------------------------------------------------------

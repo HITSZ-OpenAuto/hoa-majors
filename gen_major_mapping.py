@@ -13,29 +13,7 @@ import time
 
 import requests
 
-# 获取方案号所用 Headers
-HEADERS_FORM = {
-    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-    "Cookie": "_qimei_uuid42=196031207051009c516abefb4710507b8457eedf87; _qimei_i_3=76ed518a9c5902dd9797fc310e8c7ae1a6e6f1f8410f0282e2dd7b092794243d676433943c89e29e8295; _qimei_h38=; tenantId=default; _qimei_i_1=54c552e1c132; _qimei_fingerprint=1418c5a93b1a523ba3a18392c8f2792d; route=35e0bb97cd8b3ec63836645aa32ed39c; JSESSIONID=C8E9345C924642480761F47FA6EBA66A",
-    "RoleCode": "01",
-    "X-Requested-With": "XMLHttpRequest",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-}
-
-# 获取大类专业列表所用 Headers
-HEADERS_JSON = {
-    "Content-Type": "application/json",
-    "Cookie": "_qimei_uuid42=196031207051009c516abefb4710507b8457eedf87; _qimei_i_3=76ed518a9c5902dd9797fc310e8c7ae1a6e6f1f8410f0282e2dd7b092794243d676433943c89e29e8295; _qimei_h38=; tenantId=default; _qimei_i_1=54c552e1c132; _qimei_fingerprint=1418c5a93b1a523ba3a18392c8f2792d; route=35e0bb97cd8b3ec63836645aa32ed39c; JSESSIONID=C8E9345C924642480761F47FA6EBA66A",
-    "RoleCode": "01",
-    "X-Requested-With": "XMLHttpRequest",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-}
-
-PROXIES = {"http": "http://127.0.0.1:7897", "https": "http://127.0.0.1:7897"}
-
-# API URLs
-FAH_URL = "https://jw.hitsz.edu.cn/faxq/query?sf_request_type=ajax"
-MAJOR_LIST_URL = "https://jw.hitsz.edu.cn/xjgl/dlfzysq/querydlzyd?sf_request_type=ajax"
+from config import FAH_URL, HEADERS_FORM, HEADERS_JSON, MAJOR_LIST_URL, PROXIES
 
 
 def get_fah_list(njdm: str) -> list[dict]:

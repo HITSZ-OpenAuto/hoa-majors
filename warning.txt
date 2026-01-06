@@ -1,1 +1,0 @@
-⚠ 生成大类 建筑类/工科试验班（智慧人居类） TOML 失败：[Errno 2] No such file or directory: 'SCHOOL_MAJORS_new\\2023\\本\\建筑类\\工科试验班（智慧人居类）(23L05).toml'

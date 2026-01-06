@@ -9,23 +9,29 @@
 ## 目录结构
 
 ```text
-├── get_courses.py          # 抓取课程数据并生成 TOML 文件
 ├── gen_major_mapping.py    # 生成年级-大类-专业映射关系
+├── get_courses.py          # 抓取课程数据并生成 TOML 文件
 ├── gen_lookup_table.py     # 从 TOML 文件提取课程代码，生成查找表模板
+├── update_lookup_table.py  # 更新查找表（仅添加新课程，不覆盖已有条目）
 ├── find_address.py         # 根据课程代码查找其所在文件
 ├── find_same.py            # 检测同名课程但课程代码不同的冲突
-├── getFah.py               # 查询培养方案号（FAH）的测试脚本
-├── get_major_list.py       # 查询大类专业列表的测试脚本
+├── config.py               # 统一配置管理（Cookie、代理等）
 ├── major_mapping.json      # 年级-大类-专业映射数据
-├── lookup_table_template.json  # 课程代码查找表模板
+├── lookup_table_template.py    # 课程代码查找表模板
 ├── course_code_conflicts.txt   # 课程代码冲突检测结果
 ├── warning.txt             # 运行警告日志
+├── pyproject.toml          # 项目配置文件
+├── .env.example            # 环境变量模板
+├── .gitignore              # Git 忽略配置
 ├── SCHOOL_MAJORS/          # 生成的专业课程 TOML 文件目录
 │   ├── 2019/本/
 │   ├── 2020/本/
 │   ├── ...
 │   └── 2025/本/
 └── test/                   # 测试脚本
+│   ├── get_major_correspondence.py # 获取单个大类的分流专业列表
+│   ├── get_course_single.py        # 获取单课程信息并生成 TOML 文件
+│   └── getFah.py                   # 获取培养方案信息
 ```
 
 ---
@@ -69,9 +75,19 @@ python get_courses.py
 python gen_lookup_table.py
 ```
 
-从所有 TOML 文件中提取唯一课程代码，保存到 `lookup_table_template.json`。
+从所有 TOML 文件中提取唯一课程代码，保存到 `lookup_table_template.py`。
 
-### 4. 检测课程代码冲突
+### 4. 更新课程代码查找表
+
+运行 `update_lookup_table.py`：
+
+```sh
+python update_lookup_table.py
+```
+
+增量更新查找表，仅添加新的课程代码，不会覆盖已有的条目。
+
+### 5. 检测课程代码冲突
 
 运行 `find_same.py`：
 
@@ -81,7 +97,7 @@ python find_same.py
 
 检测同名课程但课程代码不同的情况，结果输出到 `course_code_conflicts.txt`。
 
-### 5. 查找课程所在文件
+### 6. 查找课程所在文件
 
 运行 `find_address.py`：
 
@@ -95,24 +111,38 @@ python find_address.py
 
 ## 配置说明
 
-### Cookie 配置
+### 环境配置
 
-各脚本中的 `HEADERS` 包含 Cookie，需要替换为有效的登录 Cookie：
+本项目使用 `.env` 文件管理敏感配置（如 Cookie）。首次使用请按以下步骤配置：
 
-```python
-HEADERS = {
-    "Cookie": "你的Cookie",
-    ...
-}
-```
+1. 复制 `.env.example` 为 `.env`：
 
-### 代理配置
+   ```sh
+   cp .env.example .env
+   ```
 
-默认使用本地代理 `127.0.0.1:7897`，可根据需要修改 `PROXIES`：
+2. 编辑 `.env` 文件，填入你的实际配置：
 
-```python
-PROXIES = {"http": "http://127.0.0.1:7897", "https": "http://127.0.0.1:7897"}
-```
+   ```ini
+   # 登录教务系统后，从浏览器开发者工具中获取 Cookie
+   # F12 -> Network -> 任意请求 -> Headers -> Cookie
+   JW_COOKIE="你的Cookie值"
+
+   # 代理配置（可选，如果不需要代理可以留空）
+   HTTP_PROXY="http://127.0.0.1:7897"
+   HTTPS_PROXY="http://127.0.0.1:7897"
+   ```
+
+> **注意**: `.env` 文件包含敏感信息，已在 `.gitignore` 中配置忽略，请勿提交到 Git 仓库。
+
+### 获取 Cookie 的方法
+
+1. 打开浏览器，登录 [HITSZ 教务系统](https://jw.hitsz.edu.cn/)
+2. 按 F12 打开开发者工具
+3. 切换到 Network（网络）标签
+4. 刷新页面或进行任意操作
+5. 点击任意请求，在 Headers（请求头）中找到 `Cookie` 字段
+6. 复制完整的 Cookie 值到 `.env` 文件
 
 ---
 
@@ -143,21 +173,29 @@ tutoring = 0
 
 ---
 
-## 依赖
+## 安装依赖
+
+### 方式一：使用 pip（推荐）
 
 ```sh
-pip install requests toml
+pip install -e .
+```
+
+### 方式二：手动安装
+
+```sh
+pip install requests toml python-dotenv
 ```
 
 ---
 
 ## 其他备用 API
 
-https://jw.hitsz.edu.cn/xjgl/xjxxgl/xsxxdate/queryZyFxList
+<https://jw.hitsz.edu.cn/xjgl/xjxxgl/xsxxdate/queryZyFxList>
 
 学籍管理-学籍信息管理-学生信息date-专业方向列表
 
-https://jw.hitsz.edu.cn/xjgl/dlfzysq/toViewDlfzysq/zyfl
+<https://jw.hitsz.edu.cn/xjgl/dlfzysq/toViewDlfzysq/zyfl>
 
 大类分专业申请-toView大类分专业申请-专业分流
 

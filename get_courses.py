@@ -17,22 +17,9 @@ from pathlib import Path
 import requests
 import toml
 
-# -------------------------------------------------------------------------------------------------
-# 1. 教务系统请求配置（你可能需要替换 Cookie）
-# -------------------------------------------------------------------------------------------------
-
-JW_URL = "https://jw.hitsz.edu.cn/Njpyfakc/queryList?sf_request_type=ajax"
-
-HEADERS = {
-    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-    "Cookie": "_qimei_uuid42=196031207051009c516abefb4710507b8457eedf87; _qimei_i_3=76ed518a9c5902dd9797fc310e8c7ae1a6e6f1f8410f0282e2dd7b092794243d676433943c89e29e8295; _qimei_h38=; tenantId=default; _qimei_i_1=54c552e1c132; _qimei_fingerprint=1418c5a93b1a523ba3a18392c8f2792d; route=35e0bb97cd8b3ec63836645aa32ed39c; JSESSIONID=C8E9345C924642480761F47FA6EBA66A",
-    "RoleCode": "01",
-    "X-Requested-With": "XMLHttpRequest",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-}
-
-PROXIES = {"http": "http://127.0.0.1:7897", "https": "http://127.0.0.1:7897"}
-
+from config import COURSE_URL as JW_URL
+from config import HEADERS_FORM as HEADERS
+from config import PROXIES
 
 # -------------------------------------------------------------------------------------------------
 # 2. 字段英文映射
@@ -179,14 +166,19 @@ def normalize_course(raw: dict) -> dict:
 # -------------------------------------------------------------------------------------------------
 
 
-def generate_toml_for_fah(fah: str) -> dict:
+def generate_toml_for_fah(fah: str, info: dict | None = None) -> dict:
     """
     Fetch, normalize, and return a TOML-ready dict:
-    { "courses": [ {...}, {...} ] }
+    { "info": {...}, "courses": [ {...}, {...} ] }
     """
     raw_courses = fetch_courses_by_fah(fah)
     normalized = [normalize_course(item) for item in raw_courses]
-    return {"courses": normalized}
+
+    result = {}
+    if info:
+        result["info"] = info
+    result["courses"] = normalized
+    return result
 
 
 # -------------------------------------------------------------------------------------------------
@@ -200,9 +192,21 @@ def ensure_dir(path: Path):
 
 
 def write_toml(path: Path, data: dict):
-    """Write TOML dict to file."""
+    """Write TOML dict to file, ensuring info comes before courses."""
     with open(path, "w", encoding="utf-8") as f:
-        toml.dump(data, f)
+        # 先写 info 部分
+        if "info" in data:
+            f.write("[info]\n")
+            for key, value in data["info"].items():
+                if isinstance(value, str):
+                    f.write(f'{key} = "{value}"\n')
+                else:
+                    f.write(f"{key} = {value}\n")
+            f.write("\n")
+
+        # 再写 courses 部分
+        if "courses" in data:
+            toml.dump({"courses": data["courses"]}, f)
 
 
 # -------------------------------------------------------------------------------------------------
@@ -243,10 +247,16 @@ def main():
             # ------------------------------
             if fah:
                 try:
-                    major_toml_data = generate_toml_for_fah(fah)
-                    write_toml(
-                        base_dir / f"{major_name}({major_code}).toml", major_toml_data
-                    )
+                    # 构建大类 info
+                    major_info_block = {
+                        "year": year,
+                        "major_code": major_code,
+                        "major_name": major_name,
+                        "school_name": major_info.get("school_name", ""),
+                        "plan_ID": fah,
+                    }
+                    major_toml_data = generate_toml_for_fah(fah, major_info_block)
+                    write_toml(base_dir / f"{fah}.toml", major_toml_data)
                 except Exception as e:
                     warning(f"⚠ 生成大类 {major_name} TOML 失败：{e}")
             else:
@@ -270,10 +280,19 @@ def main():
                     continue
 
                 try:
-                    sub_toml = generate_toml_for_fah(sub_fah)
+                    # 构建子专业 info
+                    sub_info_block = {
+                        "year": year,
+                        "parent_major_code": major_code,
+                        "parent_major_name": major_name,
+                        "major_code": sub_code,
+                        "major_name": sub_name,
+                        "school_name": major_info.get("school_name", ""),
+                        "plan_ID": sub_fah,
+                    }
+                    sub_toml = generate_toml_for_fah(sub_fah, sub_info_block)
                     write_toml(
-                        base_dir
-                        / f"{major_name}({major_code})-{sub_name}({sub_code}).toml",
+                        base_dir / f"{sub_fah}.toml",
                         sub_toml,
                     )
                 except Exception as e:

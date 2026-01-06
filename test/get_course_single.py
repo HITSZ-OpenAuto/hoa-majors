@@ -11,27 +11,18 @@ Features:
     ./SCHOOL_MAJORS/{year}/{type}/MajorName[-Submajor].toml
 """
 
+import sys
 from pathlib import Path
 
 import requests
 import toml
 
-# -------------------------------------------------------------------------------------------------
-# 1. 教务系统请求配置（你可能需要替换 Cookie）
-# -------------------------------------------------------------------------------------------------
+# 将父目录添加到路径，以便导入 config 模块
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
-JW_URL = "https://jw.hitsz.edu.cn/Njpyfakc/queryList?sf_request_type=ajax"
-
-HEADERS = {
-    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-    "Cookie": "_qimei_uuid42=196031207051009c516abefb4710507b8457eedf87; _qimei_i_3=76ed518a9c5902dd9797fc310e8c7ae1a6e6f1f8410f0282e2dd7b092794243d676433943c89e29e8295; _qimei_h38=; tenantId=default; _qimei_i_1=54c552e1c132; _qimei_fingerprint=1418c5a93b1a523ba3a18392c8f2792d; JSESSIONID=8D2426E67B659D49B1DC2413F130837E; route=35e0bb97cd8b3ec63836645aa32ed39c",
-    "RoleCode": "01",
-    "X-Requested-With": "XMLHttpRequest",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-}
-
-PROXIES = {"http": "http://127.0.0.1:7897", "https": "http://127.0.0.1:7897"}
-
+from config import COURSE_URL as JW_URL
+from config import HEADERS_FORM as HEADERS
+from config import PROXIES
 
 # -------------------------------------------------------------------------------------------------
 # 2. 字段英文映射
@@ -218,9 +209,9 @@ def main():
         print(msg)
         warn_fp.write(msg + "\n")
 
-    root = Path("SCHOOL_MAJORS_new")
+    root = Path("SCHOOL_MAJORS")
 
-    fah = "315E2D2561DB87FCE0630B18F80AD786"
+    fah = "42C248B0D4A01B24E0630B18F80A7AD4"
 
     major_toml_data = generate_toml_for_fah(fah)
     write_toml(root / f"{fah}.toml", major_toml_data)

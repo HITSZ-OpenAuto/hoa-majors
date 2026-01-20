@@ -31,7 +31,7 @@
     - 注释部分在重新生成时会保留
 """
 
-LOOKUP_TABLE_TEMPLATE: dict[tuple[str, str], str] = {
+LOOKUP_TABLE: dict[tuple[str, str], str] = {
     ("22MX44001", ""): "22MX44001",
     ("ACCT2001", ""): "ACCT2001",
     ("ACCT2002", ""): "ACCT2002",

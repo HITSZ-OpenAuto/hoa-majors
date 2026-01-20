@@ -14,6 +14,15 @@ dependencies = [
     "python-dotenv>=1.0.0",
 ]
 
+[project.scripts]
+hoa-crawl = "hoa_majors.cli.crawl:main"
+hoa-table = "hoa_majors.cli.table:main"
+hoa-search = "hoa_majors.cli.search:main"
+hoa-audit = "hoa_majors.cli.audit:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
 [project.optional-dependencies]
 dev = [
     "ruff>=0.1.0",

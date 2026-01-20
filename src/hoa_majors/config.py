@@ -12,7 +12,7 @@ try:
     from dotenv import load_dotenv
 
     # 加载 .env 文件
-    env_path = Path(__file__).parent / ".env"
+    env_path = Path(__file__).parent.parent.parent / ".env"
     load_dotenv(env_path)
 except ImportError:
     # 如果没有安装 python-dotenv，仅使用环境变量

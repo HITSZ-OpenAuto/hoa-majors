@@ -19,13 +19,7 @@ dependencies = [
 ]
 
 [project.scripts]
-hoa-crawl = "hoa_majors.cli.crawl:main"
-hoa-table = "hoa_majors.cli.table:main"
-hoa-search = "hoa_majors.cli.search:main"
-hoa-audit = "hoa_majors.cli.audit:main"
-hoa-plans = "hoa_majors.cli.list_plans:main"
-hoa-plan-courses = "hoa_majors.cli.list_courses:main"
-hoa-course-info = "hoa_majors.cli.get_course:main"
+hoa = "hoa_majors.cli.main:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

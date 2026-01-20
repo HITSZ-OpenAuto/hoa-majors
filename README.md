@@ -63,7 +63,7 @@ uv sync
 使用统一的抓取命令：
 
 ```sh
-uv run hoa-crawl
+uv run hoa crawl
 ```
 
 该命令会先更新专业映射关系，然后抓取所有专业的课程数据并保存到内置的数据目录。
@@ -72,26 +72,26 @@ uv run hoa-crawl
 
 初始化查找表：
 ```sh
-uv run hoa-table init
+uv run hoa table init
 ```
 
 增量更新查找表（添加新出现的课程）：
 ```sh
-uv run hoa-table update
+uv run hoa table update
 ```
 
 ### 4. 课程查询
 
 快速查找课程所在文件：
 ```sh
-uv run hoa-search [课程代码]
+uv run hoa search [课程代码]
 ```
 
 ### 5. 冲突审计
 
 检测同名课程但代码不同的冲突：
 ```sh
-uv run hoa-audit
+uv run hoa audit
 ```
 
 ---
@@ -132,7 +132,7 @@ steps:
   - uses: HITSZ-OpenAuto/hoa-majors@main
 
   - name: List plans
-    run: hoa-plans
+    run: hoa plans
 ```
 
 ---

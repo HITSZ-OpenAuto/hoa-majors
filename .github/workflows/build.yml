@@ -34,7 +34,7 @@ jobs:
           path: dist/
 
       - name: Smoke test - List plans
-        run: uv run hoa-plans --data-dir data
+        run: uv run hoa plans --data-dir data
 
       - name: Smoke test - List courses
-        run: uv run hoa-plan-courses 037F075E27C4138CE0630B18F80A5AFE --data-dir data
+        run: uv run hoa courses 037F075E27C4138CE0630B18F80A5AFE --data-dir data

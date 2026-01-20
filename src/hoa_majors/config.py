@@ -4,8 +4,15 @@
 从 .env 文件或环境变量中读取敏感配置信息。
 """
 
+import logging
 import os
 from pathlib import Path
+
+# 配置日志
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+)
+logger = logging.getLogger("hoa_majors")
 
 # 尝试加载 python-dotenv（如果已安装）
 try:
@@ -31,17 +38,21 @@ def get_env(key: str, default: str = "") -> str:
 JW_COOKIE = get_env("JW_COOKIE", "")
 
 if not JW_COOKIE:
-    print("警告: JW_COOKIE 未配置，请在 .env 文件或环境变量中设置")
-    print("提示: 可以复制 .env.example 为 .env 并填入你的 Cookie")
+    logger.warning("JW_COOKIE 未配置，请在 .env 文件或环境变量中设置")
+    logger.info("提示: 可以复制 .env.example 为 .env 并填入你的 Cookie")
 
 # -------------------------------------------------------------------------------------------------
 # 代理配置
 # -------------------------------------------------------------------------------------------------
 
-HTTP_PROXY = get_env("HTTP_PROXY", "http://127.0.0.1:7897")
-HTTPS_PROXY = get_env("HTTPS_PROXY", "http://127.0.0.1:7897")
+HTTP_PROXY = get_env("HTTP_PROXY", "")
+HTTPS_PROXY = get_env("HTTPS_PROXY", "")
 
-PROXIES = {"http": HTTP_PROXY, "https": HTTPS_PROXY} if HTTP_PROXY else {}
+PROXIES = {}
+if HTTP_PROXY:
+    PROXIES["http"] = HTTP_PROXY
+if HTTPS_PROXY:
+    PROXIES["https"] = HTTPS_PROXY
 
 # -------------------------------------------------------------------------------------------------
 # 请求头配置

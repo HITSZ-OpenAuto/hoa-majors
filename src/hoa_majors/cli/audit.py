@@ -1,42 +1,29 @@
+import argparse
 from collections import defaultdict
 from pathlib import Path
 
-import toml
-
-from hoa_majors.core.utils import normalize_course_code
-
-
-def load_courses(path: Path):
-    try:
-        data = toml.load(path)
-    except Exception:
-        return []
-    out = []
-    for c in data.get("courses", []):
-        if "course_name" in c and "course_code" in c:
-            out.append(
-                {
-                    "name": c["course_name"].strip(),
-                    "code": c["course_code"].strip(),
-                }
-            )
-    return out
+from hoa_majors.config import logger
+from hoa_majors.core.utils import iter_toml_files, normalize_course_code
 
 
 def scan(data_dir: Path):
     mapping = defaultdict(set)
-    root = data_dir / "SCHOOL_MAJORS"
-    for toml_path in root.rglob("*.toml"):
-        for c in load_courses(toml_path):
-            mapping[c["name"]].add(normalize_course_code(c["code"]))
+    for _, data in iter_toml_files(data_dir):
+        for c in data.get("courses", []):
+            name = c.get("course_name")
+            code = c.get("course_code")
+            if name and code:
+                mapping[name.strip()].add(normalize_course_code(code))
     return mapping
 
 
 def report_conflicts(mapping: dict, output_file: Path):
     conflicts = {name: codes for name, codes in mapping.items() if len(codes) > 1}
-    print("\n===== 检测结果 =====\n")
+
+    print("\n" + "=" * 20 + " 冲突审计结果 " + "=" * 20 + "\n")
+
     if not conflicts:
-        print("没有发现代码变更。")
+        print("没有发现同名但代码不同的课程。")
     else:
         for name in sorted(conflicts):
             print(f"{name}:")
@@ -51,17 +38,14 @@ def report_conflicts(mapping: dict, output_file: Path):
             for c in sorted(conflicts[name]):
                 f.write(f"    {c}\n")
             f.write("\n")
-    print(f"结果已写入: {output_file.resolve()}")
+
+    logger.info(f"审计报告已保存至: {output_file.resolve()}")
 
 
 def main():
-    import argparse
-
-    parser = argparse.ArgumentParser(description="Audit course codes for conflicts.")
-    parser.add_argument(
-        "--data-dir", type=Path, default=Path("data"), help="Directory where data is stored."
-    )
-    parser.add_argument("--output", type=Path, help="Path to save the conflict report.")
+    parser = argparse.ArgumentParser(description="审计课程名称与代码的冲突")
+    parser.add_argument("--data-dir", type=Path, default=Path("data"), help="数据存储目录")
+    parser.add_argument("--output", type=Path, help="保存冲突报告的路径")
     args = parser.parse_args()
 
     mapping = scan(args.data_dir)

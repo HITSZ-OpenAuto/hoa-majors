@@ -1,4 +1,6 @@
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 from hoa_majors.config import (
     COURSE_URL,
@@ -7,7 +9,29 @@ from hoa_majors.config import (
     HEADERS_JSON,
     MAJOR_LIST_URL,
     PROXIES,
+    logger,
 )
+
+
+def create_session() -> requests.Session:
+    """创建带有重试机制的 requests Session"""
+    session = requests.Session()
+    session.proxies = PROXIES
+
+    retry_strategy = Retry(
+        total=3,
+        backoff_factor=1,
+        status_forcelist=[429, 500, 502, 503, 504],
+    )
+    adapter = HTTPAdapter(max_retries=retry_strategy)
+    session.mount("http://", adapter)
+    session.mount("https://", adapter)
+
+    return session
+
+
+# 全局 session 实例
+_session = create_session()
 
 
 def fetch_courses_by_fah(fah: str) -> list[dict]:
@@ -34,13 +58,15 @@ def fetch_courses_by_fah(fah: str) -> list[dict]:
         "pageSize": 999,
     }
 
-    resp = requests.post(COURSE_URL, headers=HEADERS_FORM, data=payload, proxies=PROXIES)
-    resp_json = resp.json()
-
-    raw_list = resp_json.get("content", {}).get("list", [])
-    clean_list = [{k: v for k, v in item.items() if v is not None} for item in raw_list]
-
-    return clean_list
+    try:
+        resp = _session.post(COURSE_URL, headers=HEADERS_FORM, data=payload, timeout=15)
+        resp.raise_for_status()
+        resp_json = resp.json()
+        raw_list = resp_json.get("content", {}).get("list", [])
+        return [{k: v for k, v in item.items() if v is not None} for item in raw_list]
+    except Exception as e:
+        logger.error(f"获取培养方案 {fah} 的课程列表失败: {e}")
+        return []
 
 
 def get_fah_list(njdm: str) -> list[dict]:
@@ -71,24 +97,28 @@ def get_fah_list(njdm: str) -> list[dict]:
         "pageSize": "500",
     }
 
-    resp = requests.post(FAH_URL, headers=HEADERS_FORM, data=data, proxies=PROXIES)
-    resp_json = resp.json()
+    try:
+        resp = _session.post(FAH_URL, headers=HEADERS_FORM, data=data, timeout=15)
+        resp.raise_for_status()
+        resp_json = resp.json()
+        raw_list = resp_json.get("content", {}).get("list", [])
 
-    raw_list = resp_json.get("content", {}).get("list", [])
-
-    result = []
-    for item in raw_list:
-        if item.get("falxdm") != "1":
-            continue
-        result.append(
-            {
-                "fah": item.get("fah"),
-                "zydm": item.get("zydm"),
-                "zymc": item.get("zymc"),
-                "yxmc": item.get("yxmc"),
-            }
-        )
-    return result
+        result = []
+        for item in raw_list:
+            if item.get("falxdm") != "1":
+                continue
+            result.append(
+                {
+                    "fah": item.get("fah"),
+                    "zydm": item.get("zydm"),
+                    "zymc": item.get("zymc"),
+                    "yxmc": item.get("yxmc"),
+                }
+            )
+        return result
+    except Exception as e:
+        logger.error(f"获取年级 {njdm} 的培养方案列表失败: {e}")
+        return []
 
 
 def get_major_list_by_dalei(yzydm: str, xn: str = "2024-2025", xq: str = "2") -> list[dict]:
@@ -103,15 +133,10 @@ def get_major_list_by_dalei(yzydm: str, xn: str = "2024-2025", xq: str = "2") ->
     }
 
     try:
-        resp = requests.post(
-            MAJOR_LIST_URL, headers=HEADERS_JSON, json=data, proxies=PROXIES, timeout=10
-        )
+        resp = _session.post(MAJOR_LIST_URL, headers=HEADERS_JSON, json=data, timeout=10)
+        resp.raise_for_status()
         resp_json = resp.json()
-        result = []
-        for item in resp_json:
-            filtered_item = {k: v for k, v in item.items() if v is not None}
-            result.append(filtered_item)
-        return result
+        return [{k: v for k, v in item.items() if v is not None} for item in resp_json]
     except Exception as e:
-        print(f"查询大类 {yzydm} 的专业列表失败: {e}")
+        logger.error(f"查询大类 {yzydm} 的专业列表失败: {e}")
         return []

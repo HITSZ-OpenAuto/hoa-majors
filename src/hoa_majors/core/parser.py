@@ -13,15 +13,17 @@ FIELD_MAP = {
     "kkyxmc": "offering_college",
 }
 
-# 学时字段
-HOURS_MAP = {
-    "zxs": ("xszxs", "total_hours"),
-    "llxs": ("xsllxs", "theory"),
-    "syxs": ("xssyxs", "lab"),
-    "sjxs": ("2", "practice"),
-    "xtxs": ("6", "exercise"),
-    "sjxs2": ("8", "computer"),
-    "fdxs": ("10", "tutoring"),
+# 学时字段映射
+# 格式: {英文名: (教务系统字段名, 类型码)}
+# 如果类型码为 None，则直接从教务系统字段名读取
+HOURS_CONFIG = {
+    "total_hours": ("xszxs", None),
+    "theory": ("xsllxs", "llxs"),
+    "lab": ("xssyxs", "syxs"),
+    "practice": ("2", "sjxs"),
+    "exercise": ("6", "xtxs"),
+    "computer": ("8", "sjxs2"),
+    "tutoring": ("10", "fdxs"),
 }
 
 
@@ -32,38 +34,32 @@ def parse_hours(raw_item: dict[str, Any]) -> dict[str, Any]:
     - [hours] table
     """
     result = {"hours": {}}
-
-    # 总学时
-    total_hours_key = HOURS_MAP["zxs"][0]
-    if total_hours_key in raw_item:
-        try:
-            result["total_hours"] = int(raw_item[total_hours_key])
-        except (ValueError, TypeError):
-            result["total_hours"] = 0
-
-    # 子学时
     xss = raw_item.get("xss", {})
-    for code, (key, eng_name) in HOURS_MAP.items():
-        if code == "zxs":
-            continue
 
-        if key in raw_item:
-            try:
-                result["hours"][eng_name] = int(raw_item[key])
-            except (ValueError, TypeError):
-                result["hours"][eng_name] = 0
+    for eng_name, (jw_key, _) in HOURS_CONFIG.items():
+        val = 0
 
-        if isinstance(xss, dict) and key in xss:
-            val = xss[key]
-            if isinstance(val, str) and "周" in val:
-                val = val.replace("周", "")
+        # 1. 尝试从直接字段获取
+        if jw_key in raw_item:
             try:
-                result["hours"][eng_name] = int(val)
+                val = int(raw_item[jw_key])
             except (ValueError, TypeError):
                 pass
 
-        if eng_name not in result["hours"]:
-            result["hours"][eng_name] = 0
+        # 2. 尝试从 xss 嵌套字段获取
+        if val == 0 and isinstance(xss, dict) and jw_key in xss:
+            raw_val = xss[jw_key]
+            if isinstance(raw_val, str) and "周" in raw_val:
+                raw_val = raw_val.replace("周", "")
+            try:
+                val = int(raw_val)
+            except (ValueError, TypeError):
+                pass
+
+        if eng_name == "total_hours":
+            result["total_hours"] = val
+        else:
+            result["hours"][eng_name] = val
 
     return result
 
@@ -72,13 +68,6 @@ def normalize_course(raw: dict[str, Any]) -> dict[str, Any]:
     """
     Convert raw JW item to normalized English-field dict.
     """
-    course = {}
-
-    for zh_key, en_key in FIELD_MAP.items():
-        if zh_key in raw:
-            course[en_key] = raw[zh_key]
-
-    hours_block = parse_hours(raw)
-    course.update(hours_block)
-
+    course = {FIELD_MAP[zh]: raw[zh] for zh in FIELD_MAP if zh in raw}
+    course.update(parse_hours(raw))
     return course

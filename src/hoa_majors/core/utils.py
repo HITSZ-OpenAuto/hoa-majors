@@ -1,3 +1,9 @@
+import tomllib
+from collections.abc import Generator
+from pathlib import Path
+from typing import Any
+
+
 def normalize_course_code(code: str) -> str:
     """
     Normalize course code: trim whitespace, convert to uppercase, and remove trailing 'E' for consistency.
@@ -6,3 +12,17 @@ def normalize_course_code(code: str) -> str:
     if code.endswith("E"):
         return code[:-1]
     return code
+
+
+def iter_toml_files(data_dir: Path) -> Generator[tuple[Path, dict[str, Any]], None, None]:
+    """遍历所有的 TOML 数据文件"""
+    root = data_dir / "SCHOOL_MAJORS"
+    if not root.exists():
+        return
+
+    for f in root.rglob("*.toml"):
+        try:
+            with open(f, "rb") as fb:
+                yield f, tomllib.load(fb)
+        except Exception:
+            continue

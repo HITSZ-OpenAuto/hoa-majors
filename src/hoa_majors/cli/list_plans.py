@@ -1,38 +1,42 @@
 import argparse
-import tomllib
 from pathlib import Path
+
+from hoa_majors.core.utils import iter_toml_files
 
 
 def list_plans(data_dir: Path):
-    root = data_dir / "SCHOOL_MAJORS"
     plans = {}
 
-    for f in root.rglob("*.toml"):
-        try:
-            with open(f, "rb") as fb:
-                data = tomllib.load(fb)
-            info = data.get("info", {})
-            plan_id = info.get("plan_ID")
-            if plan_id:
-                plans[plan_id] = {
-                    "year": info.get("year", "N/A"),
-                    "major_name": info.get("major_name", "N/A"),
-                    "school": info.get("school_name", "N/A"),
-                }
-        except Exception as e:
-            print(f"Error reading {f}: {e}")
+    for _, data in iter_toml_files(data_dir):
+        info = data.get("info", {})
+        plan_id = info.get("plan_ID")
+        if plan_id:
+            plans[plan_id] = {
+                "year": info.get("year", "N/A"),
+                "major_name": info.get("major_name", "N/A"),
+                "school": info.get("school_name", "N/A"),
+            }
 
-    print(f"{'Plan ID':<35} | {'Year':<5} | {'Major Name'}")
+    if not plans:
+        print("未找到任何培养方案数据。")
+        return
+
+    print(f"{'方案 ID (plan_ID)':<35} | {'年级':<5} | {'专业名称'}")
     print("-" * 80)
-    for pid, details in sorted(plans.items(), key=lambda x: (x[1]["year"], x[1]["major_name"])):
+
+    # 按年级和专业名称排序
+    sorted_plans = sorted(plans.items(), key=lambda x: (x[1]["year"], x[1]["major_name"]))
+
+    for pid, details in sorted_plans:
         print(f"{pid:<35} | {details['year']:<5} | {details['major_name']}")
+
+    print("-" * 80)
+    print(f"共计 {len(plans)} 个培养方案")
 
 
 def main():
-    parser = argparse.ArgumentParser(description="List all training plans.")
-    parser.add_argument(
-        "--data-dir", type=Path, default=Path("data"), help="Directory where data is stored."
-    )
+    parser = argparse.ArgumentParser(description="列出所有已抓取的培养方案")
+    parser.add_argument("--data-dir", type=Path, default=Path("data"), help="数据存储目录")
     args = parser.parse_args()
 
     list_plans(args.data_dir)

@@ -112,6 +112,23 @@ uv run ruff format .
 
 ---
 
+## GitHub Action 使用
+
+本项目提供了一个 GitHub Composite Action，方便其他仓库直接调用 CLI 工具。
+
+### 示例用法
+
+```yaml
+steps:
+  - uses: actions/checkout@v6
+  - uses: HITSZ-OpenAuto/hoa-majors@main
+
+  - name: List plans
+    run: hoa-plans --data-dir path/to/data
+```
+
+---
+
 ## 输出格式示例
 
 生成的 TOML 文件格式：

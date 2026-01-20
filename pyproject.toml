@@ -14,17 +14,14 @@ dependencies = [
 ]
 
 [build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+requires = ["uv_build>=0.9.2,<0.10.0"]
+build-backend = "uv_build"
 
 [project.scripts]
 hoa = "hoa_majors.cli.main:main"
 
-[tool.setuptools.packages.find]
-where = ["src"]
-
-[tool.setuptools.package-data]
-"hoa_majors" = ["data/**/*.toml", "data/**/*.json", "data/**/*.py"]
+[tool.uv]
+managed = true
 
 [project.optional-dependencies]
 dev = [

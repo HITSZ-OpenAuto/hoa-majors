@@ -1,7 +1,8 @@
 import argparse
+import sys
 from pathlib import Path
 
-from hoa_majors.config import DEFAULT_DATA_DIR
+from hoa_majors.config import DEFAULT_DATA_DIR, logger
 from hoa_majors.core.utils import iter_toml_files
 
 
@@ -19,8 +20,8 @@ def list_plans(data_dir: Path):
             }
 
     if not plans:
-        print("未找到任何培养方案数据。")
-        return
+        logger.error("未找到任何培养方案数据。")
+        sys.exit(1)
 
     print(f"{'方案 ID (plan_ID)':<35} | {'年级':<5} | {'专业名称'}")
     print("-" * 80)

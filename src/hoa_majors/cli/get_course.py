@@ -1,7 +1,8 @@
 import argparse
+import sys
 from pathlib import Path
 
-from hoa_majors.config import DEFAULT_DATA_DIR
+from hoa_majors.config import DEFAULT_DATA_DIR, logger
 from hoa_majors.core.utils import iter_toml_files
 
 
@@ -34,9 +35,11 @@ def get_course_info(plan_id: str, course_code: str, data_dir: Path):
                 break
 
     if not found_plan:
-        print(f"未找到 ID 为 {plan_id} 的培养方案")
+        logger.error(f"未找到 ID 为 {plan_id} 的培养方案")
+        sys.exit(1)
     elif not found_course:
-        print(f"在培养方案 {plan_id} 中未找到课程 {course_code}")
+        logger.error(f"在培养方案 {plan_id} 中未找到课程 {course_code}")
+        sys.exit(1)
 
 
 def main():

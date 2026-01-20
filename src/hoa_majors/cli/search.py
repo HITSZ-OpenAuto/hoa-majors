@@ -1,7 +1,8 @@
 import argparse
+import sys
 from pathlib import Path
 
-from hoa_majors.config import DEFAULT_DATA_DIR
+from hoa_majors.config import DEFAULT_DATA_DIR, logger
 from hoa_majors.core.utils import iter_toml_files, normalize_course_code
 
 
@@ -31,7 +32,8 @@ def main():
     print("\n" + "=" * 40 + "\n查询结果\n" + "=" * 40 + "\n")
 
     if not results:
-        print("未找到该课程代码。")
+        logger.error("未找到该课程代码。")
+        sys.exit(1)
     else:
         print(f"找到 {len(results)} 个匹配：\n")
         for path, course in results:

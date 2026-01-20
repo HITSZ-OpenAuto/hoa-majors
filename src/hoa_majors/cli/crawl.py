@@ -65,25 +65,59 @@ def crawl_courses(mapping_path: Path, data_dir: Path):
         print(msg)
         warn_fp.write(msg + "\n")
 
+    base_dir = data_dir / "SCHOOL_MAJORS"
+    degree = "本"
+
     for year, majors_dict in majors.items():
-        base_dir = data_dir / "SCHOOL_MAJORS" / year / "本"
         for major_code, major_info in majors_dict.items():
             major_name = major_info.get("name")
             fah = major_info.get("plan_ID")
             if not major_name: continue
+
             if fah:
                 try:
+                    clean_name = major_name.replace("/", "-").replace("\\", "-").strip()
+                    filename = f"{year}_{degree}_{clean_name}.toml"
+                    target_path = base_dir / filename
+                    
+                    # Handle collisions
+                    if target_path.exists():
+                        # Read existing plan_ID to see if it's the same
+                        try:
+                            import toml
+                            existing_data = toml.load(target_path)
+                            if existing_data.get("info", {}).get("plan_ID") != fah:
+                                filename = f"{year}_{degree}_{clean_name}_{fah[:8]}.toml"
+                                target_path = base_dir / filename
+                        except:
+                            pass
+
                     info = {"year": year, "major_code": major_code, "major_name": major_name, "school_name": major_info.get("school_name", ""), "plan_ID": fah}
-                    write_toml(base_dir / f"{fah}.toml", generate_toml_for_fah(fah, info))
+                    write_toml(target_path, generate_toml_for_fah(fah, info))
                 except Exception as e: warning(f"⚠ 大类 {major_name} 失败: {e}")
             
             for sub in major_info.get("majors", []):
                 sub_fah = sub.get("plan_ID")
-                if sub_fah:
+                sub_name = sub.get("name")
+                if sub_fah and sub_name:
                     try:
-                        info = {"year": year, "parent_major_code": major_code, "parent_major_name": major_name, "major_code": sub.get("major_ID"), "major_name": sub.get("name"), "school_name": major_info.get("school_name", ""), "plan_ID": sub_fah}
-                        write_toml(base_dir / f"{sub_fah}.toml", generate_toml_for_fah(sub_fah, info))
-                    except Exception as e: warning(f"⚠ 子类 {sub.get('name')} 失败: {e}")
+                        clean_sub_name = sub_name.replace("/", "-").replace("\\", "-").strip()
+                        sub_filename = f"{year}_{degree}_{clean_sub_name}.toml"
+                        sub_target_path = base_dir / sub_filename
+
+                        if sub_target_path.exists():
+                            try:
+                                import toml
+                                existing_data = toml.load(sub_target_path)
+                                if existing_data.get("info", {}).get("plan_ID") != sub_fah:
+                                    sub_filename = f"{year}_{degree}_{clean_sub_name}_{sub_fah[:8]}.toml"
+                                    sub_target_path = base_dir / sub_filename
+                            except:
+                                pass
+
+                        info = {"year": year, "parent_major_code": major_code, "parent_major_name": major_name, "major_code": sub.get("major_ID"), "major_name": sub_name, "school_name": major_info.get("school_name", ""), "plan_ID": sub_fah}
+                        write_toml(sub_target_path, generate_toml_for_fah(sub_fah, info))
+                    except Exception as e: warning(f"⚠ 子类 {sub_name} 失败: {e}")
     warn_fp.close()
 
 def main():

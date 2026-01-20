@@ -157,3 +157,7 @@ cython_debug/
 # 系统文件
 .DS_Store
 Thumbs.db
+
+# Cursor & Claude
+.claude/
+.cursor/

@@ -8,6 +8,10 @@ license = { text = "MIT" }
 authors = [{ name = "HITSZ-OpenAuto" }]
 keywords = ["hitsz", "education", "courses", "curriculum"]
 
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 dependencies = [
     "requests>=2.28.0",
     "toml>=0.10.0",
@@ -19,6 +23,9 @@ hoa-crawl = "hoa_majors.cli.crawl:main"
 hoa-table = "hoa_majors.cli.table:main"
 hoa-search = "hoa_majors.cli.search:main"
 hoa-audit = "hoa_majors.cli.audit:main"
+hoa-plans = "hoa_majors.cli.list_plans:main"
+hoa-plan-courses = "hoa_majors.cli.list_courses:main"
+hoa-course-info = "hoa_majors.cli.get_course:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

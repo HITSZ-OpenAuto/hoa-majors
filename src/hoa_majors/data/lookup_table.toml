@@ -1,367 +1,290 @@
+# 课程代码查找表数据结构:
+#   表名 ([table]): str
+#       - 课程代码 (course_code)，如 "MATH1015A"
+#   键 (Key): str
+#       - 培养方案号 (plan_id/fah)，用于区分不同专业的同名课程
+#       - DEFAULT 表示该课程在所有培养方案中通用
+#   值 (Value): str
+#       - 对应的 OpenAuto 仓库 ID (repo_id)
+#       - 通常与课程代码相同，但部分课程可能有自定义映射
+# 用途:
+#   将教务系统中的课程代码映射到 HITSZ-OpenAuto 仓库中的仓库 ID。
+#   同一课程代码在不同专业培养方案中可能对应不同的仓库。
+#   本表格记录特殊的映射关系，不在表内的课程代码默认 course_code = repo_id。
+
+
 [MATH1001A]
-plan_id = "all"
-repo_id = "MATH1015A"
+DEFAULT = "MATH1015A"
 
 [MATH1011A]
-plan_id = "3C23C88575EDAD44E0630B18F80AA0F2"
-repo_id = "MATH1015A"
+"3C23C88575EDAD44E0630B18F80AA0F2" = "MATH1015A"
 
 [MATH1001B]
-plan_id = "all"
-repo_id = "MATH1015B"
+DEFAULT = "MATH1015B"
 
 [MATH1011B]
-plan_id = "3C23C88575EDAD44E0630B18F80AA0F2"
-repo_id = "MATH1015B"
+"3C23C88575EDAD44E0630B18F80AA0F2" = "MATH1015B"
 
 [GEIP1003]
-plan_id = "all"
-repo_id = "GEIP1018"
+DEFAULT = "GEIP1018"
 
 [GEIP1007]
-plan_id = "all"
-repo_id = "GEIP1015"
+DEFAULT = "GEIP1015"
 
 [GEIP1008]
-plan_id = "all"
-repo_id = "GEIP1016"
+DEFAULT = "GEIP1016"
 
 [GEIP1009A]
-plan_id = "all"
-repo_id = "GEIP1018"
+DEFAULT = "GEIP1018"
 
 [GEIP1009B]
-plan_id = "all"
-repo_id = "GEIP1018"
+DEFAULT = "GEIP1018"
 
 [LANG1002]
-plan_id = "all"
-repo_id = "LANG100X"
+DEFAULT = "LANG100X"
 
 [LANG1006]
-plan_id = "all"
-repo_id = "LANG100X"
+DEFAULT = "LANG100X"
 
 [LANG1001]
-plan_id = "all"
-repo_id = "LANG100X"
+DEFAULT = "LANG100X"
 
 [LANG1007]
-plan_id = "all"
-repo_id = "LANG100X"
+DEFAULT = "LANG100X"
 
 [LANG1008]
-plan_id = "all"
-repo_id = "LANG100X"
+DEFAULT = "LANG100X"
 
 [PE1001A]
-plan_id = "all"
-repo_id = "PE100X"
+DEFAULT = "PE100X"
 
 [PE1001B]
-plan_id = "all"
-repo_id = "PE100X"
+DEFAULT = "PE100X"
 
 [PE1001C]
-plan_id = "all"
-repo_id = "PE100X"
+DEFAULT = "PE100X"
 
 [PE1001D]
-plan_id = "all"
-repo_id = "PE100X"
+DEFAULT = "PE100X"
 
 [PE1002C]
-plan_id = "all"
-repo_id = "PE100X"
+DEFAULT = "PE100X"
 
 [PE1002D]
-plan_id = "all"
-repo_id = "PE100X"
+DEFAULT = "PE100X"
 
 [PE1002E]
-plan_id = "all"
-repo_id = "PE100X"
+DEFAULT = "PE100X"
 
 [PE1002F]
-plan_id = "all"
-repo_id = "PE100X"
+DEFAULT = "PE100X"
 
 [CAEC1001]
-plan_id = "all"
-repo_id = "COMP2001"
+DEFAULT = "COMP2001"
 
 [COMP2021]
-plan_id = "all"
-repo_id = "COMP2001"
+DEFAULT = "COMP2001"
 
 [COMP1011]
-plan_id = "all"
-repo_id = "COMP2021"
+DEFAULT = "COMP2021"
 
 [COMP1013]
-plan_id = "all"
-repo_id = "COMP2021"
+DEFAULT = "COMP2021"
 
 [EE1005]
-plan_id = "all"
-repo_id = "EE1018"
+DEFAULT = "EE1018"
 
 [EE1018]
-plan_id = "all"
-repo_id = "EE1018"
+DEFAULT = "EE1018"
 
 [EE1019]
-plan_id = "all"
-repo_id = "EE1013"
+DEFAULT = "EE1013"
 
 [EE1020]
-plan_id = "all"
-repo_id = "EE1011A"
+DEFAULT = "EE1011A"
 
 [EE1022]
-plan_id = "all"
-repo_id = "EE1014"
+DEFAULT = "EE1014"
 
 [EE1023]
-plan_id = "all"
-repo_id = "EE1012A"
+DEFAULT = "EE1012A"
 
 [ELEC2016]
-plan_id = "all"
-repo_id = "EE1009"
+DEFAULT = "EE1009"
 
 [PHYS1001A]
-plan_id = "all"
-repo_id = "PHYS1001"
+DEFAULT = "PHYS1001"
 
 [PHYS1001B]
-plan_id = "all"
-repo_id = "PHYS1001"
+DEFAULT = "PHYS1001"
 
 [PHYS1003]
-plan_id = "all"
-repo_id = "PHYS1001"
+DEFAULT = "PHYS1001"
 
 [PHYS1005A]
-plan_id = "all"
-repo_id = "PHYS1001"
+DEFAULT = "PHYS1001"
 
 [PHYS1005B]
-plan_id = "all"
-repo_id = "PHYS1001"
+DEFAULT = "PHYS1001"
 
 [PHYS1007A]
-plan_id = "all"
-repo_id = "PHYS1001"
+DEFAULT = "PHYS1001"
 
 [PHYS1007B]
-plan_id = "all"
-repo_id = "PHYS1001"
+DEFAULT = "PHYS1001"
 
 [PHYS1002A]
-plan_id = "all"
-repo_id = "PHYS1002"
+DEFAULT = "PHYS1002"
 
 [PHYS1002B]
-plan_id = "all"
-repo_id = "PHYS1002"
+DEFAULT = "PHYS1002"
 
 [PHYS1004]
-plan_id = "all"
-repo_id = "PHYS1002"
+DEFAULT = "PHYS1002"
 
 [PHYS1006A]
-plan_id = "all"
-repo_id = "PHYS1002"
+DEFAULT = "PHYS1002"
 
 [PHYS1006B]
-plan_id = "all"
-repo_id = "PHYS1002"
+DEFAULT = "PHYS1002"
 
 [ENGG1003]
-plan_id = "all"
-repo_id = "ENGG1003"
+DEFAULT = "ENGG1003"
 
 [ENGG1006]
-plan_id = "all"
-repo_id = "ENGG1003"
+DEFAULT = "ENGG1003"
 
 [ENGG1002]
-plan_id = "all"
-repo_id = "ENGG1002"
+DEFAULT = "ENGG1002"
 
 [ENGG1008]
-plan_id = "all"
-repo_id = "ENGG1002"
+DEFAULT = "ENGG1002"
 
 [IEPR1301A]
-plan_id = "all"
-repo_id = "AUTO2003A"
+DEFAULT = "AUTO2003A"
 
 [IEPR1301B]
-plan_id = "all"
-repo_id = "AUTO2003B"
+DEFAULT = "AUTO2003B"
 
 [COMP2003]
-plan_id = "all"
-repo_id = "COMP2030"
+DEFAULT = "COMP2030"
 
 [MATH1008]
-plan_id = "all"
-repo_id = "COMP2030"
+DEFAULT = "COMP2030"
 
 [MECH1003]
-plan_id = "all"
-repo_id = "MECH2019"
+DEFAULT = "MECH2019"
 
 [MECH1006]
-plan_id = "all"
-repo_id = "MECH2019"
+DEFAULT = "MECH2019"
 
 [MECH1007]
-plan_id = "all"
-repo_id = "MECH2019"
+DEFAULT = "MECH2019"
 
 [COMP2019]
-plan_id = "all"
-repo_id = "COMP2051"
+DEFAULT = "COMP2051"
 
 [COMP2053]
-plan_id = "all"
-repo_id = "COMP2051"
+DEFAULT = "COMP2051"
 
 [COMP2022]
-plan_id = "all"
-repo_id = "COMP2052"
+DEFAULT = "COMP2052"
 
 [COMP2007]
-plan_id = "all"
-repo_id = "COMP2052"
+DEFAULT = "COMP2052"
 
 [COMP2027]
-plan_id = "all"
-repo_id = "COMP3059"
+DEFAULT = "COMP3059"
 
 [COMP2024A]
-plan_id = "all"
-repo_id = "COMP3060"
+DEFAULT = "COMP3060"
 
 [COMP2028]
-plan_id = "all"
-repo_id = "COMP3060"
+DEFAULT = "COMP3060"
 
 [COMP2024B]
-plan_id = "all"
-repo_id = "COMP2029"
+DEFAULT = "COMP2029"
 
 [EE2005]
-plan_id = "all"
-repo_id = "AUTO3001A"
+DEFAULT = "AUTO3001A"
 
 [EE3006]
-plan_id = "all"
-repo_id = "EE304X"
+DEFAULT = "EE304X"
 
 [EE3008]
-plan_id = "all"
-repo_id = "EE304X"
+DEFAULT = "EE304X"
 
 [EE3009]
-plan_id = "all"
-repo_id = "EE304X"
+DEFAULT = "EE304X"
 
 [EE3041]
-plan_id = "all"
-repo_id = "EE304X"
+DEFAULT = "EE304X"
 
 [EE3042]
-plan_id = "all"
-repo_id = "EE304X"
+DEFAULT = "EE304X"
 
 [EE3004]
-plan_id = "all"
-repo_id = "EE30XX"
+DEFAULT = "EE30XX"
 
 [EE3011]
-plan_id = "all"
-repo_id = "EE30XX"
+DEFAULT = "EE30XX"
 
 [EE3012]
-plan_id = "all"
-repo_id = "EE30XX"
+DEFAULT = "EE30XX"
 
 [EE3016]
-plan_id = "all"
-repo_id = "EE30XX"
+DEFAULT = "EE30XX"
 
 [EE3017]
-plan_id = "all"
-repo_id = "EE30XX"
+DEFAULT = "EE30XX"
 
 [EE3018]
-plan_id = "all"
-repo_id = "EE30XX"
+DEFAULT = "EE30XX"
 
 [EE3021]
-plan_id = "all"
-repo_id = "EE30XX"
+DEFAULT = "EE30XX"
 
 [EE3022]
-plan_id = "all"
-repo_id = "EE30XX"
+DEFAULT = "EE30XX"
 
 [EE3023]
-plan_id = "all"
-repo_id = "EE30XX"
+DEFAULT = "EE30XX"
 
 [EE3024]
-plan_id = "all"
-repo_id = "EE30XX"
+DEFAULT = "EE30XX"
 
 [EE3026]
-plan_id = "all"
-repo_id = "EE30XX"
+DEFAULT = "EE30XX"
 
 [EE3027]
-plan_id = "all"
-repo_id = "EE30XX"
+DEFAULT = "EE30XX"
 
 [EE3028]
-plan_id = "all"
-repo_id = "EE30XX"
+DEFAULT = "EE30XX"
 
 [EE3029]
-plan_id = "all"
-repo_id = "EE30XX"
+DEFAULT = "EE30XX"
 
 [EE3030]
-plan_id = "all"
-repo_id = "EE30XX"
+DEFAULT = "EE30XX"
 
 [EE3038]
-plan_id = "all"
-repo_id = "EE30XX"
+DEFAULT = "EE30XX"
 
 [EE3040]
-plan_id = "all"
-repo_id = "EE30XX"
+DEFAULT = "EE30XX"
 
 [EE3043]
-plan_id = "all"
-repo_id = "EE30XX"
+DEFAULT = "EE30XX"
 
 [EE4001]
-plan_id = "all"
-repo_id = "EE30XX"
+DEFAULT = "EE30XX"
 
 [AUTO2004]
-plan_id = "all"
-repo_id = "AUTO1001"
+DEFAULT = "AUTO1001"
 
 [AUTO3014]
-plan_id = "all"
-repo_id = "AUTO3022"
+DEFAULT = "AUTO3022"
 
 [MATH3010]
-plan_id = "all"
-repo_id = "AUTO3028"
+DEFAULT = "AUTO3028"

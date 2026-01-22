@@ -1,7 +1,7 @@
 import argparse
 import sys
 from pathlib import Path
-from hoa_majors.cli import crawl, table, search, audit, plans, courses, info
+from hoa_majors.cli import crawl, search, audit, plans, courses, info
 from hoa_majors.config import DEFAULT_DATA_DIR, logger
 
 def main():
@@ -21,12 +21,6 @@ def main():
         help="要抓取的年级列表",
     )
     crawl_parser.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR, help="数据存储目录")
-
-    # table
-    table_parser = subparsers.add_parser("table", help="生成或更新课程查找表")
-    table_parser.add_argument("action", choices=["init", "update"], help="执行的操作")
-    table_parser.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR, help="数据存储目录")
-    table_parser.add_argument("--output-file", type=Path, help="查找表输出文件路径")
 
     # search
     search_parser = subparsers.add_parser("search", help="在数据中搜索课程代码")
@@ -66,12 +60,6 @@ def main():
         logger.info("开始抓取课程详细数据")
         crawl.crawl_courses(mapping_file, args.data_dir)
         logger.info("抓取任务完成")
-    elif args.command == "table":
-        table_file = args.output_file or args.data_dir / "lookup_table.py"
-        if args.action == "init":
-            table.init_table(args.data_dir, table_file)
-        else:
-            table.update_table(args.data_dir, table_file)
     elif args.command == "search":
         code = args.code
         if not code:

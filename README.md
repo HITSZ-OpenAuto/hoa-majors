@@ -12,13 +12,11 @@
 ├── src/hoa_majors/       # 核心代码包
 │   ├── cli/              # 命令行工具
 │   │   ├── crawl.py      # 抓取数据
-│   │   ├── table.py      # 查找表管理
 │   │   ├── search.py     # 课程查询
 │   │   └── audit.py      # 冲突审计
 │   ├── core/             # 核心逻辑
 │   ├── data/             # 培养方案数据 (打包在包内)
 │   │   ├── plans/ # 专业课程 TOML 文件
-│   │   ├── lookup_table.py # 课程代码查找表
 │   │   └── major_mapping.json # 专业映射数据
 │   └── config.py         # 配置管理
 ├── tests/                # 测试脚本
@@ -53,9 +51,11 @@ uv sync
 ### 1. 配置环境
 
 1. 复制 `.env.example` 为 `.env`：
+
    ```sh
    cp .env.example .env
    ```
+
 2. 编辑 `.env` 文件，填入你的 `JW_COOKIE`。
 
 ### 2. 抓取数据
@@ -68,28 +68,18 @@ uv run hoa crawl
 
 该命令会先更新专业映射关系，然后抓取所有专业的课程数据并保存到内置的数据目录。
 
-### 3. 维护查找表
-
-初始化查找表：
-```sh
-uv run hoa table init
-```
-
-增量更新查找表（添加新出现的课程）：
-```sh
-uv run hoa table update
-```
-
-### 4. 课程查询
+### 3. 课程查询
 
 快速查找课程所在文件：
+
 ```sh
 uv run hoa search [课程代码]
 ```
 
-### 5. 冲突审计
+### 4. 冲突审计
 
 检测同名课程但代码不同的冲突：
+
 ```sh
 uv run hoa audit
 ```
@@ -164,6 +154,7 @@ lab = 16
 ## 开发说明
 
 本项目采用模块化设计：
+
 - `hoa_majors.core.fetcher`: 负责 API 请求
 - `hoa_majors.core.parser`: 负责数据清洗与 TOML 格式化
 - `hoa_majors.core.writer`: 负责文件写入

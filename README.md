@@ -6,6 +6,14 @@
 
 本项目用于从 **哈尔滨工业大学（深圳）教务系统** 抓取各年级、各专业的培养方案课程数据，并将其规范化后保存为 TOML 格式文件，便于后续查询与分析。
 
+## 安装
+
+直接安装 CLI 工具到系统中：
+
+```sh
+uv tool install git+https://github.com/HITSZ-OpenAuto/hoa-majors.git
+```
+
 ## 快速开始
 
 ```sh

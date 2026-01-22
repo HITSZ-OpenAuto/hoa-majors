@@ -2,6 +2,7 @@ import argparse
 import sys
 from pathlib import Path
 
+from hoa_majors import __version__
 from hoa_majors.cli import audit, courses, crawl, info, plans, search
 from hoa_majors.config import DEFAULT_DATA_DIR, logger
 
@@ -11,6 +12,7 @@ def main():
         description="HOA Majors CLI - 哈工大（深圳）培养方案抓取与查询工具",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
+    parser.add_argument("--version", action="version", version=f"hoa-majors {__version__}")
 
     subparsers = parser.add_subparsers(dest="command", help="可用命令")
 

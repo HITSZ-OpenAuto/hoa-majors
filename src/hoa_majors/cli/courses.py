@@ -12,15 +12,10 @@ def list_courses(plan_id: str, data_dir: Path):
     for _, data in iter_toml_files(data_dir):
         if data.get("info", {}).get("plan_ID") == plan_id:
             found = True
-            info = data.get("info", {})
-            print(f"专业: {info.get('major_name')} ({info.get('year')} 年级)")
-            print(f"方案 ID: {plan_id}")
-            print(f"{'课程代码':<12} | {'课程名称'}")
-            print("-" * 50)
             for course in data.get("courses", []):
                 code = course.get("course_code", "N/A")
                 name = course.get("course_name", "N/A")
-                print(f"{code:<12} | {name}")
+                print(f"{code:<12} {name}")
             break
 
     if not found:

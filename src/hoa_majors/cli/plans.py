@@ -15,6 +15,7 @@ def list_plans(data_dir: Path):
         if plan_id:
             plans[plan_id] = {
                 "year": info.get("year", "N/A"),
+                "major_code": info.get("major_code", "N/A"),
                 "major_name": info.get("major_name", "N/A"),
                 "school": info.get("school_name", "N/A"),
             }
@@ -23,17 +24,17 @@ def list_plans(data_dir: Path):
         logger.error("未找到任何培养方案数据。")
         sys.exit(1)
 
-    print(f"{'方案 ID (plan_ID)':<35} | {'年级':<5} | {'专业名称'}")
-    print("-" * 80)
+    # print(f"{'方案 ID (plan_ID)':<35} | {'年级':<5} | {'专业名称'}")
+    # print("-" * 80)
 
     # 按年级和专业名称排序
     sorted_plans = sorted(plans.items(), key=lambda x: (x[1]["year"], x[1]["major_name"]))
 
     for pid, details in sorted_plans:
-        print(f"{pid:<35} | {details['year']:<5} | {details['major_name']}")
+        print(f"{pid} {details['year']} {details['major_code']} {details['major_name']}")
 
-    print("-" * 80)
-    print(f"共计 {len(plans)} 个培养方案")
+    # print("-" * 80)
+    # print(f"共计 {len(plans)} 个培养方案")
 
 
 def main():

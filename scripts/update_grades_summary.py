@@ -31,6 +31,39 @@ OUT_PATH = Path(__file__).resolve().parents[1] / "src/hoa_majors/data/grades_sum
 PERCENT_RE = re.compile(r"(\d+%)")
 
 
+def normalize_entry_key(course_variant: str) -> str:
+    """Normalize TOML variant keys into one of:
+
+    - default
+    - 入学年份_default (e.g. 2024_default)
+    - 入学年份_专业 (e.g. 2022_自动化)
+
+    Notes:
+    - Keys like "23级" / "21级自动化" are converted to 2023_* / 2021_*.
+    - A few variants in upstream data are not enrollment-year based (e.g. teacher names).
+      We currently map them into "default" (see PR discussion if this needs refinement).
+    """
+
+    if course_variant == "default":
+        return "default"
+
+    # Plain year.
+    if re.fullmatch(r"\d{4}", course_variant):
+        return f"{course_variant}_default"
+
+    # Patterns like "23级" / "21级自动化".
+    m = re.fullmatch(r"(?P<yy>\d{2})级(?P<rest>.*)", course_variant)
+    if m:
+        year = f"20{m.group('yy')}"
+        rest = m.group("rest").strip()
+        if not rest:
+            return f"{year}_default"
+        return f"{year}_{rest}"
+
+    # Non-year variants in the upstream file.
+    return "default"
+
+
 def parse_grade(raw: str) -> dict[str, Any]:
     """Parse a grade string into a structured object.
 
@@ -73,27 +106,79 @@ def parse_grade(raw: str) -> dict[str, Any]:
     return {"raw": raw, "items": items, "note": note}
 
 
-def transform(obj: Any) -> None:
+def extract_grade_strings(obj: Any) -> list[str]:
+    """Collect all grade strings found under a variant block.
+
+    Upstream TOML shapes include:
+    - variant -> default -> {grade: "..."}
+    - variant -> default -> default -> {grade: "..."}
+    """
+
+    out: list[str] = []
     if isinstance(obj, dict):
-        for k, v in list(obj.items()):
+        for k, v in obj.items():
             if k == "grade" and isinstance(v, str):
-                obj[k] = parse_grade(v)
+                out.append(v)
             else:
-                transform(v)
+                out.extend(extract_grade_strings(v))
     elif isinstance(obj, list):
         for v in obj:
-            transform(v)
+            out.extend(extract_grade_strings(v))
+    return out
 
 
 def main() -> None:
     raw_bytes = urllib.request.urlopen(SOURCE_URL).read()
-    data = tomllib.loads(raw_bytes.decode("utf-8"))
+    toml_data = tomllib.loads(raw_bytes.decode("utf-8"))
 
-    transform(data)
+    grades = toml_data.get("grades", {})
+    out_grades: dict[str, Any] = {}
+
+    for course_code, course_obj in grades.items():
+        if not isinstance(course_obj, dict):
+            continue
+
+        entries: dict[str, Any] = {}
+
+        for variant_key, variant_obj in course_obj.items():
+            if variant_key == "course_name":
+                continue  # explicitly removed per repo convention
+
+            entry_key = normalize_entry_key(str(variant_key))
+            grade_strings = extract_grade_strings(variant_obj)
+            if not grade_strings:
+                continue
+
+            # If multiple grade strings appear for the same entry_key, keep the first and
+            # append the rest into its note to remain lossless enough.
+            first = grade_strings[0]
+            grade_struct = parse_grade(first)
+            if len(grade_strings) > 1:
+                extra = " | ".join(grade_strings[1:])
+                grade_struct["note"] = (
+                    f"{grade_struct['note']} | {extra}" if grade_struct["note"] else extra
+                )
+
+            if entry_key in entries:
+                # Merge collision: keep existing and append this raw into note.
+                prev = entries[entry_key]["grade"]
+                prev_note = prev.get("note")
+                prev["note"] = (
+                    f"{prev_note} | ALT: {grade_struct['raw']}"
+                    if prev_note
+                    else f"ALT: {grade_struct['raw']}"
+                )
+            else:
+                entries[entry_key] = {"grade": grade_struct}
+
+        if entries:
+            out_grades[course_code] = entries
+
+    out = {"grades": out_grades}
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(
-        json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        json.dumps(out, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
     )
 

@@ -87,7 +87,7 @@ def parse_grade(raw: str) -> list[dict[str, Any]]:
     for part in parts or [raw_norm.strip()]:
         m = PERCENT_RE.search(part)
         if not m:
-            items.append({"name": part, "percent": None})
+            items.append({"name": part})
             continue
 
         percent = m.group(1)

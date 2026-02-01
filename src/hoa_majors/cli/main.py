@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 
 from hoa_majors import __version__
-from hoa_majors.cli import audit, courses, crawl, info, plans, repo, search
+from hoa_majors.cli import courses, crawl, info, plans, repo
 from hoa_majors.config import DEFAULT_DATA_DIR, logger
 
 
@@ -27,20 +27,6 @@ def main():
     crawl_parser.add_argument(
         "--data-dir", type=Path, default=DEFAULT_DATA_DIR, help="数据存储目录"
     )
-
-    # search
-    search_parser = subparsers.add_parser("search", help="在数据中搜索课程代码")
-    search_parser.add_argument("code", nargs="?", help="要搜索的课程代码")
-    search_parser.add_argument(
-        "--data-dir", type=Path, default=DEFAULT_DATA_DIR, help="数据存储目录"
-    )
-
-    # audit
-    audit_parser = subparsers.add_parser("audit", help="审计课程名称与代码的冲突")
-    audit_parser.add_argument(
-        "--data-dir", type=Path, default=DEFAULT_DATA_DIR, help="数据存储目录"
-    )
-    audit_parser.add_argument("--output", type=Path, help="保存冲突报告的路径")
 
     # plans
     plans_parser = subparsers.add_parser("plans", help="列出所有已抓取的培养方案")
@@ -87,26 +73,6 @@ def main():
         logger.info("开始抓取课程详细数据")
         crawl.crawl_courses(mapping_file, args.data_dir)
         logger.info("抓取任务完成")
-    elif args.command == "search":
-        code = args.code
-        if not code:
-            code = input("请输入课程代码: ").strip()
-        results = search.locate(code, args.data_dir)
-        print("\n" + "=" * 40 + "\n查询结果\n" + "=" * 40 + "\n")
-        if not results:
-            print("未找到该课程代码。")
-        else:
-            print(f"找到 {len(results)} 个匹配：\n")
-            for path, course in results:
-                print(f"文件: {path.name}")
-                print(f"课程名称: {course.get('course_name', 'N/A')}")
-                print(f"课程性质: {course.get('course_nature', 'N/A')}")
-                print(f"学分: {course.get('credit', 'N/A')}")
-                print("-" * 40)
-    elif args.command == "audit":
-        mapping = audit.scan(args.data_dir)
-        report_file = args.output or args.data_dir / "course_code_conflicts.txt"
-        audit.report_conflicts(mapping, report_file)
     elif args.command == "plans":
         plans.list_plans(args.data_dir)
     elif args.command == "courses":

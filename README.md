@@ -35,12 +35,6 @@ uv run hoa courses <plan_id>
 
 # 获取培养方案中特定课程的详细信息
 uv run hoa info <plan_id> <course_code>
-
-# 通过课程代码找出培养方案
-uv run hoa search <course_code>
-
-# 审计课程名称与代码的冲突
-uv run hoa audit
 ```
 
 ## GitHub Action
